@@ -1,0 +1,12 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/fs-2.4.16-py2.py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/Jinja2-2.11.3-py2.py3-none-any.whl has bad hash. Re-downloading.
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [1 lines of output]
+      platform android is not supported
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'psutil' when getting requirements to build wheel

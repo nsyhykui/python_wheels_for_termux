@@ -1,0 +1,19 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ploomber-0.23.3-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ploomber_scaffold-0.3.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ploomber_engine-0.0.33-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ploomber_core-0.2.27-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/posthog-7.14.0-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/notebook-6.5.7-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/jupyter_client-7.4.9-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ipykernel-6.30.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ipykernel-6.29.5-py3-none-any.whl has bad hash. Re-downloading.
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [1 lines of output]
+      platform android is not supported
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'psutil' when getting requirements to build wheel

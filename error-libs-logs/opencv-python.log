@@ -1,0 +1,753 @@
+  error: subprocess-exited-with-error
+  
+  × Building wheel for opencv-python (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [743 lines of output]
+      /data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+        warn(
+      
+      
+      --------------------------------------------------------------------------------
+      -- Trying 'Ninja' generator
+      --------------------------------
+      ---------------------------
+      ----------------------
+      -----------------
+      ------------
+      -------
+      --
+      Not searching for unused variables given on the command line.
+      -- The C compiler identification is Clang 21.1.8
+      -- Detecting C compiler ABI info
+      -- Detecting C compiler ABI info - done
+      -- Check for working C compiler: /data/data/com.termux/files/usr/bin/clang - skipped
+      -- Detecting C compile features
+      -- Detecting C compile features - done
+      -- The CXX compiler identification is Clang 21.1.8
+      -- Detecting CXX compiler ABI info
+      -- Detecting CXX compiler ABI info - done
+      -- Check for working CXX compiler: /data/data/com.termux/files/usr/bin/clang++ - skipped
+      -- Detecting CXX compile features
+      -- Detecting CXX compile features - done
+      -- Configuring done (3.5s)
+      -- Generating done (0.1s)
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_cmake_test_compile/build
+      --
+      -------
+      ------------
+      -----------------
+      ----------------------
+      ---------------------------
+      --------------------------------
+      -- Trying 'Ninja' generator - success
+      --------------------------------------------------------------------------------
+      
+      Configuring Project
+        Working directory:
+          /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build
+        Command:
+          /data/data/com.termux/files/usr/bin/cmake /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/opencv -G Ninja --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-install -DPYTHON_VERSION_STRING:STRING=3.13.13 -DSKBUILD:INTERNAL=TRUE -DCMAKE_MODULE_PATH:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/resources/cmake -DPYTHON_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPYTHON_LIBRARY:PATH=/data/data/com.termux/files/usr/lib/libpython3.13.so -DPython_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPython_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython_FIND_REGISTRY:STRING=NEVER -DPython_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPython_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/numpy/_core/include -DPython3_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPython3_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython3_FIND_REGISTRY:STRING=NEVER -DPython3_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPython3_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/numpy/_core/include -DPYTHON3_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON_DEFAULT_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON3_INCLUDE_DIR=/data/data/com.termux/files/usr/include/python3.13 -DPYTHON3_LIBRARY=/data/data/com.termux/files/usr/lib/libpython3.13.so -DBUILD_opencv_python3=ON -DBUILD_opencv_python2=OFF -DBUILD_opencv_java=OFF -DOPENCV_PYTHON3_INSTALL_PATH=python -DINSTALL_CREATE_DISTRIB=ON -DBUILD_opencv_apps=OFF -DBUILD_opencv_freetype=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_DOCS=OFF -DPYTHON3_LIMITED_API=ON -DBUILD_OPENEXR=ON -DCMAKE_BUILD_TYPE:STRING=Release
+      
+      Not searching for unused variables given on the command line.
+      CMake Deprecation Warning at CMakeLists.txt:25 (cmake_minimum_required):
+        Compatibility with CMake < 3.10 will be removed from a future version of
+        CMake.
+      
+        Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+        to tell CMake that the project requires at least <min> but has been updated
+        to work with policies introduced by <max> or earlier.
+      
+      
+      CMake Deprecation Warning at CMakeLists.txt:88 (cmake_policy):
+        The OLD behavior for policy CMP0146 will be removed from a future version
+        of CMake.
+      
+        The cmake-policies(7) manual explains that the OLD behaviors of all
+        policies are deprecated and that a policy should be set to OLD only under
+        specific short-term circumstances.  Projects should be ported to the NEW
+        behavior and not rely on setting a policy to OLD.
+      
+      
+      CMake Deprecation Warning at CMakeLists.txt:92 (cmake_policy):
+        The OLD behavior for policy CMP0148 will be removed from a future version
+        of CMake.
+      
+        The cmake-policies(7) manual explains that the OLD behaviors of all
+        policies are deprecated and that a policy should be set to OLD only under
+        specific short-term circumstances.  Projects should be ported to the NEW
+        behavior and not rely on setting a policy to OLD.
+      
+      
+      -- The CXX compiler identification is Clang 21.1.8
+      -- The C compiler identification is Clang 21.1.8
+      -- Detecting CXX compiler ABI info
+      -- Detecting CXX compiler ABI info - done
+      -- Check for working CXX compiler: /data/data/com.termux/files/usr/bin/clang++ - skipped
+      -- Detecting CXX compile features
+      -- Detecting CXX compile features - done
+      -- Detecting C compiler ABI info
+      -- Detecting C compiler ABI info - done
+      -- Check for working C compiler: /data/data/com.termux/files/usr/bin/clang - skipped
+      -- Detecting C compile features
+      -- Detecting C compile features - done
+      -- ocv_init_download: OpenCV source tree is not fetched as git repository. 3rdparty resources will be downloaded from github.com by default.
+      -- Detected processor: aarch64
+      -- Found PythonInterp: /data/data/com.termux/files/usr/bin/python3.13 (found suitable version "3.13.13", minimum required is "3.2")
+      -- Looking for ccache - found (/data/data/com.termux/files/usr/bin/ccache)
+      -- Performing Test HAVE_CXX_FSIGNED_CHAR
+      -- Performing Test HAVE_CXX_FSIGNED_CHAR - Success
+      -- Performing Test HAVE_C_FSIGNED_CHAR
+      -- Performing Test HAVE_C_FSIGNED_CHAR - Success
+      -- Performing Test HAVE_CXX_W
+      -- Performing Test HAVE_CXX_W - Success
+      -- Performing Test HAVE_C_W
+      -- Performing Test HAVE_C_W - Success
+      -- Performing Test HAVE_CXX_WALL
+      -- Performing Test HAVE_CXX_WALL - Success
+      -- Performing Test HAVE_C_WALL
+      -- Performing Test HAVE_C_WALL - Success
+      -- Performing Test HAVE_CXX_WRETURN_TYPE
+      -- Performing Test HAVE_CXX_WRETURN_TYPE - Success
+      -- Performing Test HAVE_C_WRETURN_TYPE
+      -- Performing Test HAVE_C_WRETURN_TYPE - Success
+      -- Performing Test HAVE_CXX_WNON_VIRTUAL_DTOR
+      -- Performing Test HAVE_CXX_WNON_VIRTUAL_DTOR - Success
+      -- Performing Test HAVE_C_WNON_VIRTUAL_DTOR
+      -- Performing Test HAVE_C_WNON_VIRTUAL_DTOR - Success
+      -- Performing Test HAVE_CXX_WADDRESS
+      -- Performing Test HAVE_CXX_WADDRESS - Success
+      -- Performing Test HAVE_C_WADDRESS
+      -- Performing Test HAVE_C_WADDRESS - Success
+      -- Performing Test HAVE_CXX_WSEQUENCE_POINT
+      -- Performing Test HAVE_CXX_WSEQUENCE_POINT - Success
+      -- Performing Test HAVE_C_WSEQUENCE_POINT
+      -- Performing Test HAVE_C_WSEQUENCE_POINT - Success
+      -- Performing Test HAVE_CXX_WFORMAT
+      -- Performing Test HAVE_CXX_WFORMAT - Success
+      -- Performing Test HAVE_C_WFORMAT
+      -- Performing Test HAVE_C_WFORMAT - Success
+      -- Performing Test HAVE_CXX_WFORMAT_SECURITY
+      -- Performing Test HAVE_CXX_WFORMAT_SECURITY - Success
+      -- Performing Test HAVE_C_WFORMAT_SECURITY
+      -- Performing Test HAVE_C_WFORMAT_SECURITY - Success
+      -- Performing Test HAVE_CXX_WMISSING_DECLARATIONS
+      -- Performing Test HAVE_CXX_WMISSING_DECLARATIONS - Success
+      -- Performing Test HAVE_C_WMISSING_DECLARATIONS
+      -- Performing Test HAVE_C_WMISSING_DECLARATIONS - Success
+      -- Performing Test HAVE_CXX_WMISSING_PROTOTYPES
+      -- Performing Test HAVE_CXX_WMISSING_PROTOTYPES - Success
+      -- Performing Test HAVE_C_WMISSING_PROTOTYPES
+      -- Performing Test HAVE_C_WMISSING_PROTOTYPES - Success
+      -- Performing Test HAVE_CXX_WSTRICT_PROTOTYPES
+      -- Performing Test HAVE_CXX_WSTRICT_PROTOTYPES - Success
+      -- Performing Test HAVE_C_WSTRICT_PROTOTYPES
+      -- Performing Test HAVE_C_WSTRICT_PROTOTYPES - Success
+      -- Performing Test HAVE_CXX_WUNDEF
+      -- Performing Test HAVE_CXX_WUNDEF - Success
+      -- Performing Test HAVE_C_WUNDEF
+      -- Performing Test HAVE_C_WUNDEF - Success
+      -- Performing Test HAVE_CXX_WINIT_SELF
+      -- Performing Test HAVE_CXX_WINIT_SELF - Success
+      -- Performing Test HAVE_C_WINIT_SELF
+      -- Performing Test HAVE_C_WINIT_SELF - Success
+      -- Performing Test HAVE_CXX_WPOINTER_ARITH
+      -- Performing Test HAVE_CXX_WPOINTER_ARITH - Success
+      -- Performing Test HAVE_C_WPOINTER_ARITH
+      -- Performing Test HAVE_C_WPOINTER_ARITH - Success
+      -- Performing Test HAVE_CXX_WSHADOW
+      -- Performing Test HAVE_CXX_WSHADOW - Success
+      -- Performing Test HAVE_C_WSHADOW
+      -- Performing Test HAVE_C_WSHADOW - Success
+      -- Performing Test HAVE_CXX_WSIGN_PROMO
+      -- Performing Test HAVE_CXX_WSIGN_PROMO - Success
+      -- Performing Test HAVE_C_WSIGN_PROMO
+      -- Performing Test HAVE_C_WSIGN_PROMO - Success
+      -- Performing Test HAVE_CXX_WUNINITIALIZED
+      -- Performing Test HAVE_CXX_WUNINITIALIZED - Success
+      -- Performing Test HAVE_C_WUNINITIALIZED
+      -- Performing Test HAVE_C_WUNINITIALIZED - Success
+      -- Performing Test HAVE_CXX_WINCONSISTENT_MISSING_OVERRIDE
+      -- Performing Test HAVE_CXX_WINCONSISTENT_MISSING_OVERRIDE - Success
+      -- Performing Test HAVE_C_WINCONSISTENT_MISSING_OVERRIDE
+      -- Performing Test HAVE_C_WINCONSISTENT_MISSING_OVERRIDE - Success
+      -- Performing Test HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR
+      -- Performing Test HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR - Success
+      -- Performing Test HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR
+      -- Performing Test HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR - Success
+      -- Performing Test HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS
+      -- Performing Test HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS - Success
+      -- Performing Test HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS
+      -- Performing Test HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS - Success
+      -- Performing Test HAVE_CXX_WNO_COMMENT
+      -- Performing Test HAVE_CXX_WNO_COMMENT - Success
+      -- Performing Test HAVE_C_WNO_COMMENT
+      -- Performing Test HAVE_C_WNO_COMMENT - Success
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED_ENUM_ENUM_CONVERSION
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED_ENUM_ENUM_CONVERSION - Success
+      -- Performing Test HAVE_C_WNO_DEPRECATED_ENUM_ENUM_CONVERSION
+      -- Performing Test HAVE_C_WNO_DEPRECATED_ENUM_ENUM_CONVERSION - Success
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED_ANON_ENUM_ENUM_CONVERSION
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED_ANON_ENUM_ENUM_CONVERSION - Success
+      -- Performing Test HAVE_C_WNO_DEPRECATED_ANON_ENUM_ENUM_CONVERSION
+      -- Performing Test HAVE_C_WNO_DEPRECATED_ANON_ENUM_ENUM_CONVERSION - Success
+      -- Performing Test HAVE_CXX_FDIAGNOSTICS_SHOW_OPTION
+      -- Performing Test HAVE_CXX_FDIAGNOSTICS_SHOW_OPTION - Success
+      -- Performing Test HAVE_C_FDIAGNOSTICS_SHOW_OPTION
+      -- Performing Test HAVE_C_FDIAGNOSTICS_SHOW_OPTION - Success
+      -- Performing Test HAVE_CXX_QUNUSED_ARGUMENTS
+      -- Performing Test HAVE_CXX_QUNUSED_ARGUMENTS - Success
+      -- Performing Test HAVE_C_QUNUSED_ARGUMENTS
+      -- Performing Test HAVE_C_QUNUSED_ARGUMENTS - Success
+      -- Performing Test HAVE_CPU_NEON_SUPPORT (check file: cmake/checks/cpu_neon.cpp)
+      -- Performing Test HAVE_CPU_NEON_SUPPORT - Success
+      -- Performing Test HAVE_CPU_FP16_SUPPORT (check file: cmake/checks/cpu_fp16.cpp)
+      -- Performing Test HAVE_CPU_FP16_SUPPORT - Success
+      -- Performing Test HAVE_CPU_NEON_DOTPROD_SUPPORT (check file: cmake/checks/cpu_neon_dotprod.cpp)
+      -- Performing Test HAVE_CPU_NEON_DOTPROD_SUPPORT - Failed
+      -- Performing Test HAVE_CXX_MARCH_ARMV8_2_A+DOTPROD (check file: cmake/checks/cpu_neon_dotprod.cpp)
+      -- Performing Test HAVE_CXX_MARCH_ARMV8_2_A+DOTPROD - Success
+      -- Performing Test HAVE_CPU_NEON_FP16_SUPPORT (check file: cmake/checks/cpu_neon_fp16.cpp)
+      -- Performing Test HAVE_CPU_NEON_FP16_SUPPORT - Failed
+      -- Performing Test HAVE_CXX_MARCH_ARMV8_2_A+FP16 (check file: cmake/checks/cpu_neon_fp16.cpp)
+      -- Performing Test HAVE_CXX_MARCH_ARMV8_2_A+FP16 - Success
+      -- Performing Test HAVE_CPU_NEON_BF16_SUPPORT (check file: cmake/checks/cpu_neon_bf16.cpp)
+      -- Performing Test HAVE_CPU_NEON_BF16_SUPPORT - Failed
+      -- Performing Test HAVE_CXX_MARCH_ARMV8_2_A+BF16 (check file: cmake/checks/cpu_neon_bf16.cpp)
+      -- Performing Test HAVE_CXX_MARCH_ARMV8_2_A+BF16 - Success
+      -- Performing Test HAVE_CPU_BASELINE_FLAGS
+      -- Performing Test HAVE_CPU_BASELINE_FLAGS - Success
+      -- Performing Test HAVE_CPU_DISPATCH_FLAGS_NEON_DOTPROD
+      -- Performing Test HAVE_CPU_DISPATCH_FLAGS_NEON_DOTPROD - Success
+      -- Performing Test HAVE_CPU_DISPATCH_FLAGS_NEON_FP16
+      -- Performing Test HAVE_CPU_DISPATCH_FLAGS_NEON_FP16 - Success
+      -- Performing Test HAVE_CPU_DISPATCH_FLAGS_NEON_BF16
+      -- Performing Test HAVE_CPU_DISPATCH_FLAGS_NEON_BF16 - Success
+      -- Performing Test HAVE_CXX_FVISIBILITY_HIDDEN
+      -- Performing Test HAVE_CXX_FVISIBILITY_HIDDEN - Success
+      -- Performing Test HAVE_C_FVISIBILITY_HIDDEN
+      -- Performing Test HAVE_C_FVISIBILITY_HIDDEN - Success
+      -- Performing Test HAVE_CXX_FVISIBILITY_INLINES_HIDDEN
+      -- Performing Test HAVE_CXX_FVISIBILITY_INLINES_HIDDEN - Success
+      -- Performing Test HAVE_C_FVISIBILITY_INLINES_HIDDEN
+      -- Performing Test HAVE_C_FVISIBILITY_INLINES_HIDDEN - Success
+      -- Performing Test HAVE_LINK_AS_NEEDED
+      -- Performing Test HAVE_LINK_AS_NEEDED - Success
+      -- Performing Test HAVE_LINK_NO_UNDEFINED
+      -- Performing Test HAVE_LINK_NO_UNDEFINED - Success
+      -- Looking for pthread.h
+      -- Looking for pthread.h - found
+      -- Looking for posix_memalign
+      -- Looking for posix_memalign - found
+      -- Looking for malloc.h
+      -- Looking for malloc.h - found
+      -- Looking for memalign
+      -- Looking for memalign - found
+      -- Looking for getauxval
+      -- Looking for getauxval - found
+      -- Looking for elf_aux_info
+      -- Looking for elf_aux_info - not found
+      -- Found ZLIB: /data/data/com.termux/files/usr/lib/libz.so (found suitable version "1.3.2", minimum required is "1.2.3")
+      -- Performing Test HAVE_C_WNO_UNUSED_PARAMETER
+      -- Performing Test HAVE_C_WNO_UNUSED_PARAMETER - Success
+      -- Performing Test HAVE_C_WNO_SIGN_COMPARE
+      -- Performing Test HAVE_C_WNO_SIGN_COMPARE - Success
+      -- Performing Test HAVE_C_WNO_SHORTEN_64_TO_32
+      -- Performing Test HAVE_C_WNO_SHORTEN_64_TO_32 - Success
+      -- Performing Test HAVE_C_WNO_IMPLICIT_FALLTHROUGH
+      -- Performing Test HAVE_C_WNO_IMPLICIT_FALLTHROUGH - Success
+      -- libjpeg-turbo: VERSION = 3.1.0, BUILD = opencv-4.12.0-libjpeg-turbo
+      -- Looking for sys/types.h
+      -- Looking for sys/types.h - found
+      -- Looking for stdint.h
+      -- Looking for stdint.h - found
+      -- Looking for stddef.h
+      -- Looking for stddef.h - found
+      -- Check size of size_t
+      -- Check size of size_t - done
+      -- Check size of unsigned long
+      -- Check size of unsigned long - done
+      -- Looking for include file locale.h
+      -- Looking for include file locale.h - found
+      -- Looking for include file stdlib.h
+      -- Looking for include file stdlib.h - found
+      -- Looking for include file sys/types.h
+      -- Looking for include file sys/types.h - found
+      -- Performing Test HAVE_VLD1_S16_X3
+      -- Performing Test HAVE_VLD1_S16_X3 - Success
+      -- Performing Test HAVE_VLD1_U16_X2
+      -- Performing Test HAVE_VLD1_U16_X2 - Success
+      -- Performing Test HAVE_VLD1Q_U8_X4
+      -- Performing Test HAVE_VLD1Q_U8_X4 - Success
+      -- Use full Neon SIMD intrinsics implementation (NEON_INTRINSICS = ON)
+      -- SIMD extensions: arm64 (WITH_SIMD = 1)
+      -- Looking for assert.h
+      -- Looking for assert.h - found
+      -- Looking for dlfcn.h
+      -- Looking for dlfcn.h - found
+      -- Looking for fcntl.h
+      -- Looking for fcntl.h - found
+      -- Looking for inttypes.h
+      -- Looking for inttypes.h - found
+      -- Looking for io.h
+      -- Looking for io.h - not found
+      -- Looking for limits.h
+      -- Looking for limits.h - found
+      -- Looking for memory.h
+      -- Looking for memory.h - found
+      -- Looking for search.h
+      -- Looking for search.h - found
+      -- Looking for string.h
+      -- Looking for string.h - found
+      -- Looking for strings.h
+      -- Looking for strings.h - found
+      -- Looking for sys/time.h
+      -- Looking for sys/time.h - found
+      -- Looking for unistd.h
+      -- Looking for unistd.h - found
+      -- Performing Test C_HAS_inline
+      -- Performing Test C_HAS_inline - Success
+      -- Check size of signed short
+      -- Check size of signed short - done
+      -- Check size of unsigned short
+      -- Check size of unsigned short - done
+      -- Check size of signed int
+      -- Check size of signed int - done
+      -- Check size of unsigned int
+      -- Check size of unsigned int - done
+      -- Check size of signed long
+      -- Check size of signed long - done
+      -- Check size of unsigned long
+      -- Check size of unsigned long - done
+      -- Check size of signed long long
+      -- Check size of signed long long - done
+      -- Check size of unsigned long long
+      -- Check size of unsigned long long - done
+      -- Check size of unsigned char *
+      -- Check size of unsigned char * - done
+      -- Check size of size_t
+      -- Check size of size_t - done
+      -- Check size of ptrdiff_t
+      -- Check size of ptrdiff_t - done
+      -- Check size of INT8
+      -- Check size of INT8 - failed
+      -- Check size of INT16
+      -- Check size of INT16 - failed
+      -- Check size of INT32
+      -- Check size of INT32 - failed
+      -- Looking for floor
+      -- Looking for floor - not found
+      -- Looking for pow
+      -- Looking for pow - not found
+      -- Looking for sqrt
+      -- Looking for sqrt - not found
+      -- Looking for isascii
+      -- Looking for isascii - found
+      -- Looking for memset
+      -- Looking for memset - found
+      -- Looking for mmap
+      -- Looking for mmap - found
+      -- Looking for getopt
+      -- Looking for getopt - found
+      -- Looking for memmove
+      -- Looking for memmove - found
+      -- Looking for setmode
+      -- Looking for setmode - not found
+      -- Looking for strcasecmp
+      -- Looking for strcasecmp - found
+      -- Looking for strchr
+      -- Looking for strchr - found
+      -- Looking for strrchr
+      -- Looking for strrchr - found
+      -- Looking for strstr
+      -- Looking for strstr - found
+      -- Looking for strtol
+      -- Looking for strtol - found
+      -- Looking for strtol
+      -- Looking for strtol - found
+      -- Looking for strtoull
+      -- Looking for strtoull - found
+      -- Looking for lfind
+      -- Looking for lfind - found
+      -- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_VARIABLE
+      -- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_VARIABLE - Success
+      -- Performing Test HAVE_C_WNO_MISSING_PROTOTYPES
+      -- Performing Test HAVE_C_WNO_MISSING_PROTOTYPES - Success
+      -- Performing Test HAVE_C_WNO_MISSING_DECLARATIONS
+      -- Performing Test HAVE_C_WNO_MISSING_DECLARATIONS - Success
+      -- Performing Test HAVE_C_WNO_UNDEF
+      -- Performing Test HAVE_C_WNO_UNDEF - Success
+      -- Performing Test HAVE_C_WNO_UNUSED
+      -- Performing Test HAVE_C_WNO_UNUSED - Success
+      -- Performing Test HAVE_C_WNO_CAST_ALIGN
+      -- Performing Test HAVE_C_WNO_CAST_ALIGN - Success
+      -- Performing Test HAVE_C_WNO_SHADOW
+      -- Performing Test HAVE_C_WNO_SHADOW - Success
+      -- Performing Test HAVE_C_WNO_MAYBE_UNINITIALIZED
+      -- Performing Test HAVE_C_WNO_MAYBE_UNINITIALIZED - Failed
+      -- Performing Test HAVE_C_WNO_POINTER_TO_INT_CAST
+      -- Performing Test HAVE_C_WNO_POINTER_TO_INT_CAST - Success
+      -- Performing Test HAVE_C_WNO_INT_TO_POINTER_CAST
+      -- Performing Test HAVE_C_WNO_INT_TO_POINTER_CAST - Success
+      -- Performing Test HAVE_C_WNO_MISLEADING_INDENTATION
+      -- Performing Test HAVE_C_WNO_MISLEADING_INDENTATION - Success
+      -- Performing Test HAVE_C_WNO_ARRAY_PARAMETER
+      -- Performing Test HAVE_C_WNO_ARRAY_PARAMETER - Success
+      -- Performing Test HAVE_C_WNO_STRICT_PROTOTYPES
+      -- Performing Test HAVE_C_WNO_STRICT_PROTOTYPES - Success
+      -- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS
+      -- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS - Success
+      -- Performing Test HAVE_CXX_WNO_UNUSED_PARAMETER
+      -- Performing Test HAVE_CXX_WNO_UNUSED_PARAMETER - Success
+      -- Performing Test HAVE_CXX_WNO_MISSING_PROTOTYPES
+      -- Performing Test HAVE_CXX_WNO_MISSING_PROTOTYPES - Success
+      -- Performing Test HAVE_CXX_WNO_UNDEF
+      -- Performing Test HAVE_CXX_WNO_UNDEF - Success
+      -- Performing Test HAVE_C_WNO_UNUSED_VARIABLE
+      -- Performing Test HAVE_C_WNO_UNUSED_VARIABLE - Success
+      -- Performing Test HAVE_C_WNO_UNUSED_FUNCTION
+      -- Performing Test HAVE_C_WNO_UNUSED_FUNCTION - Success
+      -- Could NOT find OpenJPEG (minimal suitable version: 2.0, recommended version >= 2.3.1). OpenJPEG will be built from sources
+      -- Performing Test HAVE_C_WNO_IMPLICIT_CONST_INT_FLOAT_CONVERSION
+      -- Performing Test HAVE_C_WNO_IMPLICIT_CONST_INT_FLOAT_CONVERSION - Success
+      -- Performing Test HAVE_C_WNO_DOCUMENTATION
+      -- Performing Test HAVE_C_WNO_DOCUMENTATION - Success
+      -- OpenJPEG: VERSION = 2.5.3, BUILD = opencv-4.12.0-openjp2-2.5.3
+      -- Looking for stdio.h
+      -- Looking for stdio.h - found
+      -- Looking for math.h
+      -- Looking for math.h - found
+      -- Looking for float.h
+      -- Looking for float.h - found
+      -- Looking for time.h
+      -- Looking for time.h - found
+      -- Looking for stdarg.h
+      -- Looking for stdarg.h - found
+      -- Looking for ctype.h
+      -- Looking for ctype.h - found
+      -- Looking for stdint.h
+      -- Looking for stdint.h - found
+      -- Looking for inttypes.h
+      -- Looking for inttypes.h - found
+      -- Looking for sys/stat.h
+      -- Looking for sys/stat.h - found
+      -- Looking for include file malloc.h
+      -- Looking for include file malloc.h - found
+      -- Looking for _aligned_malloc
+      -- Looking for _aligned_malloc - not found
+      -- Looking for posix_memalign
+      -- Looking for posix_memalign - found
+      -- Looking for memalign
+      -- Looking for memalign - found
+      -- Performing Test HAVE_C_WNO_CAST_FUNCTION_TYPE
+      -- Performing Test HAVE_C_WNO_CAST_FUNCTION_TYPE - Success
+      -- OpenJPEG libraries will be built from sources: libopenjp2 (version "2.5.3")
+      -- The ASM compiler identification is Clang with GNU-like command-line
+      -- Found assembler: /data/data/com.termux/files/usr/bin/clang
+      -- Performing Test HAVE_C_WNO_NULL_POINTER_SUBTRACTION
+      -- Performing Test HAVE_C_WNO_NULL_POINTER_SUBTRACTION - Success
+      -- Looking for semaphore.h
+      -- Looking for semaphore.h - found
+      -- Performing Test HAVE_CXX_WNO_SHADOW
+      -- Performing Test HAVE_CXX_WNO_SHADOW - Success
+      -- Performing Test HAVE_CXX_WNO_UNUSED
+      -- Performing Test HAVE_CXX_WNO_UNUSED - Success
+      -- Performing Test HAVE_CXX_WNO_SIGN_COMPARE
+      -- Performing Test HAVE_CXX_WNO_SIGN_COMPARE - Success
+      -- Performing Test HAVE_CXX_WNO_UNINITIALIZED
+      -- Performing Test HAVE_CXX_WNO_UNINITIALIZED - Success
+      -- Performing Test HAVE_CXX_WNO_SWITCH
+      -- Performing Test HAVE_CXX_WNO_SWITCH - Success
+      -- Performing Test HAVE_CXX_WNO_PARENTHESES
+      -- Performing Test HAVE_CXX_WNO_PARENTHESES - Success
+      -- Performing Test HAVE_CXX_WNO_ARRAY_BOUNDS
+      -- Performing Test HAVE_CXX_WNO_ARRAY_BOUNDS - Success
+      -- Performing Test HAVE_CXX_WNO_EXTRA
+      -- Performing Test HAVE_CXX_WNO_EXTRA - Success
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS - Success
+      -- Performing Test HAVE_CXX_WNO_MISLEADING_INDENTATION
+      -- Performing Test HAVE_CXX_WNO_MISLEADING_INDENTATION - Success
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED
+      -- Performing Test HAVE_CXX_WNO_DEPRECATED - Success
+      -- Performing Test HAVE_CXX_WNO_SUGGEST_OVERRIDE
+      -- Performing Test HAVE_CXX_WNO_SUGGEST_OVERRIDE - Success
+      -- Performing Test HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE
+      -- Performing Test HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE - Success
+      -- Performing Test HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH
+      -- Performing Test HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH - Success
+      -- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_COMPARE
+      -- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_COMPARE - Success
+      -- Performing Test HAVE_CXX_WNO_REORDER
+      -- Performing Test HAVE_CXX_WNO_REORDER - Success
+      -- Performing Test HAVE_CXX_WNO_UNUSED_RESULT
+      -- Performing Test HAVE_CXX_WNO_UNUSED_RESULT - Success
+      -- Performing Test HAVE_CXX_WNO_IMPLICIT_CONST_INT_FLOAT_CONVERSION
+      -- Performing Test HAVE_CXX_WNO_IMPLICIT_CONST_INT_FLOAT_CONVERSION - Success
+      -- KLEIDICV: Downloading kleidicv-0.5.0.tar.gz from https://gitlab.arm.com/kleidi/kleidicv/-/archive/0.5.0/kleidicv-0.5.0.tar.gz
+      -- Performing Test HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS
+      -- Performing Test HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS - Success
+      -- Performing Test HAVE_CXX_WNO_SIGN_PROMO
+      -- Performing Test HAVE_CXX_WNO_SIGN_PROMO - Success
+      -- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE
+      -- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE - Success
+      -- Performing Test HAVE_CXX_WNO_IGNORED_QUALIFIERS
+      -- Performing Test HAVE_CXX_WNO_IGNORED_QUALIFIERS - Success
+      -- Performing Test HAVE_CXX_WNO_UNUSED_FUNCTION
+      -- Performing Test HAVE_CXX_WNO_UNUSED_FUNCTION - Success
+      -- Performing Test HAVE_CXX_WNO_UNUSED_CONST_VARIABLE
+      -- Performing Test HAVE_CXX_WNO_UNUSED_CONST_VARIABLE - Success
+      -- Performing Test HAVE_CXX_WNO_SHORTEN_64_TO_32
+      -- Performing Test HAVE_CXX_WNO_SHORTEN_64_TO_32 - Success
+      -- Performing Test HAVE_CXX_WNO_INVALID_OFFSETOF
+      -- Performing Test HAVE_CXX_WNO_INVALID_OFFSETOF - Success
+      -- Performing Test HAVE_CXX_WNO_ENUM_COMPARE_SWITCH
+      -- Performing Test HAVE_CXX_WNO_ENUM_COMPARE_SWITCH - Success
+      -- Performing Test HAVE_CXX_WNO_STRINGOP_OVERFLOW
+      -- Performing Test HAVE_CXX_WNO_STRINGOP_OVERFLOW - Failed
+      -- Performing Test HAVE_CXX_WNO_STRINGOP_OVERREAD
+      -- Performing Test HAVE_CXX_WNO_STRINGOP_OVERREAD - Failed
+      -- Performing Test HAVE_CXX_WNO_EXTRA_SEMI
+      -- Performing Test HAVE_CXX_WNO_EXTRA_SEMI - Success
+      -- Performing Test HAVE_CXX_WNO_COMMA
+      -- Performing Test HAVE_CXX_WNO_COMMA - Success
+      -- Update variable ANDROID_SDK_ROOT from environment: /data/data/com.termux/files/home/android-sdk
+      -- Update variable ANDROID_HOME from environment: /data/data/com.termux/files/home/android-sdk
+      -- Android SDK: using location: /data/data/com.termux/files/home/android-sdk
+      -- Android SDK Build Tools: ver. 34.0.0 (subdir 34.0.0 from 34.0.0)
+      -- Android SDK Build Tools: Gradle 3.0.0+ builds support is available
+      -- Android SDK Tools: Prepare Android projects for using Gradle 3.0.0+ build scripts
+      -- Android Gradle Plugin version: 8.6.0
+      -- Kotlin Plugin version: 1.8.20
+      -- Gradle version: 8.11.1
+      CMake Warning (dev) at cmake/android/android_gradle_projects.cmake:84 (install):
+        Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+        "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+        command to set the policy and suppress this warning.
+      Call Stack (most recent call first):
+        cmake/android/OpenCVDetectAndroidSDK.cmake:225 (include)
+        CMakeLists.txt:834 (include)
+      This warning is for project developers.  Use -Wno-dev to suppress it.
+      
+      CMake Warning (dev) at cmake/android/android_gradle_projects.cmake:84 (install):
+        Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+        "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+        command to set the policy and suppress this warning.
+      Call Stack (most recent call first):
+        cmake/android/OpenCVDetectAndroidSDK.cmake:225 (include)
+        CMakeLists.txt:834 (include)
+      This warning is for project developers.  Use -Wno-dev to suppress it.
+      
+      CMake Warning (dev) at cmake/android/android_gradle_projects.cmake:84 (install):
+        Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+        "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+        command to set the policy and suppress this warning.
+      Call Stack (most recent call first):
+        cmake/android/OpenCVDetectAndroidSDK.cmake:225 (include)
+        CMakeLists.txt:834 (include)
+      This warning is for project developers.  Use -Wno-dev to suppress it.
+      
+      -- Android Gradle Java version: 17
+      CMake Deprecation Warning at hal/carotene/hal/CMakeLists.txt:1 (cmake_minimum_required):
+        Compatibility with CMake < 3.10 will be removed from a future version of
+        CMake.
+      
+        Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+        to tell CMake that the project requires at least <min> but has been updated
+        to work with policies introduced by <max> or earlier.
+      
+      
+      CMake Deprecation Warning at hal/carotene/CMakeLists.txt:1 (cmake_minimum_required):
+        Compatibility with CMake < 3.10 will be removed from a future version of
+        CMake.
+      
+        Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+        to tell CMake that the project requires at least <min> but has been updated
+        to work with policies introduced by <max> or earlier.
+      
+      
+      -- Looking for dlerror in dl
+      -- Looking for dlerror in dl - found
+      -- ADE: Downloading v0.1.2e.zip from https://github.com/opencv/ade/archive/v0.1.2e.zip
+      -- Allocator metrics storage type: 'int'
+      -- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
+      -- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
+      -- Excluding from source files list: modules/imgproc/src/imgwarp.lasx.cpp
+      -- Excluding from source files list: modules/imgproc/src/imgwarp.sse4_1.cpp
+      -- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
+      -- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
+      -- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
+      -- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
+      -- opencv_dnn: filter out ocl4dnn source code
+      -- opencv_dnn: filter out cuda4dnn source code
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx2.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx512_skx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.rvv.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.lasx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/int8layers/layers_common.avx2.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/int8layers/layers_common.avx512_skx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/int8layers/layers_common.rvv.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/int8layers/layers_common.lasx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/conv_block.avx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/conv_block.avx2.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/conv_depthwise.avx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/conv_depthwise.avx2.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/conv_depthwise.rvv.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/conv_depthwise.lasx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/fast_gemm_kernels.avx.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/fast_gemm_kernels.avx2.cpp
+      -- Excluding from source files list: <BUILD>/modules/dnn/layers/cpu_kernels/fast_gemm_kernels.lasx.cpp
+      -- Excluding from source files list: modules/features2d/src/fast.avx2.cpp
+      -- imgcodecs: OpenEXR codec is disabled in runtime. Details: https://github.com/opencv/opencv/issues/21326
+      -- highgui: using builtin backend: NONE
+      -- Use autogenerated whitelist /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build/modules/js_bindings_generator/whitelist.json
+      -- OPENCV_FACE_DETECT_YN: Downloading face_detection_yunet_2023mar.onnx from https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+      -- OPENCV_MOBILENET_SSD_WEIGHTS: Downloading mobilenet_iter_73000.caffemodel from https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/97406996b1eee2d40eb0a00ae567cf41e23369f9/mobilenet_iter_73000.caffemodel
+      -- OPENCV_MOBILENET_SSD_CONFIG: Downloading deploy.prototxt from https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/97406996b1eee2d40eb0a00ae567cf41e23369f9/deploy.prototxt
+      CMake Warning (dev) at CMakeLists.txt:1175 (install):
+        Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+        "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+        command to set the policy and suppress this warning.
+      This warning is for project developers.  Use -Wno-dev to suppress it.
+      
+      CMake Warning (dev) at CMakeLists.txt:1179 (install):
+        Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+        "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+        command to set the policy and suppress this warning.
+      This warning is for project developers.  Use -Wno-dev to suppress it.
+      
+      --
+      -- General configuration for OpenCV 4.12.0 =====================================
+      --   Version control:               unknown
+      --
+      --   Platform:
+      --     Timestamp:                   2026-05-09T17:53:01Z
+      --     Host:                        Android 29 aarch64
+      --     CMake:                       4.3.1
+      --     CMake generator:             Ninja
+      --     CMake build tool:            /data/data/com.termux/files/usr/bin/ninja
+      --     Configuration:               Release
+      --     Algorithm Hint:              ALGO_HINT_ACCURATE
+      --
+      --   CPU/HW features:
+      --     Baseline:                    NEON FP16
+      --       requested:                 DETECT
+      --     Dispatched code generation:  NEON_DOTPROD NEON_FP16 NEON_BF16
+      --       requested:                 NEON_FP16 NEON_BF16 NEON_DOTPROD
+      --       NEON_DOTPROD (2 files):    + NEON_DOTPROD
+      --       NEON_FP16 (2 files):       + NEON_FP16
+      --       NEON_BF16 (0 files):       + NEON_BF16
+      --
+      --   C/C++:
+      --     Built as dynamic libs?:      NO
+      --     C++ standard:                11
+      --     C++ Compiler:                /data/data/com.termux/files/usr/bin/clang++  (ver 21.1.8)
+      --     C++ flags (Release):         -fPIC   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG
+      --     C++ flags (Debug):           -fPIC   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG
+      --     C Compiler:                  /data/data/com.termux/files/usr/bin/clang
+      --     C flags (Release):           -fPIC   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG
+      --     C flags (Debug):             -fPIC   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG
+      --     Linker flags (Release):      -Wl,--as-needed -Wl,--no-undefined
+      --     Linker flags (Debug):        -Wl,--as-needed -Wl,--no-undefined
+      --     ccache:                      YES
+      --     Precompiled headers:         NO
+      --     Extra dependencies:          avif z dl m log
+      --     3rdparty dependencies:       libcpufeatures libprotobuf ade ittnotify libjpeg-turbo libwebp libpng libtiff libopenjp2 IlmImf tegra_hal kleidicv_hal kleidicv kleidicv_thread
+      --
+      --   OpenCV modules:
+      --     To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc ml objdetect photo stitching video videoio
+      --     Disabled:                    java world
+      --     Disabled by dependency:      -
+      --     Unavailable:                 python2 python3 ts
+      --     Applications:                -
+      --     Documentation:               NO
+      --     Non-free algorithms:         NO
+      --
+      --   Android NDK:                   location:
+      --     Android ABI:
+      --     STL type:
+      --     Native API level:
+      --   Android SDK:                   /data/data/com.termux/files/home/android-sdk (tools:  build tools: 34.0.0)
+      --
+      --   GUI:                           NONE
+      --
+      --   Media I/O:
+      --     ZLib:                        z (ver 1.3.2)
+      --     JPEG:                        build-libjpeg-turbo (ver 3.1.0-70)
+      --       SIMD Support Request:      YES
+      --       SIMD Support:              YES
+      --     WEBP:                        build (ver decoder: 0x0209, encoder: 0x020f, demux: 0x0107)
+      --     AVIF:                        avif (ver 1.4.1)
+      --     PNG:                         build (ver 1.6.43)
+      --       SIMD Support Request:      YES
+      --       SIMD Support:              YES (Arm NEON)
+      --     TIFF:                        build (ver 42 - 4.6.0)
+      --     JPEG 2000:                   build (ver 2.5.3)
+      --     OpenEXR:                     build (ver 2.3.0)
+      --     GIF:                         YES
+      --     HDR:                         YES
+      --     SUNRASTER:                   YES
+      --     PXM:                         YES
+      --     PFM:                         YES
+      --
+      --   Video I/O:
+      --    MEDIANDK:                     NO
+      --    NDK Camera:                   NO
+      --
+      --   Parallel framework:            pthreads
+      --
+      --   Trace:                         YES (with Intel ITT(3.25.4))
+      --
+      --   Other third-party libraries:
+      --     Eigen:                       NO
+      --     Custom HAL:                  YES (carotene (ver 0.0.1) KleidiCV (ver 0.5.0))
+      --     Protobuf:                    build (3.19.1)
+      --     Flatbuffers:                 builtin/3rdparty (23.5.9)
+      --
+      --   Python 3:
+      --     Interpreter:                 /data/data/com.termux/files/usr/bin/python3.13 (ver 3.13.13)
+      --     Libraries:                   NO
+      --     Limited API:                 YES (ver 0x03060000)
+      --     numpy:                       NO (Python3 wrappers can not be generated)
+      --     install path:                -
+      --
+      --   Python (for build):            /data/data/com.termux/files/usr/bin/python3.13
+      --
+      --   Java:                          export all functions
+      --     ant:                         NO
+      --     Java wrappers:               NO
+      --     Java tests:                  NO
+      --
+      --   Install to:                    /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-install
+      -- -----------------------------------------------------------------
+      --
+      -- Configuring done (193.2s)
+      -- Generating done (0.7s)
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build
+      ninja: error: 'samples/android/15-puzzle/opencv_java_android', needed by 'CMakeFiles/dephelper/android_sample_15-puzzle', missing and no known rule to make it
+      Traceback (most recent call last):
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/setuptools_wrap.py", line 669, in setup
+          cmkr.make(make_args, install_target=cmake_install_target, env=env)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/cmaker.py", line 697, in make
+          self.make_impl(clargs=clargs, config=config, source_dir=source_dir, install_target=install_target, env=env)
+          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/cmaker.py", line 742, in make_impl
+          raise SKBuildError(msg)
+      
+      An error occurred while building with CMake.
+        Command:
+          /data/data/com.termux/files/usr/bin/cmake --build . --target install --config Release --
+        Install target:
+          install
+        Source directory:
+          /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76
+        Working directory:
+          /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build
+      Please check the install target is valid and see CMake's output for more information.
+      
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for opencv-python
+ERROR: Failed to build one or more wheels

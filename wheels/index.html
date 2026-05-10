@@ -1,0 +1,3446 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Private PyPI</title>
+        <style>
+            /* http://meyerweb.com/eric/tools/css/reset/
+               v2.0 | 20110126
+               License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed,
+            figure, figcaption, footer, header, hgroup,
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure,
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+        </style>
+        <style>
+            body, html {
+                padding: 0;
+                margin: 0;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            .width {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+
+            .container {
+                margin-top: 75px;
+            }
+
+            .header-container {
+                background-color: #e6f8ff;
+                padding: 20px;
+                border-bottom: solid 1px #e2e2e2;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .header {
+                display: table;
+                width: 100%;
+            }
+
+            .title {
+                display: table-cell;
+                width: 1px;
+                white-space: nowrap;
+                vertical-align: middle;
+            }
+
+            .title h1 {
+                margin: 0 !important;
+            }
+
+            p, h1, h2, h3, h4, table {
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            strong {
+                font-weight: bold;
+            }
+
+            .hide { display: none !important; }
+
+            
+
+            .nowrap {
+                white-space: nowrap;
+            }
+        </style>
+        
+        <style>
+            .searchbox {
+                display: table-cell;
+                padding-left: 15px;
+                vertical-align: middle;
+            }
+
+            .searchbox input {
+                width: 100%;
+                margin: 0;
+                padding: 4px;
+                font-size: 16px;
+                box-sizing: border-box;
+                border: none;
+                line-height: 16px;
+            }
+
+            .package {
+                display: block;
+                font-size: 14px;
+                padding: 10px;
+                color: #111;
+                text-decoration: none;
+            }
+
+            .package:hover {
+                background-color: #ebf1ff !important;
+                color: #333;
+            }
+
+            .package.odd {
+                background-color: #fefefe;
+            }
+
+            .package.even {
+                background-color: #f8f8f8;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="header-container">
+            <div class="width">
+                <div class="header">
+                    <div style="display: table-row">
+                        <div class="title">
+                            <h1>My Private PyPI</h1>
+                        </div>
+
+                        
+    <div class="searchbox">
+        <input id="search" type="text" autofocus placeholder="Filter" value="" />
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container width">
+            
+    <div class="packages width" id="packages">
+        
+            <a class="package odd" href="simple/a2wsgi/index.html" data-name="a2wsgi">
+                <strong>a2wsgi</strong> (latest version: 1.10.10)
+            </a>
+        
+            <a class="package even" href="simple/addict/index.html" data-name="addict">
+                <strong>addict</strong> (latest version: 2.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/agate/index.html" data-name="agate">
+                <strong>agate</strong> (latest version: 1.14.2)
+            </a>
+        
+            <a class="package even" href="simple/agate-dbf/index.html" data-name="agate-dbf">
+                <strong>agate-dbf</strong> (latest version: 0.2.4)
+            </a>
+        
+            <a class="package odd" href="simple/agate-excel/index.html" data-name="agate-excel">
+                <strong>agate-excel</strong> (latest version: 0.4.2)
+            </a>
+        
+            <a class="package even" href="simple/agate-sql/index.html" data-name="agate-sql">
+                <strong>agate-sql</strong> (latest version: 0.7.3)
+            </a>
+        
+            <a class="package odd" href="simple/aioboto3/index.html" data-name="aioboto3">
+                <strong>aioboto3</strong> (latest version: 15.5.0)
+            </a>
+        
+            <a class="package even" href="simple/aiobotocore/index.html" data-name="aiobotocore">
+                <strong>aiobotocore</strong> (latest version: 3.7.0)
+            </a>
+        
+            <a class="package odd" href="simple/aiocache/index.html" data-name="aiocache">
+                <strong>aiocache</strong> (latest version: 0.12.3)
+            </a>
+        
+            <a class="package even" href="simple/aiofiles/index.html" data-name="aiofiles">
+                <strong>aiofiles</strong> (latest version: 25.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/aiohappyeyeballs/index.html" data-name="aiohappyeyeballs">
+                <strong>aiohappyeyeballs</strong> (latest version: 2.6.1)
+            </a>
+        
+            <a class="package even" href="simple/aiohttp/index.html" data-name="aiohttp">
+                <strong>aiohttp</strong> (latest version: 3.13.5)
+            </a>
+        
+            <a class="package odd" href="simple/aiohttp-cors/index.html" data-name="aiohttp-cors">
+                <strong>aiohttp-cors</strong> (latest version: 0.8.1)
+            </a>
+        
+            <a class="package even" href="simple/aioitertools/index.html" data-name="aioitertools">
+                <strong>aioitertools</strong> (latest version: 0.13.0)
+            </a>
+        
+            <a class="package odd" href="simple/aiomisc/index.html" data-name="aiomisc">
+                <strong>aiomisc</strong> (latest version: 18.0.19)
+            </a>
+        
+            <a class="package even" href="simple/aioprometheus/index.html" data-name="aioprometheus">
+                <strong>aioprometheus</strong> (latest version: 23.12.0)
+            </a>
+        
+            <a class="package odd" href="simple/aiosignal/index.html" data-name="aiosignal">
+                <strong>aiosignal</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package even" href="simple/aiosmtplib/index.html" data-name="aiosmtplib">
+                <strong>aiosmtplib</strong> (latest version: 5.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/aiosqlite/index.html" data-name="aiosqlite">
+                <strong>aiosqlite</strong> (latest version: 0.22.1)
+            </a>
+        
+            <a class="package even" href="simple/aiothreads/index.html" data-name="aiothreads">
+                <strong>aiothreads</strong> (latest version: 1.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/alabaster/index.html" data-name="alabaster">
+                <strong>alabaster</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package even" href="simple/alembic/index.html" data-name="alembic">
+                <strong>alembic</strong> (latest version: 1.18.4)
+            </a>
+        
+            <a class="package odd" href="simple/algorithms/index.html" data-name="algorithms">
+                <strong>algorithms</strong> (latest version: 1.0.1)
+            </a>
+        
+            <a class="package even" href="simple/altair/index.html" data-name="altair">
+                <strong>altair</strong> (latest version: 6.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/amplitude-analytics/index.html" data-name="amplitude-analytics">
+                <strong>amplitude-analytics</strong> (latest version: 1.2.3)
+            </a>
+        
+            <a class="package even" href="simple/amqp/index.html" data-name="amqp">
+                <strong>amqp</strong> (latest version: 5.3.1)
+            </a>
+        
+            <a class="package odd" href="simple/aniso8601/index.html" data-name="aniso8601">
+                <strong>aniso8601</strong> (latest version: 10.0.1)
+            </a>
+        
+            <a class="package even" href="simple/annotated-doc/index.html" data-name="annotated-doc">
+                <strong>annotated-doc</strong> (latest version: 0.0.4)
+            </a>
+        
+            <a class="package odd" href="simple/annotated-types/index.html" data-name="annotated-types">
+                <strong>annotated-types</strong> (latest version: 0.7.0)
+            </a>
+        
+            <a class="package even" href="simple/ansible/index.html" data-name="ansible">
+                <strong>ansible</strong> (latest version: 13.6.0)
+            </a>
+        
+            <a class="package odd" href="simple/ansible-core/index.html" data-name="ansible-core">
+                <strong>ansible-core</strong> (latest version: 2.20.5)
+            </a>
+        
+            <a class="package even" href="simple/antlr4-python3-runtime/index.html" data-name="antlr4-python3-runtime">
+                <strong>antlr4-python3-runtime</strong> (latest version: 4.13.2)
+            </a>
+        
+            <a class="package odd" href="simple/anyascii/index.html" data-name="anyascii">
+                <strong>anyascii</strong> (latest version: 0.3.3)
+            </a>
+        
+            <a class="package even" href="simple/anyio/index.html" data-name="anyio">
+                <strong>anyio</strong> (latest version: 4.13.0)
+            </a>
+        
+            <a class="package odd" href="simple/anytree/index.html" data-name="anytree">
+                <strong>anytree</strong> (latest version: 2.13.0)
+            </a>
+        
+            <a class="package even" href="simple/apache-airflow/index.html" data-name="apache-airflow">
+                <strong>apache-airflow</strong> (latest version: 3.1.8)
+            </a>
+        
+            <a class="package odd" href="simple/apache-airflow-core/index.html" data-name="apache-airflow-core">
+                <strong>apache-airflow-core</strong> (latest version: 3.1.8)
+            </a>
+        
+            <a class="package even" href="simple/apache-airflow-providers-common-compat/index.html" data-name="apache-airflow-providers-common-compat">
+                <strong>apache-airflow-providers-common-compat</strong> (latest version: 1.14.1)
+            </a>
+        
+            <a class="package odd" href="simple/apache-airflow-providers-common-io/index.html" data-name="apache-airflow-providers-common-io">
+                <strong>apache-airflow-providers-common-io</strong> (latest version: 1.7.1)
+            </a>
+        
+            <a class="package even" href="simple/apache-airflow-providers-common-sql/index.html" data-name="apache-airflow-providers-common-sql">
+                <strong>apache-airflow-providers-common-sql</strong> (latest version: 1.33.0)
+            </a>
+        
+            <a class="package odd" href="simple/apache-airflow-providers-smtp/index.html" data-name="apache-airflow-providers-smtp">
+                <strong>apache-airflow-providers-smtp</strong> (latest version: 2.4.3)
+            </a>
+        
+            <a class="package even" href="simple/apache-airflow-providers-standard/index.html" data-name="apache-airflow-providers-standard">
+                <strong>apache-airflow-providers-standard</strong> (latest version: 1.12.1)
+            </a>
+        
+            <a class="package odd" href="simple/apache-airflow-task-sdk/index.html" data-name="apache-airflow-task-sdk">
+                <strong>apache-airflow-task-sdk</strong> (latest version: 1.1.8)
+            </a>
+        
+            <a class="package even" href="simple/apache-libcloud/index.html" data-name="apache-libcloud">
+                <strong>apache-libcloud</strong> (latest version: 3.9.1)
+            </a>
+        
+            <a class="package odd" href="simple/appdirs/index.html" data-name="appdirs">
+                <strong>appdirs</strong> (latest version: 1.4.4)
+            </a>
+        
+            <a class="package even" href="simple/apprise/index.html" data-name="apprise">
+                <strong>apprise</strong> (latest version: 1.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/argcomplete/index.html" data-name="argcomplete">
+                <strong>argcomplete</strong> (latest version: 3.6.3)
+            </a>
+        
+            <a class="package even" href="simple/argo-models/index.html" data-name="argo-models">
+                <strong>argo-models</strong> (latest version: 2.7.5)
+            </a>
+        
+            <a class="package odd" href="simple/argon2-cffi/index.html" data-name="argon2-cffi">
+                <strong>argon2-cffi</strong> (latest version: 25.1.0)
+            </a>
+        
+            <a class="package even" href="simple/argon2-cffi-bindings/index.html" data-name="argon2-cffi-bindings">
+                <strong>argon2-cffi-bindings</strong> (latest version: 25.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/argparse/index.html" data-name="argparse">
+                <strong>argparse</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package even" href="simple/args/index.html" data-name="args">
+                <strong>args</strong> (latest version: 0.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/arq/index.html" data-name="arq">
+                <strong>arq</strong> (latest version: 0.28.0)
+            </a>
+        
+            <a class="package even" href="simple/arraykit/index.html" data-name="arraykit">
+                <strong>arraykit</strong> (latest version: 1.2.1)
+            </a>
+        
+            <a class="package odd" href="simple/arrow/index.html" data-name="arrow">
+                <strong>arrow</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package even" href="simple/asciimatics/index.html" data-name="asciimatics">
+                <strong>asciimatics</strong> (latest version: 1.15.0)
+            </a>
+        
+            <a class="package odd" href="simple/asgi-lifespan/index.html" data-name="asgi-lifespan">
+                <strong>asgi-lifespan</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package even" href="simple/asgiref/index.html" data-name="asgiref">
+                <strong>asgiref</strong> (latest version: 3.11.1)
+            </a>
+        
+            <a class="package odd" href="simple/asn1crypto/index.html" data-name="asn1crypto">
+                <strong>asn1crypto</strong> (latest version: 1.5.1)
+            </a>
+        
+            <a class="package even" href="simple/asttokens/index.html" data-name="asttokens">
+                <strong>asttokens</strong> (latest version: 3.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/async-lru/index.html" data-name="async-lru">
+                <strong>async-lru</strong> (latest version: 2.3.0)
+            </a>
+        
+            <a class="package even" href="simple/asyncer/index.html" data-name="asyncer">
+                <strong>asyncer</strong> (latest version: 0.0.17)
+            </a>
+        
+            <a class="package odd" href="simple/asyncpg/index.html" data-name="asyncpg">
+                <strong>asyncpg</strong> (latest version: 0.31.0)
+            </a>
+        
+            <a class="package even" href="simple/atom/index.html" data-name="atom">
+                <strong>atom</strong> (latest version: 0.12.1)
+            </a>
+        
+            <a class="package odd" href="simple/atpublic/index.html" data-name="atpublic">
+                <strong>atpublic</strong> (latest version: 7.0.0)
+            </a>
+        
+            <a class="package even" href="simple/attrs/index.html" data-name="attrs">
+                <strong>attrs</strong> (latest version: 26.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/autocommand/index.html" data-name="autocommand">
+                <strong>autocommand</strong> (latest version: 2.2.2)
+            </a>
+        
+            <a class="package even" href="simple/autopep8/index.html" data-name="autopep8">
+                <strong>autopep8</strong> (latest version: 2.3.2)
+            </a>
+        
+            <a class="package odd" href="simple/awesome-slugify/index.html" data-name="awesome-slugify">
+                <strong>awesome-slugify</strong> (latest version: 1.6.5)
+            </a>
+        
+            <a class="package even" href="simple/awscli/index.html" data-name="awscli">
+                <strong>awscli</strong> (latest version: 1.45.6)
+            </a>
+        
+            <a class="package odd" href="simple/awswrangler/index.html" data-name="awswrangler">
+                <strong>awswrangler</strong> (latest version: 3.16.1)
+            </a>
+        
+            <a class="package even" href="simple/azure-core/index.html" data-name="azure-core">
+                <strong>azure-core</strong> (latest version: 1.41.0)
+            </a>
+        
+            <a class="package odd" href="simple/azure-storage-blob/index.html" data-name="azure-storage-blob">
+                <strong>azure-storage-blob</strong> (latest version: 12.28.0)
+            </a>
+        
+            <a class="package even" href="simple/babel/index.html" data-name="babel">
+                <strong>babel</strong> (latest version: 2.18.0)
+            </a>
+        
+            <a class="package odd" href="simple/backoff/index.html" data-name="backoff">
+                <strong>backoff</strong> (latest version: 2.2.1)
+            </a>
+        
+            <a class="package even" href="simple/backports-zstd/index.html" data-name="backports-zstd">
+                <strong>backports-zstd</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/banal/index.html" data-name="banal">
+                <strong>banal</strong> (latest version: 1.1.2)
+            </a>
+        
+            <a class="package even" href="simple/bashplotlib/index.html" data-name="bashplotlib">
+                <strong>bashplotlib</strong> (latest version: 0.6.5)
+            </a>
+        
+            <a class="package odd" href="simple/batchflow/index.html" data-name="batchflow">
+                <strong>batchflow</strong> (latest version: 0.10.1)
+            </a>
+        
+            <a class="package even" href="simple/bcrypt/index.html" data-name="bcrypt">
+                <strong>bcrypt</strong> (latest version: 5.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/beaker/index.html" data-name="beaker">
+                <strong>beaker</strong> (latest version: 1.13.0)
+            </a>
+        
+            <a class="package even" href="simple/beartype/index.html" data-name="beartype">
+                <strong>beartype</strong> (latest version: 0.22.9)
+            </a>
+        
+            <a class="package odd" href="simple/beautifulsoup4/index.html" data-name="beautifulsoup4">
+                <strong>beautifulsoup4</strong> (latest version: 4.14.3)
+            </a>
+        
+            <a class="package even" href="simple/bibtexparser/index.html" data-name="bibtexparser">
+                <strong>bibtexparser</strong> (latest version: 1.4.4)
+            </a>
+        
+            <a class="package odd" href="simple/bidict/index.html" data-name="bidict">
+                <strong>bidict</strong> (latest version: 0.23.1)
+            </a>
+        
+            <a class="package even" href="simple/billiard/index.html" data-name="billiard">
+                <strong>billiard</strong> (latest version: 4.2.4)
+            </a>
+        
+            <a class="package odd" href="simple/binaryornot/index.html" data-name="binaryornot">
+                <strong>binaryornot</strong> (latest version: 0.6.0)
+            </a>
+        
+            <a class="package even" href="simple/birch/index.html" data-name="birch">
+                <strong>birch</strong> (latest version: 0.0.35)
+            </a>
+        
+            <a class="package odd" href="simple/black/index.html" data-name="black">
+                <strong>black</strong> (latest version: 26.3.1)
+            </a>
+        
+            <a class="package even" href="simple/bleach/index.html" data-name="bleach">
+                <strong>bleach</strong> (latest version: 6.3.0)
+            </a>
+        
+            <a class="package odd" href="simple/blessings/index.html" data-name="blessings">
+                <strong>blessings</strong> (latest version: 1.7)
+            </a>
+        
+            <a class="package even" href="simple/blinker/index.html" data-name="blinker">
+                <strong>blinker</strong> (latest version: 1.9.0)
+            </a>
+        
+            <a class="package odd" href="simple/boltons/index.html" data-name="boltons">
+                <strong>boltons</strong> (latest version: 25.0.0)
+            </a>
+        
+            <a class="package even" href="simple/bonobo/index.html" data-name="bonobo">
+                <strong>bonobo</strong> (latest version: 0.0.2)
+            </a>
+        
+            <a class="package odd" href="simple/botflow/index.html" data-name="botflow">
+                <strong>botflow</strong> (latest version: 0.2.0)
+            </a>
+        
+            <a class="package even" href="simple/boto3/index.html" data-name="boto3">
+                <strong>boto3</strong> (latest version: 1.43.6)
+            </a>
+        
+            <a class="package odd" href="simple/botocore/index.html" data-name="botocore">
+                <strong>botocore</strong> (latest version: 1.43.6)
+            </a>
+        
+            <a class="package even" href="simple/bottle/index.html" data-name="bottle">
+                <strong>bottle</strong> (latest version: 0.13.4)
+            </a>
+        
+            <a class="package odd" href="simple/bottle-websocket/index.html" data-name="bottle-websocket">
+                <strong>bottle-websocket</strong> (latest version: 0.2.9)
+            </a>
+        
+            <a class="package even" href="simple/bottleneck/index.html" data-name="bottleneck">
+                <strong>bottleneck</strong> (latest version: 1.6.0)
+            </a>
+        
+            <a class="package odd" href="simple/bracex/index.html" data-name="bracex">
+                <strong>bracex</strong> (latest version: 2.6)
+            </a>
+        
+            <a class="package even" href="simple/build/index.html" data-name="build">
+                <strong>build</strong> (latest version: 1.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/burner-redis/index.html" data-name="burner-redis">
+                <strong>burner-redis</strong> (latest version: 0.1.7)
+            </a>
+        
+            <a class="package even" href="simple/bytecode/index.html" data-name="bytecode">
+                <strong>bytecode</strong> (latest version: 0.17.0)
+            </a>
+        
+            <a class="package odd" href="simple/cachecontrol/index.html" data-name="cachecontrol">
+                <strong>cachecontrol</strong> (latest version: 0.14.4)
+            </a>
+        
+            <a class="package even" href="simple/cached-property/index.html" data-name="cached-property">
+                <strong>cached-property</strong> (latest version: 2.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/cachelib/index.html" data-name="cachelib">
+                <strong>cachelib</strong> (latest version: 0.14.0)
+            </a>
+        
+            <a class="package even" href="simple/cachetools/index.html" data-name="cachetools">
+                <strong>cachetools</strong> (latest version: 7.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/cachier/index.html" data-name="cachier">
+                <strong>cachier</strong> (latest version: 4.2.0)
+            </a>
+        
+            <a class="package even" href="simple/cadwyn/index.html" data-name="cadwyn">
+                <strong>cadwyn</strong> (latest version: 6.2.2)
+            </a>
+        
+            <a class="package odd" href="simple/catalogue/index.html" data-name="catalogue">
+                <strong>catalogue</strong> (latest version: 2.0.10)
+            </a>
+        
+            <a class="package even" href="simple/celery/index.html" data-name="celery">
+                <strong>celery</strong> (latest version: 5.6.3)
+            </a>
+        
+            <a class="package odd" href="simple/cerberus/index.html" data-name="cerberus">
+                <strong>cerberus</strong> (latest version: 1.3.8)
+            </a>
+        
+            <a class="package even" href="simple/certifi/index.html" data-name="certifi">
+                <strong>certifi</strong> (latest version: 2026.4.22)
+            </a>
+        
+            <a class="package odd" href="simple/cffi/index.html" data-name="cffi">
+                <strong>cffi</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/cfgv/index.html" data-name="cfgv">
+                <strong>cfgv</strong> (latest version: 3.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/chardet/index.html" data-name="chardet">
+                <strong>chardet</strong> (latest version: 7.4.3)
+            </a>
+        
+            <a class="package even" href="simple/charset-normalizer/index.html" data-name="charset-normalizer">
+                <strong>charset-normalizer</strong> (latest version: 3.4.7)
+            </a>
+        
+            <a class="package odd" href="simple/ciso8601/index.html" data-name="ciso8601">
+                <strong>ciso8601</strong> (latest version: 2.3.3)
+            </a>
+        
+            <a class="package even" href="simple/cleo/index.html" data-name="cleo">
+                <strong>cleo</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/cleverdict/index.html" data-name="cleverdict">
+                <strong>cleverdict</strong> (latest version: 1.9.2)
+            </a>
+        
+            <a class="package even" href="simple/click/index.html" data-name="click">
+                <strong>click</strong> (latest version: 8.3.3)
+            </a>
+        
+            <a class="package odd" href="simple/click-didyoumean/index.html" data-name="click-didyoumean">
+                <strong>click-didyoumean</strong> (latest version: 0.3.1)
+            </a>
+        
+            <a class="package even" href="simple/click-extra/index.html" data-name="click-extra">
+                <strong>click-extra</strong> (latest version: 7.15.0)
+            </a>
+        
+            <a class="package odd" href="simple/click-option-group/index.html" data-name="click-option-group">
+                <strong>click-option-group</strong> (latest version: 0.5.9)
+            </a>
+        
+            <a class="package even" href="simple/click-plugins/index.html" data-name="click-plugins">
+                <strong>click-plugins</strong> (latest version: 1.1.1.2)
+            </a>
+        
+            <a class="package odd" href="simple/click-repl/index.html" data-name="click-repl">
+                <strong>click-repl</strong> (latest version: 0.3.0)
+            </a>
+        
+            <a class="package even" href="simple/clint/index.html" data-name="clint">
+                <strong>clint</strong> (latest version: 0.5.1)
+            </a>
+        
+            <a class="package odd" href="simple/cloudant/index.html" data-name="cloudant">
+                <strong>cloudant</strong> (latest version: 2.15.0)
+            </a>
+        
+            <a class="package even" href="simple/cloudpickle/index.html" data-name="cloudpickle">
+                <strong>cloudpickle</strong> (latest version: 3.1.2)
+            </a>
+        
+            <a class="package odd" href="simple/cloup/index.html" data-name="cloup">
+                <strong>cloup</strong> (latest version: 3.0.9)
+            </a>
+        
+            <a class="package even" href="simple/colorama/index.html" data-name="colorama">
+                <strong>colorama</strong> (latest version: 0.4.6)
+            </a>
+        
+            <a class="package odd" href="simple/colorclass/index.html" data-name="colorclass">
+                <strong>colorclass</strong> (latest version: 2.2.2)
+            </a>
+        
+            <a class="package even" href="simple/colored/index.html" data-name="colored">
+                <strong>colored</strong> (latest version: 2.3.2)
+            </a>
+        
+            <a class="package odd" href="simple/colorlog/index.html" data-name="colorlog">
+                <strong>colorlog</strong> (latest version: 6.10.1)
+            </a>
+        
+            <a class="package even" href="simple/colout/index.html" data-name="colout">
+                <strong>colout</strong> (latest version: 0.12.1)
+            </a>
+        
+            <a class="package odd" href="simple/comm/index.html" data-name="comm">
+                <strong>comm</strong> (latest version: 0.2.3)
+            </a>
+        
+            <a class="package even" href="simple/commonregex/index.html" data-name="commonregex">
+                <strong>commonregex</strong> (latest version: 1.5.4)
+            </a>
+        
+            <a class="package odd" href="simple/configargparse/index.html" data-name="configargparse">
+                <strong>configargparse</strong> (latest version: 1.7.5)
+            </a>
+        
+            <a class="package even" href="simple/configobj/index.html" data-name="configobj">
+                <strong>configobj</strong> (latest version: 5.0.9)
+            </a>
+        
+            <a class="package odd" href="simple/configupdater/index.html" data-name="configupdater">
+                <strong>configupdater</strong> (latest version: 3.2)
+            </a>
+        
+            <a class="package even" href="simple/constraints-txt/index.html" data-name="constraints-txt">
+                <strong>constraints-txt</strong> (latest version: 0.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/contextlib2/index.html" data-name="contextlib2">
+                <strong>contextlib2</strong> (latest version: 21.6.0)
+            </a>
+        
+            <a class="package even" href="simple/contourpy/index.html" data-name="contourpy">
+                <strong>contourpy</strong> (latest version: 1.3.3)
+            </a>
+        
+            <a class="package odd" href="simple/cookiecutter/index.html" data-name="cookiecutter">
+                <strong>cookiecutter</strong> (latest version: 2.7.1)
+            </a>
+        
+            <a class="package even" href="simple/coolname/index.html" data-name="coolname">
+                <strong>coolname</strong> (latest version: 5.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/copier/index.html" data-name="copier">
+                <strong>copier</strong> (latest version: 9.15.0)
+            </a>
+        
+            <a class="package even" href="simple/crashtest/index.html" data-name="crashtest">
+                <strong>crashtest</strong> (latest version: 0.4.1)
+            </a>
+        
+            <a class="package odd" href="simple/cron-descriptor/index.html" data-name="cron-descriptor">
+                <strong>cron-descriptor</strong> (latest version: 2.0.8)
+            </a>
+        
+            <a class="package even" href="simple/croniter/index.html" data-name="croniter">
+                <strong>croniter</strong> (latest version: 6.2.2)
+            </a>
+        
+            <a class="package odd" href="simple/cronsim/index.html" data-name="cronsim">
+                <strong>cronsim</strong> (latest version: 2.7)
+            </a>
+        
+            <a class="package even" href="simple/cryptography/index.html" data-name="cryptography">
+                <strong>cryptography</strong> (latest version: 48.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/csvkit/index.html" data-name="csvkit">
+                <strong>csvkit</strong> (latest version: 2.2.0)
+            </a>
+        
+            <a class="package even" href="simple/csvs-to-sqlite/index.html" data-name="csvs-to-sqlite">
+                <strong>csvs-to-sqlite</strong> (latest version: 1.3.1)
+            </a>
+        
+            <a class="package odd" href="simple/cycler/index.html" data-name="cycler">
+                <strong>cycler</strong> (latest version: 0.12.1)
+            </a>
+        
+            <a class="package even" href="simple/cyclopts/index.html" data-name="cyclopts">
+                <strong>cyclopts</strong> (latest version: 4.11.2)
+            </a>
+        
+            <a class="package odd" href="simple/cython/index.html" data-name="cython">
+                <strong>cython</strong> (latest version: 3.2.4)
+            </a>
+        
+            <a class="package even" href="simple/d6tflow/index.html" data-name="d6tflow">
+                <strong>d6tflow</strong> (latest version: 0.2.8)
+            </a>
+        
+            <a class="package odd" href="simple/daffy/index.html" data-name="daffy">
+                <strong>daffy</strong> (latest version: 2.8.0)
+            </a>
+        
+            <a class="package even" href="simple/dask/index.html" data-name="dask">
+                <strong>dask</strong> (latest version: 2026.3.0)
+            </a>
+        
+            <a class="package odd" href="simple/databases/index.html" data-name="databases">
+                <strong>databases</strong> (latest version: 0.9.0)
+            </a>
+        
+            <a class="package even" href="simple/dataclasses/index.html" data-name="dataclasses">
+                <strong>dataclasses</strong> (latest version: 0.6)
+            </a>
+        
+            <a class="package odd" href="simple/dataset/index.html" data-name="dataset">
+                <strong>dataset</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/datasketch/index.html" data-name="datasketch">
+                <strong>datasketch</strong> (latest version: 1.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/datatest/index.html" data-name="datatest">
+                <strong>datatest</strong> (latest version: 0.11.1)
+            </a>
+        
+            <a class="package even" href="simple/datatile/index.html" data-name="datatile">
+                <strong>datatile</strong> (latest version: 1.0.3)
+            </a>
+        
+            <a class="package odd" href="simple/dateparser/index.html" data-name="dateparser">
+                <strong>dateparser</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package even" href="simple/datetime/index.html" data-name="datetime">
+                <strong>datetime</strong> (latest version: 6.0)
+            </a>
+        
+            <a class="package odd" href="simple/db-dtypes/index.html" data-name="db-dtypes">
+                <strong>db-dtypes</strong> (latest version: 1.6.0)
+            </a>
+        
+            <a class="package even" href="simple/db-py/index.html" data-name="db-py">
+                <strong>db-py</strong> (latest version: 0.5.3)
+            </a>
+        
+            <a class="package odd" href="simple/dbfread/index.html" data-name="dbfread">
+                <strong>dbfread</strong> (latest version: 2.0.7)
+            </a>
+        
+            <a class="package even" href="simple/debuglater/index.html" data-name="debuglater">
+                <strong>debuglater</strong> (latest version: 1.4.4)
+            </a>
+        
+            <a class="package odd" href="simple/debugpy/index.html" data-name="debugpy">
+                <strong>debugpy</strong> (latest version: 1.8.20)
+            </a>
+        
+            <a class="package even" href="simple/decorator/index.html" data-name="decorator">
+                <strong>decorator</strong> (latest version: 5.2.1)
+            </a>
+        
+            <a class="package odd" href="simple/decore/index.html" data-name="decore">
+                <strong>decore</strong> (latest version: 0.0.4)
+            </a>
+        
+            <a class="package even" href="simple/deepdiff/index.html" data-name="deepdiff">
+                <strong>deepdiff</strong> (latest version: 9.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/deeplake/index.html" data-name="deeplake">
+                <strong>deeplake</strong> (latest version: 3.9.52)
+            </a>
+        
+            <a class="package even" href="simple/deepmerge/index.html" data-name="deepmerge">
+                <strong>deepmerge</strong> (latest version: 2.0)
+            </a>
+        
+            <a class="package odd" href="simple/defusedxml/index.html" data-name="defusedxml">
+                <strong>defusedxml</strong> (latest version: 0.7.1)
+            </a>
+        
+            <a class="package even" href="simple/deprecated/index.html" data-name="deprecated">
+                <strong>deprecated</strong> (latest version: 1.3.1)
+            </a>
+        
+            <a class="package odd" href="simple/dialite/index.html" data-name="dialite">
+                <strong>dialite</strong> (latest version: 0.6.0)
+            </a>
+        
+            <a class="package even" href="simple/dill/index.html" data-name="dill">
+                <strong>dill</strong> (latest version: 0.4.1)
+            </a>
+        
+            <a class="package odd" href="simple/dirty-equals/index.html" data-name="dirty-equals">
+                <strong>dirty-equals</strong> (latest version: 0.11)
+            </a>
+        
+            <a class="package even" href="simple/distlib/index.html" data-name="distlib">
+                <strong>distlib</strong> (latest version: 0.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/distro/index.html" data-name="distro">
+                <strong>distro</strong> (latest version: 1.9.0)
+            </a>
+        
+            <a class="package even" href="simple/dnspython/index.html" data-name="dnspython">
+                <strong>dnspython</strong> (latest version: 2.8.0)
+            </a>
+        
+            <a class="package odd" href="simple/docker/index.html" data-name="docker">
+                <strong>docker</strong> (latest version: 7.1.0)
+            </a>
+        
+            <a class="package even" href="simple/docopt/index.html" data-name="docopt">
+                <strong>docopt</strong> (latest version: 0.6.2)
+            </a>
+        
+            <a class="package odd" href="simple/docopt-ng/index.html" data-name="docopt-ng">
+                <strong>docopt-ng</strong> (latest version: 0.9.0)
+            </a>
+        
+            <a class="package even" href="simple/docstring-parser/index.html" data-name="docstring-parser">
+                <strong>docstring-parser</strong> (latest version: 0.18.0)
+            </a>
+        
+            <a class="package odd" href="simple/docutils/index.html" data-name="docutils">
+                <strong>docutils</strong> (latest version: 0.22.4)
+            </a>
+        
+            <a class="package even" href="simple/donfig/index.html" data-name="donfig">
+                <strong>donfig</strong> (latest version: 0.8.1.post1)
+            </a>
+        
+            <a class="package odd" href="simple/dulwich/index.html" data-name="dulwich">
+                <strong>dulwich</strong> (latest version: 1.2.1)
+            </a>
+        
+            <a class="package even" href="simple/dunamai/index.html" data-name="dunamai">
+                <strong>dunamai</strong> (latest version: 1.26.1)
+            </a>
+        
+            <a class="package odd" href="simple/durationpy/index.html" data-name="durationpy">
+                <strong>durationpy</strong> (latest version: 0.10)
+            </a>
+        
+            <a class="package even" href="simple/dynaconf/index.html" data-name="dynaconf">
+                <strong>dynaconf</strong> (latest version: 3.2.13)
+            </a>
+        
+            <a class="package odd" href="simple/easyprocess/index.html" data-name="easyprocess">
+                <strong>easyprocess</strong> (latest version: 1.1)
+            </a>
+        
+            <a class="package even" href="simple/eel/index.html" data-name="eel">
+                <strong>eel</strong> (latest version: 0.18.2)
+            </a>
+        
+            <a class="package odd" href="simple/elastic-transport/index.html" data-name="elastic-transport">
+                <strong>elastic-transport</strong> (latest version: 9.4.0)
+            </a>
+        
+            <a class="package even" href="simple/elasticsearch/index.html" data-name="elasticsearch">
+                <strong>elasticsearch</strong> (latest version: 9.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/elasticsearch-dsl/index.html" data-name="elasticsearch-dsl">
+                <strong>elasticsearch-dsl</strong> (latest version: 8.18.0)
+            </a>
+        
+            <a class="package even" href="simple/email-validator/index.html" data-name="email-validator">
+                <strong>email-validator</strong> (latest version: 2.3.0)
+            </a>
+        
+            <a class="package odd" href="simple/emoji/index.html" data-name="emoji">
+                <strong>emoji</strong> (latest version: 2.15.0)
+            </a>
+        
+            <a class="package even" href="simple/enaml/index.html" data-name="enaml">
+                <strong>enaml</strong> (latest version: 0.19.0)
+            </a>
+        
+            <a class="package odd" href="simple/entrypoint2/index.html" data-name="entrypoint2">
+                <strong>entrypoint2</strong> (latest version: 1.1)
+            </a>
+        
+            <a class="package even" href="simple/entrypoints/index.html" data-name="entrypoints">
+                <strong>entrypoints</strong> (latest version: 0.4)
+            </a>
+        
+            <a class="package odd" href="simple/et-xmlfile/index.html" data-name="et-xmlfile">
+                <strong>et-xmlfile</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/everett/index.html" data-name="everett">
+                <strong>everett</strong> (latest version: 3.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/exceptiongroup/index.html" data-name="exceptiongroup">
+                <strong>exceptiongroup</strong> (latest version: 1.3.1)
+            </a>
+        
+            <a class="package even" href="simple/executing/index.html" data-name="executing">
+                <strong>executing</strong> (latest version: 2.2.1)
+            </a>
+        
+            <a class="package odd" href="simple/extra-platforms/index.html" data-name="extra-platforms">
+                <strong>extra-platforms</strong> (latest version: 12.0.3)
+            </a>
+        
+            <a class="package even" href="simple/fabric/index.html" data-name="fabric">
+                <strong>fabric</strong> (latest version: 3.2.3)
+            </a>
+        
+            <a class="package odd" href="simple/fabric39/index.html" data-name="fabric39">
+                <strong>fabric39</strong> (latest version: 1.15.3.post2)
+            </a>
+        
+            <a class="package even" href="simple/fabtools/index.html" data-name="fabtools">
+                <strong>fabtools</strong> (latest version: 0.20.0)
+            </a>
+        
+            <a class="package odd" href="simple/face/index.html" data-name="face">
+                <strong>face</strong> (latest version: 26.0.0)
+            </a>
+        
+            <a class="package even" href="simple/fake-useragent/index.html" data-name="fake-useragent">
+                <strong>fake-useragent</strong> (latest version: 2.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/faker/index.html" data-name="faker">
+                <strong>faker</strong> (latest version: 40.15.0)
+            </a>
+        
+            <a class="package even" href="simple/fakeredis/index.html" data-name="fakeredis">
+                <strong>fakeredis</strong> (latest version: 2.35.1)
+            </a>
+        
+            <a class="package odd" href="simple/fastapi/index.html" data-name="fastapi">
+                <strong>fastapi</strong> (latest version: 0.136.1)
+            </a>
+        
+            <a class="package even" href="simple/fastapi-cli/index.html" data-name="fastapi-cli">
+                <strong>fastapi-cli</strong> (latest version: 0.0.24)
+            </a>
+        
+            <a class="package odd" href="simple/fastcore/index.html" data-name="fastcore">
+                <strong>fastcore</strong> (latest version: 1.12.45)
+            </a>
+        
+            <a class="package even" href="simple/fastjsonschema/index.html" data-name="fastjsonschema">
+                <strong>fastjsonschema</strong> (latest version: 2.21.2)
+            </a>
+        
+            <a class="package odd" href="simple/faust/index.html" data-name="faust">
+                <strong>faust</strong> (latest version: 1.10.4)
+            </a>
+        
+            <a class="package even" href="simple/feedparser/index.html" data-name="feedparser">
+                <strong>feedparser</strong> (latest version: 6.0.12)
+            </a>
+        
+            <a class="package odd" href="simple/filedepot/index.html" data-name="filedepot">
+                <strong>filedepot</strong> (latest version: 0.11.0)
+            </a>
+        
+            <a class="package even" href="simple/filelock/index.html" data-name="filelock">
+                <strong>filelock</strong> (latest version: 3.29.0)
+            </a>
+        
+            <a class="package odd" href="simple/filetype/index.html" data-name="filetype">
+                <strong>filetype</strong> (latest version: 1.2.0)
+            </a>
+        
+            <a class="package even" href="simple/findpython/index.html" data-name="findpython">
+                <strong>findpython</strong> (latest version: 0.8.0)
+            </a>
+        
+            <a class="package odd" href="simple/fire/index.html" data-name="fire">
+                <strong>fire</strong> (latest version: 0.7.1)
+            </a>
+        
+            <a class="package even" href="simple/flask/index.html" data-name="flask">
+                <strong>flask</strong> (latest version: 3.1.3)
+            </a>
+        
+            <a class="package odd" href="simple/flask-restful/index.html" data-name="flask-restful">
+                <strong>flask-restful</strong> (latest version: 0.3.10)
+            </a>
+        
+            <a class="package even" href="simple/flatbuffers/index.html" data-name="flatbuffers">
+                <strong>flatbuffers</strong> (latest version: 25.12.19)
+            </a>
+        
+            <a class="package odd" href="simple/flexx/index.html" data-name="flexx">
+                <strong>flexx</strong> (latest version: 0.8.4)
+            </a>
+        
+            <a class="package even" href="simple/flupy/index.html" data-name="flupy">
+                <strong>flupy</strong> (latest version: 1.2.3)
+            </a>
+        
+            <a class="package odd" href="simple/fonttools/index.html" data-name="fonttools">
+                <strong>fonttools</strong> (latest version: 4.62.1)
+            </a>
+        
+            <a class="package even" href="simple/fqdn/index.html" data-name="fqdn">
+                <strong>fqdn</strong> (latest version: 1.5.1)
+            </a>
+        
+            <a class="package odd" href="simple/free-proxy/index.html" data-name="free-proxy">
+                <strong>free-proxy</strong> (latest version: 1.1.3)
+            </a>
+        
+            <a class="package even" href="simple/frozenlist/index.html" data-name="frozenlist">
+                <strong>frozenlist</strong> (latest version: 1.8.0)
+            </a>
+        
+            <a class="package odd" href="simple/fs/index.html" data-name="fs">
+                <strong>fs</strong> (latest version: 2.4.16)
+            </a>
+        
+            <a class="package even" href="simple/fsspec/index.html" data-name="fsspec">
+                <strong>fsspec</strong> (latest version: 2026.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/funcy/index.html" data-name="funcy">
+                <strong>funcy</strong> (latest version: 2.0)
+            </a>
+        
+            <a class="package even" href="simple/future/index.html" data-name="future">
+                <strong>future</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/future-typing/index.html" data-name="future-typing">
+                <strong>future-typing</strong> (latest version: 0.4.1)
+            </a>
+        
+            <a class="package even" href="simple/futures/index.html" data-name="futures">
+                <strong>futures</strong> (latest version: 3.0.5)
+            </a>
+        
+            <a class="package odd" href="simple/gdown/index.html" data-name="gdown">
+                <strong>gdown</strong> (latest version: 6.0.0)
+            </a>
+        
+            <a class="package even" href="simple/gevent-websocket/index.html" data-name="gevent-websocket">
+                <strong>gevent-websocket</strong> (latest version: 0.10.1)
+            </a>
+        
+            <a class="package odd" href="simple/gin-config/index.html" data-name="gin-config">
+                <strong>gin-config</strong> (latest version: 0.5.0)
+            </a>
+        
+            <a class="package even" href="simple/gino/index.html" data-name="gino">
+                <strong>gino</strong> (latest version: 1.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/gitdb/index.html" data-name="gitdb">
+                <strong>gitdb</strong> (latest version: 4.0.12)
+            </a>
+        
+            <a class="package even" href="simple/gitpython/index.html" data-name="gitpython">
+                <strong>gitpython</strong> (latest version: 3.1.50)
+            </a>
+        
+            <a class="package odd" href="simple/glom/index.html" data-name="glom">
+                <strong>glom</strong> (latest version: 25.12.0)
+            </a>
+        
+            <a class="package even" href="simple/google-api-core/index.html" data-name="google-api-core">
+                <strong>google-api-core</strong> (latest version: 2.30.3)
+            </a>
+        
+            <a class="package odd" href="simple/google-api-python-client/index.html" data-name="google-api-python-client">
+                <strong>google-api-python-client</strong> (latest version: 2.196.0)
+            </a>
+        
+            <a class="package even" href="simple/google-auth/index.html" data-name="google-auth">
+                <strong>google-auth</strong> (latest version: 2.52.0)
+            </a>
+        
+            <a class="package odd" href="simple/google-auth-httplib2/index.html" data-name="google-auth-httplib2">
+                <strong>google-auth-httplib2</strong> (latest version: 0.4.0)
+            </a>
+        
+            <a class="package even" href="simple/google-auth-oauthlib/index.html" data-name="google-auth-oauthlib">
+                <strong>google-auth-oauthlib</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/google-cloud-bigquery/index.html" data-name="google-cloud-bigquery">
+                <strong>google-cloud-bigquery</strong> (latest version: 3.41.0)
+            </a>
+        
+            <a class="package even" href="simple/google-cloud-core/index.html" data-name="google-cloud-core">
+                <strong>google-cloud-core</strong> (latest version: 2.6.0)
+            </a>
+        
+            <a class="package odd" href="simple/google-cloud-storage/index.html" data-name="google-cloud-storage">
+                <strong>google-cloud-storage</strong> (latest version: 3.10.1)
+            </a>
+        
+            <a class="package even" href="simple/google-crc32c/index.html" data-name="google-crc32c">
+                <strong>google-crc32c</strong> (latest version: 1.8.0)
+            </a>
+        
+            <a class="package odd" href="simple/google-resumable-media/index.html" data-name="google-resumable-media">
+                <strong>google-resumable-media</strong> (latest version: 2.9.0)
+            </a>
+        
+            <a class="package even" href="simple/googleapis-common-protos/index.html" data-name="googleapis-common-protos">
+                <strong>googleapis-common-protos</strong> (latest version: 1.75.0)
+            </a>
+        
+            <a class="package odd" href="simple/graphviz/index.html" data-name="graphviz">
+                <strong>graphviz</strong> (latest version: 0.21)
+            </a>
+        
+            <a class="package even" href="simple/great-expectations/index.html" data-name="great-expectations">
+                <strong>great-expectations</strong> (latest version: 1.17.1)
+            </a>
+        
+            <a class="package odd" href="simple/greenback/index.html" data-name="greenback">
+                <strong>greenback</strong> (latest version: 1.3.0)
+            </a>
+        
+            <a class="package even" href="simple/greenlet/index.html" data-name="greenlet">
+                <strong>greenlet</strong> (latest version: 3.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/griffe/index.html" data-name="griffe">
+                <strong>griffe</strong> (latest version: 2.0.2)
+            </a>
+        
+            <a class="package even" href="simple/griffecli/index.html" data-name="griffecli">
+                <strong>griffecli</strong> (latest version: 2.0.2)
+            </a>
+        
+            <a class="package odd" href="simple/griffelib/index.html" data-name="griffelib">
+                <strong>griffelib</strong> (latest version: 2.0.2)
+            </a>
+        
+            <a class="package even" href="simple/grpcio/index.html" data-name="grpcio">
+                <strong>grpcio</strong> (latest version: 1.78.1)
+            </a>
+        
+            <a class="package odd" href="simple/grpcio-status/index.html" data-name="grpcio-status">
+                <strong>grpcio-status</strong> (latest version: 1.80.0)
+            </a>
+        
+            <a class="package even" href="simple/gsheetsdb/index.html" data-name="gsheetsdb">
+                <strong>gsheetsdb</strong> (latest version: 0.1.13.1)
+            </a>
+        
+            <a class="package odd" href="simple/h11/index.html" data-name="h11">
+                <strong>h11</strong> (latest version: 0.16.0)
+            </a>
+        
+            <a class="package even" href="simple/h2/index.html" data-name="h2">
+                <strong>h2</strong> (latest version: 4.3.0)
+            </a>
+        
+            <a class="package odd" href="simple/happybase/index.html" data-name="happybase">
+                <strong>happybase</strong> (latest version: 1.3.0)
+            </a>
+        
+            <a class="package even" href="simple/hickle/index.html" data-name="hickle">
+                <strong>hickle</strong> (latest version: 5.0.3)
+            </a>
+        
+            <a class="package odd" href="simple/hiredis/index.html" data-name="hiredis">
+                <strong>hiredis</strong> (latest version: 3.3.1)
+            </a>
+        
+            <a class="package even" href="simple/holidays/index.html" data-name="holidays">
+                <strong>holidays</strong> (latest version: 0.96)
+            </a>
+        
+            <a class="package odd" href="simple/hpack/index.html" data-name="hpack">
+                <strong>hpack</strong> (latest version: 4.1.0)
+            </a>
+        
+            <a class="package even" href="simple/html5lib/index.html" data-name="html5lib">
+                <strong>html5lib</strong> (latest version: 1.1)
+            </a>
+        
+            <a class="package odd" href="simple/httpcore/index.html" data-name="httpcore">
+                <strong>httpcore</strong> (latest version: 1.0.9)
+            </a>
+        
+            <a class="package even" href="simple/httplib2/index.html" data-name="httplib2">
+                <strong>httplib2</strong> (latest version: 0.31.2)
+            </a>
+        
+            <a class="package odd" href="simple/httptools/index.html" data-name="httptools">
+                <strong>httptools</strong> (latest version: 0.7.1)
+            </a>
+        
+            <a class="package even" href="simple/httpx/index.html" data-name="httpx">
+                <strong>httpx</strong> (latest version: 0.28.1)
+            </a>
+        
+            <a class="package odd" href="simple/hub/index.html" data-name="hub">
+                <strong>hub</strong> (latest version: 3.0.1)
+            </a>
+        
+            <a class="package even" href="simple/huey/index.html" data-name="huey">
+                <strong>huey</strong> (latest version: 3.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/humanize/index.html" data-name="humanize">
+                <strong>humanize</strong> (latest version: 4.15.0)
+            </a>
+        
+            <a class="package even" href="simple/humbug/index.html" data-name="humbug">
+                <strong>humbug</strong> (latest version: 0.3.2)
+            </a>
+        
+            <a class="package odd" href="simple/hyperframe/index.html" data-name="hyperframe">
+                <strong>hyperframe</strong> (latest version: 6.1.0)
+            </a>
+        
+            <a class="package even" href="simple/ibis-framework/index.html" data-name="ibis-framework">
+                <strong>ibis-framework</strong> (latest version: 12.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/id/index.html" data-name="id">
+                <strong>id</strong> (latest version: 1.6.1)
+            </a>
+        
+            <a class="package even" href="simple/identify/index.html" data-name="identify">
+                <strong>identify</strong> (latest version: 2.6.19)
+            </a>
+        
+            <a class="package odd" href="simple/idna/index.html" data-name="idna">
+                <strong>idna</strong> (latest version: 3.13)
+            </a>
+        
+            <a class="package even" href="simple/ijson/index.html" data-name="ijson">
+                <strong>ijson</strong> (latest version: 3.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/imagesize/index.html" data-name="imagesize">
+                <strong>imagesize</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/immutables/index.html" data-name="immutables">
+                <strong>immutables</strong> (latest version: 0.21)
+            </a>
+        
+            <a class="package odd" href="simple/importlib-metadata/index.html" data-name="importlib-metadata">
+                <strong>importlib-metadata</strong> (latest version: 9.0.0)
+            </a>
+        
+            <a class="package even" href="simple/importlib-resources/index.html" data-name="importlib-resources">
+                <strong>importlib-resources</strong> (latest version: 7.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/inflect/index.html" data-name="inflect">
+                <strong>inflect</strong> (latest version: 7.5.0)
+            </a>
+        
+            <a class="package even" href="simple/inflection/index.html" data-name="inflection">
+                <strong>inflection</strong> (latest version: 0.5.1)
+            </a>
+        
+            <a class="package odd" href="simple/influxdb/index.html" data-name="influxdb">
+                <strong>influxdb</strong> (latest version: 5.3.2)
+            </a>
+        
+            <a class="package even" href="simple/installer/index.html" data-name="installer">
+                <strong>installer</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/intake/index.html" data-name="intake">
+                <strong>intake</strong> (latest version: 2.0.9)
+            </a>
+        
+            <a class="package even" href="simple/interchange/index.html" data-name="interchange">
+                <strong>interchange</strong> (latest version: 2021.0.4)
+            </a>
+        
+            <a class="package odd" href="simple/invoke/index.html" data-name="invoke">
+                <strong>invoke</strong> (latest version: 3.0.3)
+            </a>
+        
+            <a class="package even" href="simple/ipython/index.html" data-name="ipython">
+                <strong>ipython</strong> (latest version: 9.12.0)
+            </a>
+        
+            <a class="package odd" href="simple/ipython-genutils/index.html" data-name="ipython-genutils">
+                <strong>ipython-genutils</strong> (latest version: 0.2.0)
+            </a>
+        
+            <a class="package even" href="simple/ipython-pygments-lexers/index.html" data-name="ipython-pygments-lexers">
+                <strong>ipython-pygments-lexers</strong> (latest version: 1.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/ipywidgets/index.html" data-name="ipywidgets">
+                <strong>ipywidgets</strong> (latest version: 8.1.7)
+            </a>
+        
+            <a class="package even" href="simple/iso8601/index.html" data-name="iso8601">
+                <strong>iso8601</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/isodate/index.html" data-name="isodate">
+                <strong>isodate</strong> (latest version: 0.7.2)
+            </a>
+        
+            <a class="package even" href="simple/isoduration/index.html" data-name="isoduration">
+                <strong>isoduration</strong> (latest version: 20.11.0)
+            </a>
+        
+            <a class="package odd" href="simple/itsdangerous/index.html" data-name="itsdangerous">
+                <strong>itsdangerous</strong> (latest version: 2.2.0)
+            </a>
+        
+            <a class="package even" href="simple/janus/index.html" data-name="janus">
+                <strong>janus</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/jaraco-classes/index.html" data-name="jaraco-classes">
+                <strong>jaraco-classes</strong> (latest version: 3.4.0)
+            </a>
+        
+            <a class="package even" href="simple/jaraco-context/index.html" data-name="jaraco-context">
+                <strong>jaraco-context</strong> (latest version: 6.1.2)
+            </a>
+        
+            <a class="package odd" href="simple/jaraco-functools/index.html" data-name="jaraco-functools">
+                <strong>jaraco-functools</strong> (latest version: 4.4.0)
+            </a>
+        
+            <a class="package even" href="simple/jedi/index.html" data-name="jedi">
+                <strong>jedi</strong> (latest version: 0.20.0)
+            </a>
+        
+            <a class="package odd" href="simple/jeepney/index.html" data-name="jeepney">
+                <strong>jeepney</strong> (latest version: 0.9.0)
+            </a>
+        
+            <a class="package even" href="simple/jinja2/index.html" data-name="jinja2">
+                <strong>jinja2</strong> (latest version: 3.1.6)
+            </a>
+        
+            <a class="package odd" href="simple/jinja2-ansible-filters/index.html" data-name="jinja2-ansible-filters">
+                <strong>jinja2-ansible-filters</strong> (latest version: 1.3.2)
+            </a>
+        
+            <a class="package even" href="simple/jinja2-humanize-extension/index.html" data-name="jinja2-humanize-extension">
+                <strong>jinja2-humanize-extension</strong> (latest version: 0.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/jmespath/index.html" data-name="jmespath">
+                <strong>jmespath</strong> (latest version: 1.1.0)
+            </a>
+        
+            <a class="package even" href="simple/joblib/index.html" data-name="joblib">
+                <strong>joblib</strong> (latest version: 1.5.3)
+            </a>
+        
+            <a class="package odd" href="simple/json-table-schema/index.html" data-name="json-table-schema">
+                <strong>json-table-schema</strong> (latest version: 0.2.1)
+            </a>
+        
+            <a class="package even" href="simple/json5/index.html" data-name="json5">
+                <strong>json5</strong> (latest version: 0.14.0)
+            </a>
+        
+            <a class="package odd" href="simple/jsonlines/index.html" data-name="jsonlines">
+                <strong>jsonlines</strong> (latest version: 4.0.0)
+            </a>
+        
+            <a class="package even" href="simple/jsonpatch/index.html" data-name="jsonpatch">
+                <strong>jsonpatch</strong> (latest version: 1.33)
+            </a>
+        
+            <a class="package odd" href="simple/jsonpickle/index.html" data-name="jsonpickle">
+                <strong>jsonpickle</strong> (latest version: 4.1.1)
+            </a>
+        
+            <a class="package even" href="simple/jsonpointer/index.html" data-name="jsonpointer">
+                <strong>jsonpointer</strong> (latest version: 3.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/jsonref/index.html" data-name="jsonref">
+                <strong>jsonref</strong> (latest version: 1.1.0)
+            </a>
+        
+            <a class="package even" href="simple/jsonschema/index.html" data-name="jsonschema">
+                <strong>jsonschema</strong> (latest version: 4.26.0)
+            </a>
+        
+            <a class="package odd" href="simple/jsonschema-specifications/index.html" data-name="jsonschema-specifications">
+                <strong>jsonschema-specifications</strong> (latest version: 2025.9.1)
+            </a>
+        
+            <a class="package even" href="simple/jupyter-client/index.html" data-name="jupyter-client">
+                <strong>jupyter-client</strong> (latest version: 8.8.0)
+            </a>
+        
+            <a class="package odd" href="simple/jupyter-core/index.html" data-name="jupyter-core">
+                <strong>jupyter-core</strong> (latest version: 5.9.1)
+            </a>
+        
+            <a class="package even" href="simple/jupyter-events/index.html" data-name="jupyter-events">
+                <strong>jupyter-events</strong> (latest version: 0.12.1)
+            </a>
+        
+            <a class="package odd" href="simple/jupyter-lsp/index.html" data-name="jupyter-lsp">
+                <strong>jupyter-lsp</strong> (latest version: 2.3.1)
+            </a>
+        
+            <a class="package even" href="simple/jupyter-server/index.html" data-name="jupyter-server">
+                <strong>jupyter-server</strong> (latest version: 2.18.2)
+            </a>
+        
+            <a class="package odd" href="simple/jupyter-server-terminals/index.html" data-name="jupyter-server-terminals">
+                <strong>jupyter-server-terminals</strong> (latest version: 0.5.4)
+            </a>
+        
+            <a class="package even" href="simple/jupyterlab/index.html" data-name="jupyterlab">
+                <strong>jupyterlab</strong> (latest version: 4.5.6)
+            </a>
+        
+            <a class="package odd" href="simple/jupyterlab-pygments/index.html" data-name="jupyterlab-pygments">
+                <strong>jupyterlab-pygments</strong> (latest version: 0.3.0)
+            </a>
+        
+            <a class="package even" href="simple/jupyterlab-server/index.html" data-name="jupyterlab-server">
+                <strong>jupyterlab-server</strong> (latest version: 2.28.0)
+            </a>
+        
+            <a class="package odd" href="simple/jupyterlab-widgets/index.html" data-name="jupyterlab-widgets">
+                <strong>jupyterlab-widgets</strong> (latest version: 3.0.16)
+            </a>
+        
+            <a class="package even" href="simple/jupytext/index.html" data-name="jupytext">
+                <strong>jupytext</strong> (latest version: 1.19.1)
+            </a>
+        
+            <a class="package odd" href="simple/kafka-python/index.html" data-name="kafka-python">
+                <strong>kafka-python</strong> (latest version: 2.3.1)
+            </a>
+        
+            <a class="package even" href="simple/kedro/index.html" data-name="kedro">
+                <strong>kedro</strong> (latest version: 1.3.1)
+            </a>
+        
+            <a class="package odd" href="simple/kedro-telemetry/index.html" data-name="kedro-telemetry">
+                <strong>kedro-telemetry</strong> (latest version: 0.7.0)
+            </a>
+        
+            <a class="package even" href="simple/keyboard/index.html" data-name="keyboard">
+                <strong>keyboard</strong> (latest version: 0.13.5)
+            </a>
+        
+            <a class="package odd" href="simple/keyring/index.html" data-name="keyring">
+                <strong>keyring</strong> (latest version: 25.7.0)
+            </a>
+        
+            <a class="package even" href="simple/kfp/index.html" data-name="kfp">
+                <strong>kfp</strong> (latest version: 2.16.1)
+            </a>
+        
+            <a class="package odd" href="simple/kfp-pipeline-spec/index.html" data-name="kfp-pipeline-spec">
+                <strong>kfp-pipeline-spec</strong> (latest version: 2.16.1)
+            </a>
+        
+            <a class="package even" href="simple/kfp-server-api/index.html" data-name="kfp-server-api">
+                <strong>kfp-server-api</strong> (latest version: 2.16.1)
+            </a>
+        
+            <a class="package odd" href="simple/kivy-garden/index.html" data-name="kivy-garden">
+                <strong>kivy-garden</strong> (latest version: 0.1.5)
+            </a>
+        
+            <a class="package even" href="simple/kiwisolver/index.html" data-name="kiwisolver">
+                <strong>kiwisolver</strong> (latest version: 1.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/kombu/index.html" data-name="kombu">
+                <strong>kombu</strong> (latest version: 5.6.2)
+            </a>
+        
+            <a class="package even" href="simple/kubeflow-kale/index.html" data-name="kubeflow-kale">
+                <strong>kubeflow-kale</strong> (latest version: 0.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/kubernetes/index.html" data-name="kubernetes">
+                <strong>kubernetes</strong> (latest version: 35.0.0)
+            </a>
+        
+            <a class="package even" href="simple/lark/index.html" data-name="lark">
+                <strong>lark</strong> (latest version: 1.3.1)
+            </a>
+        
+            <a class="package odd" href="simple/lazy-import/index.html" data-name="lazy-import">
+                <strong>lazy-import</strong> (latest version: 0.2.2)
+            </a>
+        
+            <a class="package even" href="simple/lazy-object-proxy/index.html" data-name="lazy-object-proxy">
+                <strong>lazy-object-proxy</strong> (latest version: 1.12.0)
+            </a>
+        
+            <a class="package odd" href="simple/lazydata/index.html" data-name="lazydata">
+                <strong>lazydata</strong> (latest version: 1.0.19)
+            </a>
+        
+            <a class="package even" href="simple/leather/index.html" data-name="leather">
+                <strong>leather</strong> (latest version: 0.4.1)
+            </a>
+        
+            <a class="package odd" href="simple/libcst/index.html" data-name="libcst">
+                <strong>libcst</strong> (latest version: 1.8.6)
+            </a>
+        
+            <a class="package even" href="simple/linear-tsv/index.html" data-name="linear-tsv">
+                <strong>linear-tsv</strong> (latest version: 1.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/linkify-it-py/index.html" data-name="linkify-it-py">
+                <strong>linkify-it-py</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package even" href="simple/lml/index.html" data-name="lml">
+                <strong>lml</strong> (latest version: 0.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/locket/index.html" data-name="locket">
+                <strong>locket</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package even" href="simple/lockfile/index.html" data-name="lockfile">
+                <strong>lockfile</strong> (latest version: 0.12.2)
+            </a>
+        
+            <a class="package odd" href="simple/luigi/index.html" data-name="luigi">
+                <strong>luigi</strong> (latest version: 3.8.1)
+            </a>
+        
+            <a class="package even" href="simple/lupa/index.html" data-name="lupa">
+                <strong>lupa</strong> (latest version: 2.6)
+            </a>
+        
+            <a class="package odd" href="simple/lxml/index.html" data-name="lxml">
+                <strong>lxml</strong> (latest version: 6.1.0)
+            </a>
+        
+            <a class="package even" href="simple/lz4/index.html" data-name="lz4">
+                <strong>lz4</strong> (latest version: 4.4.5)
+            </a>
+        
+            <a class="package odd" href="simple/mako/index.html" data-name="mako">
+                <strong>mako</strong> (latest version: 1.3.12)
+            </a>
+        
+            <a class="package even" href="simple/mara-db/index.html" data-name="mara-db">
+                <strong>mara-db</strong> (latest version: 4.11.0)
+            </a>
+        
+            <a class="package odd" href="simple/mara-page/index.html" data-name="mara-page">
+                <strong>mara-page</strong> (latest version: 1.7.0)
+            </a>
+        
+            <a class="package even" href="simple/markdown/index.html" data-name="markdown">
+                <strong>markdown</strong> (latest version: 3.10.2)
+            </a>
+        
+            <a class="package odd" href="simple/markdown-it-py/index.html" data-name="markdown-it-py">
+                <strong>markdown-it-py</strong> (latest version: 4.2.0)
+            </a>
+        
+            <a class="package even" href="simple/markupsafe/index.html" data-name="markupsafe">
+                <strong>markupsafe</strong> (latest version: 3.0.3)
+            </a>
+        
+            <a class="package odd" href="simple/marshmallow/index.html" data-name="marshmallow">
+                <strong>marshmallow</strong> (latest version: 4.3.0)
+            </a>
+        
+            <a class="package even" href="simple/matplotlib/index.html" data-name="matplotlib">
+                <strong>matplotlib</strong> (latest version: 3.10.9)
+            </a>
+        
+            <a class="package odd" href="simple/matplotlib-inline/index.html" data-name="matplotlib-inline">
+                <strong>matplotlib-inline</strong> (latest version: 0.2.2)
+            </a>
+        
+            <a class="package even" href="simple/maturin/index.html" data-name="maturin">
+                <strong>maturin</strong> (latest version: 1.13.1)
+            </a>
+        
+            <a class="package odd" href="simple/mdit-py-plugins/index.html" data-name="mdit-py-plugins">
+                <strong>mdit-py-plugins</strong> (latest version: 0.6.0)
+            </a>
+        
+            <a class="package even" href="simple/mdurl/index.html" data-name="mdurl">
+                <strong>mdurl</strong> (latest version: 0.1.2)
+            </a>
+        
+            <a class="package odd" href="simple/messytables/index.html" data-name="messytables">
+                <strong>messytables</strong> (latest version: 0.15.2)
+            </a>
+        
+            <a class="package even" href="simple/methodtools/index.html" data-name="methodtools">
+                <strong>methodtools</strong> (latest version: 0.4.7)
+            </a>
+        
+            <a class="package odd" href="simple/meza/index.html" data-name="meza">
+                <strong>meza</strong> (latest version: 0.47.0)
+            </a>
+        
+            <a class="package even" href="simple/mezmorize/index.html" data-name="mezmorize">
+                <strong>mezmorize</strong> (latest version: 0.31.0)
+            </a>
+        
+            <a class="package odd" href="simple/millify/index.html" data-name="millify">
+                <strong>millify</strong> (latest version: 0.1.1)
+            </a>
+        
+            <a class="package even" href="simple/minio/index.html" data-name="minio">
+                <strong>minio</strong> (latest version: 7.2.20)
+            </a>
+        
+            <a class="package odd" href="simple/mistune/index.html" data-name="mistune">
+                <strong>mistune</strong> (latest version: 3.2.1)
+            </a>
+        
+            <a class="package even" href="simple/mleap/index.html" data-name="mleap">
+                <strong>mleap</strong> (latest version: 0.24.0)
+            </a>
+        
+            <a class="package odd" href="simple/mo-dots/index.html" data-name="mo-dots">
+                <strong>mo-dots</strong> (latest version: 10.685.25166)
+            </a>
+        
+            <a class="package even" href="simple/mo-future/index.html" data-name="mo-future">
+                <strong>mo-future</strong> (latest version: 7.685.25166)
+            </a>
+        
+            <a class="package odd" href="simple/mo-imports/index.html" data-name="mo-imports">
+                <strong>mo-imports</strong> (latest version: 7.685.25166)
+            </a>
+        
+            <a class="package even" href="simple/mo-kwargs/index.html" data-name="mo-kwargs">
+                <strong>mo-kwargs</strong> (latest version: 8.703.26061)
+            </a>
+        
+            <a class="package odd" href="simple/mo-logs/index.html" data-name="mo-logs">
+                <strong>mo-logs</strong> (latest version: 8.703.26061)
+            </a>
+        
+            <a class="package even" href="simple/mode/index.html" data-name="mode">
+                <strong>mode</strong> (latest version: 4.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/mongo-connector/index.html" data-name="mongo-connector">
+                <strong>mongo-connector</strong> (latest version: 3.1.1)
+            </a>
+        
+            <a class="package even" href="simple/mongoengine/index.html" data-name="mongoengine">
+                <strong>mongoengine</strong> (latest version: 0.29.3)
+            </a>
+        
+            <a class="package odd" href="simple/monotonic/index.html" data-name="monotonic">
+                <strong>monotonic</strong> (latest version: 1.6)
+            </a>
+        
+            <a class="package even" href="simple/more-itertools/index.html" data-name="more-itertools">
+                <strong>more-itertools</strong> (latest version: 11.0.2)
+            </a>
+        
+            <a class="package odd" href="simple/motor/index.html" data-name="motor">
+                <strong>motor</strong> (latest version: 3.7.1)
+            </a>
+        
+            <a class="package even" href="simple/moz-sql-parser/index.html" data-name="moz-sql-parser">
+                <strong>moz-sql-parser</strong> (latest version: 4.40.21126)
+            </a>
+        
+            <a class="package odd" href="simple/mpmath/index.html" data-name="mpmath">
+                <strong>mpmath</strong> (latest version: 1.4.1)
+            </a>
+        
+            <a class="package even" href="simple/mrjob/index.html" data-name="mrjob">
+                <strong>mrjob</strong> (latest version: 0.7.4)
+            </a>
+        
+            <a class="package odd" href="simple/msgpack/index.html" data-name="msgpack">
+                <strong>msgpack</strong> (latest version: 1.1.2)
+            </a>
+        
+            <a class="package even" href="simple/msgpack-numpy/index.html" data-name="msgpack-numpy">
+                <strong>msgpack-numpy</strong> (latest version: 0.4.8)
+            </a>
+        
+            <a class="package odd" href="simple/msgspec/index.html" data-name="msgspec">
+                <strong>msgspec</strong> (latest version: 0.21.1)
+            </a>
+        
+            <a class="package even" href="simple/mss/index.html" data-name="mss">
+                <strong>mss</strong> (latest version: 10.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/multidict/index.html" data-name="multidict">
+                <strong>multidict</strong> (latest version: 6.7.1)
+            </a>
+        
+            <a class="package even" href="simple/multimethod/index.html" data-name="multimethod">
+                <strong>multimethod</strong> (latest version: 2.0.2)
+            </a>
+        
+            <a class="package odd" href="simple/multiprocess/index.html" data-name="multiprocess">
+                <strong>multiprocess</strong> (latest version: 0.70.19)
+            </a>
+        
+            <a class="package even" href="simple/munch/index.html" data-name="munch">
+                <strong>munch</strong> (latest version: 4.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/mypy-extensions/index.html" data-name="mypy-extensions">
+                <strong>mypy-extensions</strong> (latest version: 1.1.0)
+            </a>
+        
+            <a class="package even" href="simple/narwhals/index.html" data-name="narwhals">
+                <strong>narwhals</strong> (latest version: 2.21.0)
+            </a>
+        
+            <a class="package odd" href="simple/natsort/index.html" data-name="natsort">
+                <strong>natsort</strong> (latest version: 8.4.0)
+            </a>
+        
+            <a class="package even" href="simple/nbclient/index.html" data-name="nbclient">
+                <strong>nbclient</strong> (latest version: 0.10.4)
+            </a>
+        
+            <a class="package odd" href="simple/nbconvert/index.html" data-name="nbconvert">
+                <strong>nbconvert</strong> (latest version: 7.17.1)
+            </a>
+        
+            <a class="package even" href="simple/nbformat/index.html" data-name="nbformat">
+                <strong>nbformat</strong> (latest version: 5.10.4)
+            </a>
+        
+            <a class="package odd" href="simple/neo4j-driver/index.html" data-name="neo4j-driver">
+                <strong>neo4j-driver</strong> (latest version: 5.28.4)
+            </a>
+        
+            <a class="package even" href="simple/nest-asyncio/index.html" data-name="nest-asyncio">
+                <strong>nest-asyncio</strong> (latest version: 1.6.0)
+            </a>
+        
+            <a class="package odd" href="simple/netmiko/index.html" data-name="netmiko">
+                <strong>netmiko</strong> (latest version: 4.6.0)
+            </a>
+        
+            <a class="package even" href="simple/networkx/index.html" data-name="networkx">
+                <strong>networkx</strong> (latest version: 3.6.1)
+            </a>
+        
+            <a class="package odd" href="simple/nh3/index.html" data-name="nh3">
+                <strong>nh3</strong> (latest version: 0.3.5)
+            </a>
+        
+            <a class="package even" href="simple/nodeenv/index.html" data-name="nodeenv">
+                <strong>nodeenv</strong> (latest version: 1.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/notebook/index.html" data-name="notebook">
+                <strong>notebook</strong> (latest version: 7.5.5)
+            </a>
+        
+            <a class="package even" href="simple/notebook-shim/index.html" data-name="notebook-shim">
+                <strong>notebook-shim</strong> (latest version: 0.2.4)
+            </a>
+        
+            <a class="package odd" href="simple/ntc-templates/index.html" data-name="ntc-templates">
+                <strong>ntc-templates</strong> (latest version: 9.1.0)
+            </a>
+        
+            <a class="package even" href="simple/numba/index.html" data-name="numba">
+                <strong>numba</strong> (latest version: 0.65.1)
+            </a>
+        
+            <a class="package odd" href="simple/numcodecs/index.html" data-name="numcodecs">
+                <strong>numcodecs</strong> (latest version: 0.16.5)
+            </a>
+        
+            <a class="package even" href="simple/numexpr/index.html" data-name="numexpr">
+                <strong>numexpr</strong> (latest version: 2.14.1)
+            </a>
+        
+            <a class="package odd" href="simple/numpy/index.html" data-name="numpy">
+                <strong>numpy</strong> (latest version: 2.4.4)
+            </a>
+        
+            <a class="package even" href="simple/numpy-groupies/index.html" data-name="numpy-groupies">
+                <strong>numpy-groupies</strong> (latest version: 0.11.3)
+            </a>
+        
+            <a class="package odd" href="simple/oauthlib/index.html" data-name="oauthlib">
+                <strong>oauthlib</strong> (latest version: 3.3.1)
+            </a>
+        
+            <a class="package even" href="simple/odmantic/index.html" data-name="odmantic">
+                <strong>odmantic</strong> (latest version: 1.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/olefile/index.html" data-name="olefile">
+                <strong>olefile</strong> (latest version: 0.47)
+            </a>
+        
+            <a class="package even" href="simple/omegaconf/index.html" data-name="omegaconf">
+                <strong>omegaconf</strong> (latest version: 2.3.0)
+            </a>
+        
+            <a class="package odd" href="simple/onecite/index.html" data-name="onecite">
+                <strong>onecite</strong> (latest version: 0.1.1)
+            </a>
+        
+            <a class="package even" href="simple/opencv-python/index.html" data-name="opencv-python">
+                <strong>opencv-python</strong> (latest version: 4.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/openpyxl/index.html" data-name="openpyxl">
+                <strong>openpyxl</strong> (latest version: 3.1.5)
+            </a>
+        
+            <a class="package even" href="simple/opentelemetry-api/index.html" data-name="opentelemetry-api">
+                <strong>opentelemetry-api</strong> (latest version: 1.41.1)
+            </a>
+        
+            <a class="package odd" href="simple/opentelemetry-exporter-otlp/index.html" data-name="opentelemetry-exporter-otlp">
+                <strong>opentelemetry-exporter-otlp</strong> (latest version: 1.41.1)
+            </a>
+        
+            <a class="package even" href="simple/opentelemetry-exporter-otlp-proto-common/index.html" data-name="opentelemetry-exporter-otlp-proto-common">
+                <strong>opentelemetry-exporter-otlp-proto-common</strong> (latest version: 1.41.1)
+            </a>
+        
+            <a class="package odd" href="simple/opentelemetry-exporter-otlp-proto-grpc/index.html" data-name="opentelemetry-exporter-otlp-proto-grpc">
+                <strong>opentelemetry-exporter-otlp-proto-grpc</strong> (latest version: 1.41.1)
+            </a>
+        
+            <a class="package even" href="simple/opentelemetry-exporter-otlp-proto-http/index.html" data-name="opentelemetry-exporter-otlp-proto-http">
+                <strong>opentelemetry-exporter-otlp-proto-http</strong> (latest version: 1.41.1)
+            </a>
+        
+            <a class="package odd" href="simple/opentelemetry-instrumentation/index.html" data-name="opentelemetry-instrumentation">
+                <strong>opentelemetry-instrumentation</strong> (latest version: 0.62b1)
+            </a>
+        
+            <a class="package even" href="simple/opentelemetry-instrumentation-grpc/index.html" data-name="opentelemetry-instrumentation-grpc">
+                <strong>opentelemetry-instrumentation-grpc</strong> (latest version: 0.62b1)
+            </a>
+        
+            <a class="package odd" href="simple/opentelemetry-proto/index.html" data-name="opentelemetry-proto">
+                <strong>opentelemetry-proto</strong> (latest version: 1.41.1)
+            </a>
+        
+            <a class="package even" href="simple/opentelemetry-sdk/index.html" data-name="opentelemetry-sdk">
+                <strong>opentelemetry-sdk</strong> (latest version: 1.41.1)
+            </a>
+        
+            <a class="package odd" href="simple/opentelemetry-semantic-conventions/index.html" data-name="opentelemetry-semantic-conventions">
+                <strong>opentelemetry-semantic-conventions</strong> (latest version: 0.62b1)
+            </a>
+        
+            <a class="package even" href="simple/opentracing/index.html" data-name="opentracing">
+                <strong>opentracing</strong> (latest version: 2.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/ordered-set/index.html" data-name="ordered-set">
+                <strong>ordered-set</strong> (latest version: 4.1.0)
+            </a>
+        
+            <a class="package even" href="simple/orderly-set/index.html" data-name="orderly-set">
+                <strong>orderly-set</strong> (latest version: 5.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/orjson/index.html" data-name="orjson">
+                <strong>orjson</strong> (latest version: 3.11.8)
+            </a>
+        
+            <a class="package even" href="simple/outcome/index.html" data-name="outcome">
+                <strong>outcome</strong> (latest version: 1.3.0.post0)
+            </a>
+        
+            <a class="package odd" href="simple/packaging/index.html" data-name="packaging">
+                <strong>packaging</strong> (latest version: 26.2)
+            </a>
+        
+            <a class="package even" href="simple/pampy/index.html" data-name="pampy">
+                <strong>pampy</strong> (latest version: 0.3.0)
+            </a>
+        
+            <a class="package odd" href="simple/pandapy/index.html" data-name="pandapy">
+                <strong>pandapy</strong> (latest version: 2.2)
+            </a>
+        
+            <a class="package even" href="simple/pandarallel/index.html" data-name="pandarallel">
+                <strong>pandarallel</strong> (latest version: 1.6.5)
+            </a>
+        
+            <a class="package odd" href="simple/pandas/index.html" data-name="pandas">
+                <strong>pandas</strong> (latest version: 3.0.2)
+            </a>
+        
+            <a class="package even" href="simple/pandas-datareader/index.html" data-name="pandas-datareader">
+                <strong>pandas-datareader</strong> (latest version: 0.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/pandas-gbq/index.html" data-name="pandas-gbq">
+                <strong>pandas-gbq</strong> (latest version: 0.34.0)
+            </a>
+        
+            <a class="package even" href="simple/pandas-summary/index.html" data-name="pandas-summary">
+                <strong>pandas-summary</strong> (latest version: 0.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/pandasql/index.html" data-name="pandasql">
+                <strong>pandasql</strong> (latest version: 0.7.3)
+            </a>
+        
+            <a class="package even" href="simple/pandera/index.html" data-name="pandera">
+                <strong>pandera</strong> (latest version: 0.31.1)
+            </a>
+        
+            <a class="package odd" href="simple/pandocfilters/index.html" data-name="pandocfilters">
+                <strong>pandocfilters</strong> (latest version: 1.5.1)
+            </a>
+        
+            <a class="package even" href="simple/pansi/index.html" data-name="pansi">
+                <strong>pansi</strong> (latest version: 2024.11.0)
+            </a>
+        
+            <a class="package odd" href="simple/papermill/index.html" data-name="papermill">
+                <strong>papermill</strong> (latest version: 2.7.0)
+            </a>
+        
+            <a class="package even" href="simple/param/index.html" data-name="param">
+                <strong>param</strong> (latest version: 2.3.3)
+            </a>
+        
+            <a class="package odd" href="simple/paramiko/index.html" data-name="paramiko">
+                <strong>paramiko</strong> (latest version: 4.0.0)
+            </a>
+        
+            <a class="package even" href="simple/parse/index.html" data-name="parse">
+                <strong>parse</strong> (latest version: 1.22.0)
+            </a>
+        
+            <a class="package odd" href="simple/parsedatetime/index.html" data-name="parsedatetime">
+                <strong>parsedatetime</strong> (latest version: 2.6)
+            </a>
+        
+            <a class="package even" href="simple/parso/index.html" data-name="parso">
+                <strong>parso</strong> (latest version: 0.8.7)
+            </a>
+        
+            <a class="package odd" href="simple/parsy/index.html" data-name="parsy">
+                <strong>parsy</strong> (latest version: 2.2)
+            </a>
+        
+            <a class="package even" href="simple/partd/index.html" data-name="partd">
+                <strong>partd</strong> (latest version: 1.4.2)
+            </a>
+        
+            <a class="package odd" href="simple/path/index.html" data-name="path">
+                <strong>path</strong> (latest version: 17.1.1)
+            </a>
+        
+            <a class="package even" href="simple/pathlib/index.html" data-name="pathlib">
+                <strong>pathlib</strong> (latest version: 1.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/pathlib-abc/index.html" data-name="pathlib-abc">
+                <strong>pathlib-abc</strong> (latest version: 0.5.2)
+            </a>
+        
+            <a class="package even" href="simple/pathlib2/index.html" data-name="pathlib2">
+                <strong>pathlib2</strong> (latest version: 2.3.7.post1)
+            </a>
+        
+            <a class="package odd" href="simple/pathos/index.html" data-name="pathos">
+                <strong>pathos</strong> (latest version: 0.3.5)
+            </a>
+        
+            <a class="package even" href="simple/pathspec/index.html" data-name="pathspec">
+                <strong>pathspec</strong> (latest version: 1.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/pbs-installer/index.html" data-name="pbs-installer">
+                <strong>pbs-installer</strong> (latest version: 2026.5.8)
+            </a>
+        
+            <a class="package even" href="simple/pdfminer/index.html" data-name="pdfminer">
+                <strong>pdfminer</strong> (latest version: 20191125)
+            </a>
+        
+            <a class="package odd" href="simple/pdpipe/index.html" data-name="pdpipe">
+                <strong>pdpipe</strong> (latest version: 1.1.1)
+            </a>
+        
+            <a class="package even" href="simple/peewee/index.html" data-name="peewee">
+                <strong>peewee</strong> (latest version: 4.0.5)
+            </a>
+        
+            <a class="package odd" href="simple/pegen/index.html" data-name="pegen">
+                <strong>pegen</strong> (latest version: 0.3.0)
+            </a>
+        
+            <a class="package even" href="simple/pendulum/index.html" data-name="pendulum">
+                <strong>pendulum</strong> (latest version: 3.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/petl/index.html" data-name="petl">
+                <strong>petl</strong> (latest version: 1.7.17)
+            </a>
+        
+            <a class="package even" href="simple/pexpect/index.html" data-name="pexpect">
+                <strong>pexpect</strong> (latest version: 4.9.0)
+            </a>
+        
+            <a class="package odd" href="simple/phonenumbers/index.html" data-name="phonenumbers">
+                <strong>phonenumbers</strong> (latest version: 9.0.30)
+            </a>
+        
+            <a class="package even" href="simple/piccolo/index.html" data-name="piccolo">
+                <strong>piccolo</strong> (latest version: 1.33.0)
+            </a>
+        
+            <a class="package odd" href="simple/pickledb/index.html" data-name="pickledb">
+                <strong>pickledb</strong> (latest version: 1.6)
+            </a>
+        
+            <a class="package even" href="simple/pillow/index.html" data-name="pillow">
+                <strong>pillow</strong> (latest version: 12.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/pinject/index.html" data-name="pinject">
+                <strong>pinject</strong> (latest version: 0.14.1)
+            </a>
+        
+            <a class="package even" href="simple/pkginfo/index.html" data-name="pkginfo">
+                <strong>pkginfo</strong> (latest version: 1.12.1.2)
+            </a>
+        
+            <a class="package odd" href="simple/platformdirs/index.html" data-name="platformdirs">
+                <strong>platformdirs</strong> (latest version: 4.9.6)
+            </a>
+        
+            <a class="package even" href="simple/ploomber-core/index.html" data-name="ploomber-core">
+                <strong>ploomber-core</strong> (latest version: 0.2.27)
+            </a>
+        
+            <a class="package odd" href="simple/ploomber-extension/index.html" data-name="ploomber-extension">
+                <strong>ploomber-extension</strong> (latest version: 0.1.1)
+            </a>
+        
+            <a class="package even" href="simple/ploomber-scaffold/index.html" data-name="ploomber-scaffold">
+                <strong>ploomber-scaffold</strong> (latest version: 0.3.1)
+            </a>
+        
+            <a class="package odd" href="simple/pluggy/index.html" data-name="pluggy">
+                <strong>pluggy</strong> (latest version: 1.6.0)
+            </a>
+        
+            <a class="package even" href="simple/pluginbase/index.html" data-name="pluginbase">
+                <strong>pluginbase</strong> (latest version: 1.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/plumbum/index.html" data-name="plumbum">
+                <strong>plumbum</strong> (latest version: 1.10.0)
+            </a>
+        
+            <a class="package even" href="simple/ply/index.html" data-name="ply">
+                <strong>ply</strong> (latest version: 3.11)
+            </a>
+        
+            <a class="package odd" href="simple/poetry/index.html" data-name="poetry">
+                <strong>poetry</strong> (latest version: 2.4.1)
+            </a>
+        
+            <a class="package even" href="simple/poetry-core/index.html" data-name="poetry-core">
+                <strong>poetry-core</strong> (latest version: 2.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/pony/index.html" data-name="pony">
+                <strong>pony</strong> (latest version: 0.7.19)
+            </a>
+        
+            <a class="package even" href="simple/portalocker/index.html" data-name="portalocker">
+                <strong>portalocker</strong> (latest version: 3.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/posthog/index.html" data-name="posthog">
+                <strong>posthog</strong> (latest version: 7.14.0)
+            </a>
+        
+            <a class="package even" href="simple/powerline-shell/index.html" data-name="powerline-shell">
+                <strong>powerline-shell</strong> (latest version: 0.7.0)
+            </a>
+        
+            <a class="package odd" href="simple/pox/index.html" data-name="pox">
+                <strong>pox</strong> (latest version: 0.3.7)
+            </a>
+        
+            <a class="package even" href="simple/ppft/index.html" data-name="ppft">
+                <strong>ppft</strong> (latest version: 1.7.8)
+            </a>
+        
+            <a class="package odd" href="simple/pre-commit/index.html" data-name="pre-commit">
+                <strong>pre-commit</strong> (latest version: 4.6.0)
+            </a>
+        
+            <a class="package even" href="simple/prefect/index.html" data-name="prefect">
+                <strong>prefect</strong> (latest version: 3.7.0)
+            </a>
+        
+            <a class="package odd" href="simple/prettytable/index.html" data-name="prettytable">
+                <strong>prettytable</strong> (latest version: 3.17.0)
+            </a>
+        
+            <a class="package even" href="simple/price-parser/index.html" data-name="price-parser">
+                <strong>price-parser</strong> (latest version: 0.5.1)
+            </a>
+        
+            <a class="package odd" href="simple/prisma/index.html" data-name="prisma">
+                <strong>prisma</strong> (latest version: 0.15.0)
+            </a>
+        
+            <a class="package even" href="simple/prometheus-client/index.html" data-name="prometheus-client">
+                <strong>prometheus-client</strong> (latest version: 0.25.0)
+            </a>
+        
+            <a class="package odd" href="simple/prompt-toolkit/index.html" data-name="prompt-toolkit">
+                <strong>prompt-toolkit</strong> (latest version: 3.0.52)
+            </a>
+        
+            <a class="package even" href="simple/propcache/index.html" data-name="propcache">
+                <strong>propcache</strong> (latest version: 0.5.2)
+            </a>
+        
+            <a class="package odd" href="simple/proto-plus/index.html" data-name="proto-plus">
+                <strong>proto-plus</strong> (latest version: 1.28.0)
+            </a>
+        
+            <a class="package even" href="simple/protobuf/index.html" data-name="protobuf">
+                <strong>protobuf</strong> (latest version: 7.34.1)
+            </a>
+        
+            <a class="package odd" href="simple/pscript/index.html" data-name="pscript">
+                <strong>pscript</strong> (latest version: 0.8.1)
+            </a>
+        
+            <a class="package even" href="simple/psutil/index.html" data-name="psutil">
+                <strong>psutil</strong> (latest version: 7.2.2)
+            </a>
+        
+            <a class="package odd" href="simple/psycopg2/index.html" data-name="psycopg2">
+                <strong>psycopg2</strong> (latest version: 2.9.12)
+            </a>
+        
+            <a class="package even" href="simple/psycopg2-binary/index.html" data-name="psycopg2-binary">
+                <strong>psycopg2-binary</strong> (latest version: 2.9.12)
+            </a>
+        
+            <a class="package odd" href="simple/ptyprocess/index.html" data-name="ptyprocess">
+                <strong>ptyprocess</strong> (latest version: 0.7.0)
+            </a>
+        
+            <a class="package even" href="simple/pugsql/index.html" data-name="pugsql">
+                <strong>pugsql</strong> (latest version: 0.3.7)
+            </a>
+        
+            <a class="package odd" href="simple/pulumi/index.html" data-name="pulumi">
+                <strong>pulumi</strong> (latest version: 3.237.0)
+            </a>
+        
+            <a class="package even" href="simple/pure-eval/index.html" data-name="pure-eval">
+                <strong>pure-eval</strong> (latest version: 0.2.3)
+            </a>
+        
+            <a class="package odd" href="simple/py-key-value-aio/index.html" data-name="py-key-value-aio">
+                <strong>py-key-value-aio</strong> (latest version: 0.4.4)
+            </a>
+        
+            <a class="package even" href="simple/py-lru-cache/index.html" data-name="py-lru-cache">
+                <strong>py-lru-cache</strong> (latest version: 0.1.4)
+            </a>
+        
+            <a class="package odd" href="simple/py2neo/index.html" data-name="py2neo">
+                <strong>py2neo</strong> (latest version: 2021.2.4)
+            </a>
+        
+            <a class="package even" href="simple/py4j/index.html" data-name="py4j">
+                <strong>py4j</strong> (latest version: 0.10.9.9)
+            </a>
+        
+            <a class="package odd" href="simple/pyahocorasick/index.html" data-name="pyahocorasick">
+                <strong>pyahocorasick</strong> (latest version: 2.3.1)
+            </a>
+        
+            <a class="package even" href="simple/pyasn1/index.html" data-name="pyasn1">
+                <strong>pyasn1</strong> (latest version: 0.6.3)
+            </a>
+        
+            <a class="package odd" href="simple/pyasn1-modules/index.html" data-name="pyasn1-modules">
+                <strong>pyasn1-modules</strong> (latest version: 0.4.2)
+            </a>
+        
+            <a class="package even" href="simple/pybars3/index.html" data-name="pybars3">
+                <strong>pybars3</strong> (latest version: 0.9.7)
+            </a>
+        
+            <a class="package odd" href="simple/pycodestyle/index.html" data-name="pycodestyle">
+                <strong>pycodestyle</strong> (latest version: 2.14.0)
+            </a>
+        
+            <a class="package even" href="simple/pycparser/index.html" data-name="pycparser">
+                <strong>pycparser</strong> (latest version: 3.0)
+            </a>
+        
+            <a class="package odd" href="simple/pycryptodome/index.html" data-name="pycryptodome">
+                <strong>pycryptodome</strong> (latest version: 3.23.0)
+            </a>
+        
+            <a class="package even" href="simple/pycryptodomex/index.html" data-name="pycryptodomex">
+                <strong>pycryptodomex</strong> (latest version: 3.23.0)
+            </a>
+        
+            <a class="package odd" href="simple/pydantic/index.html" data-name="pydantic">
+                <strong>pydantic</strong> (latest version: 2.13.4)
+            </a>
+        
+            <a class="package even" href="simple/pydantic-core/index.html" data-name="pydantic-core">
+                <strong>pydantic-core</strong> (latest version: 2.46.4)
+            </a>
+        
+            <a class="package odd" href="simple/pydantic-extra-types/index.html" data-name="pydantic-extra-types">
+                <strong>pydantic-extra-types</strong> (latest version: 2.11.1)
+            </a>
+        
+            <a class="package even" href="simple/pydantic-settings/index.html" data-name="pydantic-settings">
+                <strong>pydantic-settings</strong> (latest version: 2.14.1)
+            </a>
+        
+            <a class="package odd" href="simple/pydata-google-auth/index.html" data-name="pydata-google-auth">
+                <strong>pydata-google-auth</strong> (latest version: 1.9.1)
+            </a>
+        
+            <a class="package even" href="simple/pydocket/index.html" data-name="pydocket">
+                <strong>pydocket</strong> (latest version: 0.20.1)
+            </a>
+        
+            <a class="package odd" href="simple/pyexcel-io/index.html" data-name="pyexcel-io">
+                <strong>pyexcel-io</strong> (latest version: 0.6.7)
+            </a>
+        
+            <a class="package even" href="simple/pyexcel-xlsx/index.html" data-name="pyexcel-xlsx">
+                <strong>pyexcel-xlsx</strong> (latest version: 0.6.1)
+            </a>
+        
+            <a class="package odd" href="simple/pyfiglet/index.html" data-name="pyfiglet">
+                <strong>pyfiglet</strong> (latest version: 1.0.4)
+            </a>
+        
+            <a class="package even" href="simple/pyflakes/index.html" data-name="pyflakes">
+                <strong>pyflakes</strong> (latest version: 3.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/pyfunctional/index.html" data-name="pyfunctional">
+                <strong>pyfunctional</strong> (latest version: 1.5.0)
+            </a>
+        
+            <a class="package even" href="simple/pygame/index.html" data-name="pygame">
+                <strong>pygame</strong> (latest version: 2.6.1)
+            </a>
+        
+            <a class="package odd" href="simple/pygments/index.html" data-name="pygments">
+                <strong>pygments</strong> (latest version: 2.20.0)
+            </a>
+        
+            <a class="package even" href="simple/pygogo/index.html" data-name="pygogo">
+                <strong>pygogo</strong> (latest version: 1.3.0)
+            </a>
+        
+            <a class="package odd" href="simple/pygsheets/index.html" data-name="pygsheets">
+                <strong>pygsheets</strong> (latest version: 2.0.6)
+            </a>
+        
+            <a class="package even" href="simple/pygtrie/index.html" data-name="pygtrie">
+                <strong>pygtrie</strong> (latest version: 2.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/pyhdb/index.html" data-name="pyhdb">
+                <strong>pyhdb</strong> (latest version: 0.3.4)
+            </a>
+        
+            <a class="package even" href="simple/pyinfra/index.html" data-name="pyinfra">
+                <strong>pyinfra</strong> (latest version: 3.8.0)
+            </a>
+        
+            <a class="package odd" href="simple/pyjwt/index.html" data-name="pyjwt">
+                <strong>pyjwt</strong> (latest version: 2.12.1)
+            </a>
+        
+            <a class="package even" href="simple/pymeta3/index.html" data-name="pymeta3">
+                <strong>pymeta3</strong> (latest version: 0.5.1)
+            </a>
+        
+            <a class="package odd" href="simple/pymodm/index.html" data-name="pymodm">
+                <strong>pymodm</strong> (latest version: 0.4.3)
+            </a>
+        
+            <a class="package even" href="simple/pymongo/index.html" data-name="pymongo">
+                <strong>pymongo</strong> (latest version: 4.17.0)
+            </a>
+        
+            <a class="package odd" href="simple/pympler/index.html" data-name="pympler">
+                <strong>pympler</strong> (latest version: 1.1)
+            </a>
+        
+            <a class="package even" href="simple/pymysql/index.html" data-name="pymysql">
+                <strong>pymysql</strong> (latest version: 1.1.3)
+            </a>
+        
+            <a class="package odd" href="simple/pynacl/index.html" data-name="pynacl">
+                <strong>pynacl</strong> (latest version: 1.6.2)
+            </a>
+        
+            <a class="package even" href="simple/pynamodb/index.html" data-name="pynamodb">
+                <strong>pynamodb</strong> (latest version: 6.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/pyparsing/index.html" data-name="pyparsing">
+                <strong>pyparsing</strong> (latest version: 3.3.2)
+            </a>
+        
+            <a class="package even" href="simple/pypattyrn/index.html" data-name="pypattyrn">
+                <strong>pypattyrn</strong> (latest version: 1.2)
+            </a>
+        
+            <a class="package odd" href="simple/pypeln/index.html" data-name="pypeln">
+                <strong>pypeln</strong> (latest version: 0.4.9)
+            </a>
+        
+            <a class="package even" href="simple/pypika/index.html" data-name="pypika">
+                <strong>pypika</strong> (latest version: 0.51.1)
+            </a>
+        
+            <a class="package odd" href="simple/pypika-tortoise/index.html" data-name="pypika-tortoise">
+                <strong>pypika-tortoise</strong> (latest version: 0.6.5)
+            </a>
+        
+            <a class="package even" href="simple/pyproject-hooks/index.html" data-name="pyproject-hooks">
+                <strong>pyproject-hooks</strong> (latest version: 1.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/pypyr/index.html" data-name="pypyr">
+                <strong>pypyr</strong> (latest version: 5.9.1)
+            </a>
+        
+            <a class="package even" href="simple/pyrsistent/index.html" data-name="pyrsistent">
+                <strong>pyrsistent</strong> (latest version: 0.20.0)
+            </a>
+        
+            <a class="package odd" href="simple/pyscaffold/index.html" data-name="pyscaffold">
+                <strong>pyscaffold</strong> (latest version: 4.6)
+            </a>
+        
+            <a class="package even" href="simple/pyscreenshot/index.html" data-name="pyscreenshot">
+                <strong>pyscreenshot</strong> (latest version: 3.1)
+            </a>
+        
+            <a class="package odd" href="simple/pyserial/index.html" data-name="pyserial">
+                <strong>pyserial</strong> (latest version: 3.5)
+            </a>
+        
+            <a class="package even" href="simple/pysimdjson/index.html" data-name="pysimdjson">
+                <strong>pysimdjson</strong> (latest version: 7.0.2)
+            </a>
+        
+            <a class="package odd" href="simple/pysimplegui/index.html" data-name="pysimplegui">
+                <strong>pysimplegui</strong> (latest version: 6.0)
+            </a>
+        
+            <a class="package even" href="simple/pysocks/index.html" data-name="pysocks">
+                <strong>pysocks</strong> (latest version: 1.7.1)
+            </a>
+        
+            <a class="package odd" href="simple/pysolr/index.html" data-name="pysolr">
+                <strong>pysolr</strong> (latest version: 3.11.0)
+            </a>
+        
+            <a class="package even" href="simple/pysparkling/index.html" data-name="pysparkling">
+                <strong>pysparkling</strong> (latest version: 0.6.2)
+            </a>
+        
+            <a class="package odd" href="simple/pystorm/index.html" data-name="pystorm">
+                <strong>pystorm</strong> (latest version: 3.1.4)
+            </a>
+        
+            <a class="package even" href="simple/python-benedict/index.html" data-name="python-benedict">
+                <strong>python-benedict</strong> (latest version: 0.37.0)
+            </a>
+        
+            <a class="package odd" href="simple/python-box/index.html" data-name="python-box">
+                <strong>python-box</strong> (latest version: 7.4.1)
+            </a>
+        
+            <a class="package even" href="simple/python-daemon/index.html" data-name="python-daemon">
+                <strong>python-daemon</strong> (latest version: 3.1.2)
+            </a>
+        
+            <a class="package odd" href="simple/python-dateutil/index.html" data-name="python-dateutil">
+                <strong>python-dateutil</strong> (latest version: 2.9.0.post0)
+            </a>
+        
+            <a class="package even" href="simple/python-decouple/index.html" data-name="python-decouple">
+                <strong>python-decouple</strong> (latest version: 3.8)
+            </a>
+        
+            <a class="package odd" href="simple/python-discovery/index.html" data-name="python-discovery">
+                <strong>python-discovery</strong> (latest version: 1.3.0)
+            </a>
+        
+            <a class="package even" href="simple/python-dotenv/index.html" data-name="python-dotenv">
+                <strong>python-dotenv</strong> (latest version: 1.2.2)
+            </a>
+        
+            <a class="package odd" href="simple/python-fsutil/index.html" data-name="python-fsutil">
+                <strong>python-fsutil</strong> (latest version: 0.16.1)
+            </a>
+        
+            <a class="package even" href="simple/python-json-logger/index.html" data-name="python-json-logger">
+                <strong>python-json-logger</strong> (latest version: 4.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/python-magic/index.html" data-name="python-magic">
+                <strong>python-magic</strong> (latest version: 0.4.27)
+            </a>
+        
+            <a class="package even" href="simple/python-multipart/index.html" data-name="python-multipart">
+                <strong>python-multipart</strong> (latest version: 0.0.27)
+            </a>
+        
+            <a class="package odd" href="simple/python-rapidjson/index.html" data-name="python-rapidjson">
+                <strong>python-rapidjson</strong> (latest version: 1.23)
+            </a>
+        
+            <a class="package even" href="simple/python-slugify/index.html" data-name="python-slugify">
+                <strong>python-slugify</strong> (latest version: 8.0.4)
+            </a>
+        
+            <a class="package odd" href="simple/pythondialog/index.html" data-name="pythondialog">
+                <strong>pythondialog</strong> (latest version: 3.5.3)
+            </a>
+        
+            <a class="package even" href="simple/pytimeparse/index.html" data-name="pytimeparse">
+                <strong>pytimeparse</strong> (latest version: 1.1.8)
+            </a>
+        
+            <a class="package odd" href="simple/pytokens/index.html" data-name="pytokens">
+                <strong>pytokens</strong> (latest version: 0.4.1)
+            </a>
+        
+            <a class="package even" href="simple/pytz/index.html" data-name="pytz">
+                <strong>pytz</strong> (latest version: 2026.2)
+            </a>
+        
+            <a class="package odd" href="simple/pyyaml/index.html" data-name="pyyaml">
+                <strong>pyyaml</strong> (latest version: 6.0.3)
+            </a>
+        
+            <a class="package even" href="simple/pyyaml-ft/index.html" data-name="pyyaml-ft">
+                <strong>pyyaml-ft</strong> (latest version: 8.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/pyzmq/index.html" data-name="pyzmq">
+                <strong>pyzmq</strong> (latest version: 27.1.0)
+            </a>
+        
+            <a class="package even" href="simple/quantile-python/index.html" data-name="quantile-python">
+                <strong>quantile-python</strong> (latest version: 1.1)
+            </a>
+        
+            <a class="package odd" href="simple/queries/index.html" data-name="queries">
+                <strong>queries</strong> (latest version: 2.1.1)
+            </a>
+        
+            <a class="package even" href="simple/questionary/index.html" data-name="questionary">
+                <strong>questionary</strong> (latest version: 2.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/rapidfuzz/index.html" data-name="rapidfuzz">
+                <strong>rapidfuzz</strong> (latest version: 3.14.5)
+            </a>
+        
+            <a class="package even" href="simple/rasgoql/index.html" data-name="rasgoql">
+                <strong>rasgoql</strong> (latest version: 1.6.4)
+            </a>
+        
+            <a class="package odd" href="simple/rasgotransforms/index.html" data-name="rasgotransforms">
+                <strong>rasgotransforms</strong> (latest version: 2.7.8)
+            </a>
+        
+            <a class="package even" href="simple/ratelimit/index.html" data-name="ratelimit">
+                <strong>ratelimit</strong> (latest version: 2.2.1)
+            </a>
+        
+            <a class="package odd" href="simple/readchar/index.html" data-name="readchar">
+                <strong>readchar</strong> (latest version: 4.2.2)
+            </a>
+        
+            <a class="package even" href="simple/readme-renderer/index.html" data-name="readme-renderer">
+                <strong>readme-renderer</strong> (latest version: 44.0)
+            </a>
+        
+            <a class="package odd" href="simple/records/index.html" data-name="records">
+                <strong>records</strong> (latest version: 0.6.0)
+            </a>
+        
+            <a class="package even" href="simple/redis/index.html" data-name="redis">
+                <strong>redis</strong> (latest version: 7.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/redis-py-cluster/index.html" data-name="redis-py-cluster">
+                <strong>redis-py-cluster</strong> (latest version: 2.1.3)
+            </a>
+        
+            <a class="package even" href="simple/referencing/index.html" data-name="referencing">
+                <strong>referencing</strong> (latest version: 0.37.0)
+            </a>
+        
+            <a class="package odd" href="simple/regex/index.html" data-name="regex">
+                <strong>regex</strong> (latest version: 2026.4.4)
+            </a>
+        
+            <a class="package even" href="simple/requests/index.html" data-name="requests">
+                <strong>requests</strong> (latest version: 2.33.1)
+            </a>
+        
+            <a class="package odd" href="simple/requests-oauthlib/index.html" data-name="requests-oauthlib">
+                <strong>requests-oauthlib</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/requests-toolbelt/index.html" data-name="requests-toolbelt">
+                <strong>requests-toolbelt</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/resolvelib/index.html" data-name="resolvelib">
+                <strong>resolvelib</strong> (latest version: 1.2.1)
+            </a>
+        
+            <a class="package even" href="simple/retrying/index.html" data-name="retrying">
+                <strong>retrying</strong> (latest version: 1.4.2)
+            </a>
+        
+            <a class="package odd" href="simple/returns/index.html" data-name="returns">
+                <strong>returns</strong> (latest version: 0.27.0)
+            </a>
+        
+            <a class="package even" href="simple/rfc3339-validator/index.html" data-name="rfc3339-validator">
+                <strong>rfc3339-validator</strong> (latest version: 0.1.4)
+            </a>
+        
+            <a class="package odd" href="simple/rfc3986/index.html" data-name="rfc3986">
+                <strong>rfc3986</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/rfc3986-validator/index.html" data-name="rfc3986-validator">
+                <strong>rfc3986-validator</strong> (latest version: 0.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/rfc3987-syntax/index.html" data-name="rfc3987-syntax">
+                <strong>rfc3987-syntax</strong> (latest version: 1.1.0)
+            </a>
+        
+            <a class="package even" href="simple/rich/index.html" data-name="rich">
+                <strong>rich</strong> (latest version: 15.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/rich-argparse/index.html" data-name="rich-argparse">
+                <strong>rich-argparse</strong> (latest version: 1.8.0)
+            </a>
+        
+            <a class="package even" href="simple/rich-rst/index.html" data-name="rich-rst">
+                <strong>rich-rst</strong> (latest version: 1.3.2)
+            </a>
+        
+            <a class="package odd" href="simple/rich-toolkit/index.html" data-name="rich-toolkit">
+                <strong>rich-toolkit</strong> (latest version: 0.19.7)
+            </a>
+        
+            <a class="package even" href="simple/riko/index.html" data-name="riko">
+                <strong>riko</strong> (latest version: 0.67.0)
+            </a>
+        
+            <a class="package odd" href="simple/robinhood-aiokafka/index.html" data-name="robinhood-aiokafka">
+                <strong>robinhood-aiokafka</strong> (latest version: 1.1.6)
+            </a>
+        
+            <a class="package even" href="simple/roman-numerals/index.html" data-name="roman-numerals">
+                <strong>roman-numerals</strong> (latest version: 4.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/rows/index.html" data-name="rows">
+                <strong>rows</strong> (latest version: 0.4.1)
+            </a>
+        
+            <a class="package even" href="simple/rpds-py/index.html" data-name="rpds-py">
+                <strong>rpds-py</strong> (latest version: 0.30.0)
+            </a>
+        
+            <a class="package odd" href="simple/rq/index.html" data-name="rq">
+                <strong>rq</strong> (latest version: 2.8.0)
+            </a>
+        
+            <a class="package even" href="simple/rsa/index.html" data-name="rsa">
+                <strong>rsa</strong> (latest version: 4.9.1)
+            </a>
+        
+            <a class="package odd" href="simple/rtoml/index.html" data-name="rtoml">
+                <strong>rtoml</strong> (latest version: 0.13.0)
+            </a>
+        
+            <a class="package even" href="simple/ruamel-yaml/index.html" data-name="ruamel-yaml">
+                <strong>ruamel-yaml</strong> (latest version: 0.19.1)
+            </a>
+        
+            <a class="package odd" href="simple/ruamel-yaml-clib/index.html" data-name="ruamel-yaml-clib">
+                <strong>ruamel-yaml-clib</strong> (latest version: 0.2.15)
+            </a>
+        
+            <a class="package even" href="simple/s3fs/index.html" data-name="s3fs">
+                <strong>s3fs</strong> (latest version: 2026.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/s3transfer/index.html" data-name="s3transfer">
+                <strong>s3transfer</strong> (latest version: 0.17.0)
+            </a>
+        
+            <a class="package even" href="simple/scandir/index.html" data-name="scandir">
+                <strong>scandir</strong> (latest version: 1.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/schedule/index.html" data-name="schedule">
+                <strong>schedule</strong> (latest version: 1.2.2)
+            </a>
+        
+            <a class="package even" href="simple/schema/index.html" data-name="schema">
+                <strong>schema</strong> (latest version: 0.7.8)
+            </a>
+        
+            <a class="package odd" href="simple/schematics/index.html" data-name="schematics">
+                <strong>schematics</strong> (latest version: 2.1.1)
+            </a>
+        
+            <a class="package even" href="simple/scholarly/index.html" data-name="scholarly">
+                <strong>scholarly</strong> (latest version: 1.7.11)
+            </a>
+        
+            <a class="package odd" href="simple/scikit-learn/index.html" data-name="scikit-learn">
+                <strong>scikit-learn</strong> (latest version: 1.8.0)
+            </a>
+        
+            <a class="package even" href="simple/scipy/index.html" data-name="scipy">
+                <strong>scipy</strong> (latest version: 1.17.1)
+            </a>
+        
+            <a class="package odd" href="simple/scp/index.html" data-name="scp">
+                <strong>scp</strong> (latest version: 0.15.0)
+            </a>
+        
+            <a class="package even" href="simple/seaborn/index.html" data-name="seaborn">
+                <strong>seaborn</strong> (latest version: 0.13.2)
+            </a>
+        
+            <a class="package odd" href="simple/secretstorage/index.html" data-name="secretstorage">
+                <strong>secretstorage</strong> (latest version: 3.5.0)
+            </a>
+        
+            <a class="package even" href="simple/selenium/index.html" data-name="selenium">
+                <strong>selenium</strong> (latest version: 4.43.0)
+            </a>
+        
+            <a class="package odd" href="simple/semver/index.html" data-name="semver">
+                <strong>semver</strong> (latest version: 3.0.4)
+            </a>
+        
+            <a class="package even" href="simple/send2trash/index.html" data-name="send2trash">
+                <strong>send2trash</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/setproctitle/index.html" data-name="setproctitle">
+                <strong>setproctitle</strong> (latest version: 1.3.7)
+            </a>
+        
+            <a class="package even" href="simple/setuptools/index.html" data-name="setuptools">
+                <strong>setuptools</strong> (latest version: 82.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/setuptools-scm/index.html" data-name="setuptools-scm">
+                <strong>setuptools-scm</strong> (latest version: 10.0.5)
+            </a>
+        
+            <a class="package even" href="simple/sgmllib3k/index.html" data-name="sgmllib3k">
+                <strong>sgmllib3k</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/sh/index.html" data-name="sh">
+                <strong>sh</strong> (latest version: 2.2.2)
+            </a>
+        
+            <a class="package even" href="simple/shellingham/index.html" data-name="shellingham">
+                <strong>shellingham</strong> (latest version: 1.5.4)
+            </a>
+        
+            <a class="package odd" href="simple/simplejson/index.html" data-name="simplejson">
+                <strong>simplejson</strong> (latest version: 4.1.1)
+            </a>
+        
+            <a class="package even" href="simple/singer-python/index.html" data-name="singer-python">
+                <strong>singer-python</strong> (latest version: 6.8.0)
+            </a>
+        
+            <a class="package odd" href="simple/six/index.html" data-name="six">
+                <strong>six</strong> (latest version: 1.17.0)
+            </a>
+        
+            <a class="package even" href="simple/skutil/index.html" data-name="skutil">
+                <strong>skutil</strong> (latest version: 0.0.19)
+            </a>
+        
+            <a class="package odd" href="simple/smart-open/index.html" data-name="smart-open">
+                <strong>smart-open</strong> (latest version: 7.6.1)
+            </a>
+        
+            <a class="package even" href="simple/smmap/index.html" data-name="smmap">
+                <strong>smmap</strong> (latest version: 5.0.3)
+            </a>
+        
+            <a class="package odd" href="simple/sniffio/index.html" data-name="sniffio">
+                <strong>sniffio</strong> (latest version: 1.3.1)
+            </a>
+        
+            <a class="package even" href="simple/snowballstemmer/index.html" data-name="snowballstemmer">
+                <strong>snowballstemmer</strong> (latest version: 3.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/sortedcontainers/index.html" data-name="sortedcontainers">
+                <strong>sortedcontainers</strong> (latest version: 2.4.0)
+            </a>
+        
+            <a class="package even" href="simple/soupsieve/index.html" data-name="soupsieve">
+                <strong>soupsieve</strong> (latest version: 2.8.3)
+            </a>
+        
+            <a class="package odd" href="simple/sphinx/index.html" data-name="sphinx">
+                <strong>sphinx</strong> (latest version: 9.1.0)
+            </a>
+        
+            <a class="package even" href="simple/sphinx-rtd-theme/index.html" data-name="sphinx-rtd-theme">
+                <strong>sphinx-rtd-theme</strong> (latest version: 3.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/sphinxcontrib-applehelp/index.html" data-name="sphinxcontrib-applehelp">
+                <strong>sphinxcontrib-applehelp</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/sphinxcontrib-devhelp/index.html" data-name="sphinxcontrib-devhelp">
+                <strong>sphinxcontrib-devhelp</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/sphinxcontrib-htmlhelp/index.html" data-name="sphinxcontrib-htmlhelp">
+                <strong>sphinxcontrib-htmlhelp</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package even" href="simple/sphinxcontrib-jquery/index.html" data-name="sphinxcontrib-jquery">
+                <strong>sphinxcontrib-jquery</strong> (latest version: 4.1)
+            </a>
+        
+            <a class="package odd" href="simple/sphinxcontrib-jsmath/index.html" data-name="sphinxcontrib-jsmath">
+                <strong>sphinxcontrib-jsmath</strong> (latest version: 1.0.1)
+            </a>
+        
+            <a class="package even" href="simple/sphinxcontrib-qthelp/index.html" data-name="sphinxcontrib-qthelp">
+                <strong>sphinxcontrib-qthelp</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/sphinxcontrib-serializinghtml/index.html" data-name="sphinxcontrib-serializinghtml">
+                <strong>sphinxcontrib-serializinghtml</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/sqlalchemy/index.html" data-name="sqlalchemy">
+                <strong>sqlalchemy</strong> (latest version: 2.0.49)
+            </a>
+        
+            <a class="package odd" href="simple/sqlalchemy-jsonfield/index.html" data-name="sqlalchemy-jsonfield">
+                <strong>sqlalchemy-jsonfield</strong> (latest version: 1.0.2)
+            </a>
+        
+            <a class="package even" href="simple/sqlalchemy-utils/index.html" data-name="sqlalchemy-utils">
+                <strong>sqlalchemy-utils</strong> (latest version: 0.42.1)
+            </a>
+        
+            <a class="package odd" href="simple/sqlglot/index.html" data-name="sqlglot">
+                <strong>sqlglot</strong> (latest version: 30.7.0)
+            </a>
+        
+            <a class="package even" href="simple/sqlitedict/index.html" data-name="sqlitedict">
+                <strong>sqlitedict</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/sqlmodel/index.html" data-name="sqlmodel">
+                <strong>sqlmodel</strong> (latest version: 0.0.38)
+            </a>
+        
+            <a class="package even" href="simple/sqlparse/index.html" data-name="sqlparse">
+                <strong>sqlparse</strong> (latest version: 0.5.5)
+            </a>
+        
+            <a class="package odd" href="simple/squirrel-core/index.html" data-name="squirrel-core">
+                <strong>squirrel-core</strong> (latest version: 0.20.2)
+            </a>
+        
+            <a class="package even" href="simple/srsly/index.html" data-name="srsly">
+                <strong>srsly</strong> (latest version: 2.5.3)
+            </a>
+        
+            <a class="package odd" href="simple/sshtunnel/index.html" data-name="sshtunnel">
+                <strong>sshtunnel</strong> (latest version: 0.4.0)
+            </a>
+        
+            <a class="package even" href="simple/stack-data/index.html" data-name="stack-data">
+                <strong>stack-data</strong> (latest version: 0.6.3)
+            </a>
+        
+            <a class="package odd" href="simple/starlette/index.html" data-name="starlette">
+                <strong>starlette</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package even" href="simple/static-frame/index.html" data-name="static-frame">
+                <strong>static-frame</strong> (latest version: 4.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/stopit/index.html" data-name="stopit">
+                <strong>stopit</strong> (latest version: 1.1.2)
+            </a>
+        
+            <a class="package even" href="simple/storm/index.html" data-name="storm">
+                <strong>storm</strong> (latest version: 1.1)
+            </a>
+        
+            <a class="package odd" href="simple/strct/index.html" data-name="strct">
+                <strong>strct</strong> (latest version: 0.0.35)
+            </a>
+        
+            <a class="package even" href="simple/streamparse/index.html" data-name="streamparse">
+                <strong>streamparse</strong> (latest version: 5.0.1)
+            </a>
+        
+            <a class="package odd" href="simple/strictyaml/index.html" data-name="strictyaml">
+                <strong>strictyaml</strong> (latest version: 1.7.3)
+            </a>
+        
+            <a class="package even" href="simple/structlog/index.html" data-name="structlog">
+                <strong>structlog</strong> (latest version: 25.5.0)
+            </a>
+        
+            <a class="package odd" href="simple/supervisor/index.html" data-name="supervisor">
+                <strong>supervisor</strong> (latest version: 4.3.0)
+            </a>
+        
+            <a class="package even" href="simple/svcs/index.html" data-name="svcs">
+                <strong>svcs</strong> (latest version: 25.1.0)
+            </a>
+        
+            <a class="package odd" href="simple/swifter/index.html" data-name="swifter">
+                <strong>swifter</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package even" href="simple/sympy/index.html" data-name="sympy">
+                <strong>sympy</strong> (latest version: 1.14.0)
+            </a>
+        
+            <a class="package odd" href="simple/tablib/index.html" data-name="tablib">
+                <strong>tablib</strong> (latest version: 3.9.0)
+            </a>
+        
+            <a class="package even" href="simple/tabulate/index.html" data-name="tabulate">
+                <strong>tabulate</strong> (latest version: 0.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/tabulator/index.html" data-name="tabulator">
+                <strong>tabulator</strong> (latest version: 1.53.5)
+            </a>
+        
+            <a class="package even" href="simple/targ/index.html" data-name="targ">
+                <strong>targ</strong> (latest version: 0.6.0)
+            </a>
+        
+            <a class="package odd" href="simple/tasktiger/index.html" data-name="tasktiger">
+                <strong>tasktiger</strong> (latest version: 0.25.0)
+            </a>
+        
+            <a class="package even" href="simple/tenacity/index.html" data-name="tenacity">
+                <strong>tenacity</strong> (latest version: 9.1.4)
+            </a>
+        
+            <a class="package odd" href="simple/termcolor/index.html" data-name="termcolor">
+                <strong>termcolor</strong> (latest version: 3.3.0)
+            </a>
+        
+            <a class="package even" href="simple/terminado/index.html" data-name="terminado">
+                <strong>terminado</strong> (latest version: 0.18.1)
+            </a>
+        
+            <a class="package odd" href="simple/terminaltables/index.html" data-name="terminaltables">
+                <strong>terminaltables</strong> (latest version: 3.1.10)
+            </a>
+        
+            <a class="package even" href="simple/text-unidecode/index.html" data-name="text-unidecode">
+                <strong>text-unidecode</strong> (latest version: 1.3)
+            </a>
+        
+            <a class="package odd" href="simple/textfsm/index.html" data-name="textfsm">
+                <strong>textfsm</strong> (latest version: 2.1.0)
+            </a>
+        
+            <a class="package even" href="simple/texttable/index.html" data-name="texttable">
+                <strong>texttable</strong> (latest version: 1.7.0)
+            </a>
+        
+            <a class="package odd" href="simple/thefuzz/index.html" data-name="thefuzz">
+                <strong>thefuzz</strong> (latest version: 0.22.1)
+            </a>
+        
+            <a class="package even" href="simple/threadpoolctl/index.html" data-name="threadpoolctl">
+                <strong>threadpoolctl</strong> (latest version: 3.6.0)
+            </a>
+        
+            <a class="package odd" href="simple/thriftpy2/index.html" data-name="thriftpy2">
+                <strong>thriftpy2</strong> (latest version: 0.6.0)
+            </a>
+        
+            <a class="package even" href="simple/tinycss2/index.html" data-name="tinycss2">
+                <strong>tinycss2</strong> (latest version: 1.5.1)
+            </a>
+        
+            <a class="package odd" href="simple/tinydb/index.html" data-name="tinydb">
+                <strong>tinydb</strong> (latest version: 4.8.2)
+            </a>
+        
+            <a class="package even" href="simple/toga/index.html" data-name="toga">
+                <strong>toga</strong> (latest version: 0.5.4)
+            </a>
+        
+            <a class="package odd" href="simple/toga-android/index.html" data-name="toga-android">
+                <strong>toga-android</strong> (latest version: 0.5.4)
+            </a>
+        
+            <a class="package even" href="simple/toga-core/index.html" data-name="toga-core">
+                <strong>toga-core</strong> (latest version: 0.5.4)
+            </a>
+        
+            <a class="package odd" href="simple/toml/index.html" data-name="toml">
+                <strong>toml</strong> (latest version: 0.10.2)
+            </a>
+        
+            <a class="package even" href="simple/tomli/index.html" data-name="tomli">
+                <strong>tomli</strong> (latest version: 2.4.1)
+            </a>
+        
+            <a class="package odd" href="simple/tomli-w/index.html" data-name="tomli-w">
+                <strong>tomli-w</strong> (latest version: 1.2.0)
+            </a>
+        
+            <a class="package even" href="simple/tomlkit/index.html" data-name="tomlkit">
+                <strong>tomlkit</strong> (latest version: 0.14.0)
+            </a>
+        
+            <a class="package odd" href="simple/toolz/index.html" data-name="toolz">
+                <strong>toolz</strong> (latest version: 1.1.0)
+            </a>
+        
+            <a class="package even" href="simple/tornado/index.html" data-name="tornado">
+                <strong>tornado</strong> (latest version: 6.5.5)
+            </a>
+        
+            <a class="package odd" href="simple/tortoise-orm/index.html" data-name="tortoise-orm">
+                <strong>tortoise-orm</strong> (latest version: 1.1.7)
+            </a>
+        
+            <a class="package even" href="simple/tqdm/index.html" data-name="tqdm">
+                <strong>tqdm</strong> (latest version: 4.67.3)
+            </a>
+        
+            <a class="package odd" href="simple/traceml/index.html" data-name="traceml">
+                <strong>traceml</strong> (latest version: 1.3.0)
+            </a>
+        
+            <a class="package even" href="simple/traitlets/index.html" data-name="traitlets">
+                <strong>traitlets</strong> (latest version: 5.15.0)
+            </a>
+        
+            <a class="package odd" href="simple/transitions/index.html" data-name="transitions">
+                <strong>transitions</strong> (latest version: 0.9.3)
+            </a>
+        
+            <a class="package even" href="simple/travertino/index.html" data-name="travertino">
+                <strong>travertino</strong> (latest version: 0.5.4)
+            </a>
+        
+            <a class="package odd" href="simple/trio/index.html" data-name="trio">
+                <strong>trio</strong> (latest version: 0.33.0)
+            </a>
+        
+            <a class="package even" href="simple/trio-websocket/index.html" data-name="trio-websocket">
+                <strong>trio-websocket</strong> (latest version: 0.12.2)
+            </a>
+        
+            <a class="package odd" href="simple/trove-classifiers/index.html" data-name="trove-classifiers">
+                <strong>trove-classifiers</strong> (latest version: 2026.5.7.17)
+            </a>
+        
+            <a class="package even" href="simple/twine/index.html" data-name="twine">
+                <strong>twine</strong> (latest version: 6.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/typeguard/index.html" data-name="typeguard">
+                <strong>typeguard</strong> (latest version: 4.5.1)
+            </a>
+        
+            <a class="package even" href="simple/typer/index.html" data-name="typer">
+                <strong>typer</strong> (latest version: 0.25.1)
+            </a>
+        
+            <a class="package odd" href="simple/types-paramiko/index.html" data-name="types-paramiko">
+                <strong>types-paramiko</strong> (latest version: 4.0.0.20260508)
+            </a>
+        
+            <a class="package even" href="simple/types-python-dateutil/index.html" data-name="types-python-dateutil">
+                <strong>types-python-dateutil</strong> (latest version: 2.9.0.20260508)
+            </a>
+        
+            <a class="package odd" href="simple/typical/index.html" data-name="typical">
+                <strong>typical</strong> (latest version: 2.9.0)
+            </a>
+        
+            <a class="package even" href="simple/typing/index.html" data-name="typing">
+                <strong>typing</strong> (latest version: 3.7.4.3)
+            </a>
+        
+            <a class="package odd" href="simple/typing-extensions/index.html" data-name="typing-extensions">
+                <strong>typing-extensions</strong> (latest version: 4.15.0)
+            </a>
+        
+            <a class="package even" href="simple/typing-inspect/index.html" data-name="typing-inspect">
+                <strong>typing-inspect</strong> (latest version: 0.9.0)
+            </a>
+        
+            <a class="package odd" href="simple/typing-inspection/index.html" data-name="typing-inspection">
+                <strong>typing-inspection</strong> (latest version: 0.4.2)
+            </a>
+        
+            <a class="package even" href="simple/tzdata/index.html" data-name="tzdata">
+                <strong>tzdata</strong> (latest version: 2026.2)
+            </a>
+        
+            <a class="package odd" href="simple/tzlocal/index.html" data-name="tzlocal">
+                <strong>tzlocal</strong> (latest version: 5.3.1)
+            </a>
+        
+            <a class="package even" href="simple/ubelt/index.html" data-name="ubelt">
+                <strong>ubelt</strong> (latest version: 1.4.2)
+            </a>
+        
+            <a class="package odd" href="simple/uc-micro-py/index.html" data-name="uc-micro-py">
+                <strong>uc-micro-py</strong> (latest version: 2.0.0)
+            </a>
+        
+            <a class="package even" href="simple/ujson/index.html" data-name="ujson">
+                <strong>ujson</strong> (latest version: 5.12.1)
+            </a>
+        
+            <a class="package odd" href="simple/umongo/index.html" data-name="umongo">
+                <strong>umongo</strong> (latest version: 4.0.0)
+            </a>
+        
+            <a class="package even" href="simple/uncalled-for/index.html" data-name="uncalled-for">
+                <strong>uncalled-for</strong> (latest version: 0.3.2)
+            </a>
+        
+            <a class="package odd" href="simple/unicodecsv/index.html" data-name="unicodecsv">
+                <strong>unicodecsv</strong> (latest version: 0.14.1)
+            </a>
+        
+            <a class="package even" href="simple/unidecode/index.html" data-name="unidecode">
+                <strong>unidecode</strong> (latest version: 1.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/unipath/index.html" data-name="unipath">
+                <strong>unipath</strong> (latest version: 1.1)
+            </a>
+        
+            <a class="package even" href="simple/universal-pathlib/index.html" data-name="universal-pathlib">
+                <strong>universal-pathlib</strong> (latest version: 0.3.10)
+            </a>
+        
+            <a class="package odd" href="simple/uri-template/index.html" data-name="uri-template">
+                <strong>uri-template</strong> (latest version: 1.3.0)
+            </a>
+        
+            <a class="package even" href="simple/uritemplate/index.html" data-name="uritemplate">
+                <strong>uritemplate</strong> (latest version: 4.2.0)
+            </a>
+        
+            <a class="package odd" href="simple/urllib3/index.html" data-name="urllib3">
+                <strong>urllib3</strong> (latest version: 2.7.0)
+            </a>
+        
+            <a class="package even" href="simple/useful-types/index.html" data-name="useful-types">
+                <strong>useful-types</strong> (latest version: 0.2.1)
+            </a>
+        
+            <a class="package odd" href="simple/uuid6/index.html" data-name="uuid6">
+                <strong>uuid6</strong> (latest version: 2025.0.1)
+            </a>
+        
+            <a class="package even" href="simple/uvicorn/index.html" data-name="uvicorn">
+                <strong>uvicorn</strong> (latest version: 0.46.0)
+            </a>
+        
+            <a class="package odd" href="simple/uvloop/index.html" data-name="uvloop">
+                <strong>uvloop</strong> (latest version: 0.22.1)
+            </a>
+        
+            <a class="package even" href="simple/validators/index.html" data-name="validators">
+                <strong>validators</strong> (latest version: 0.35.0)
+            </a>
+        
+            <a class="package odd" href="simple/valideer/index.html" data-name="valideer">
+                <strong>valideer</strong> (latest version: 0.4.2)
+            </a>
+        
+            <a class="package even" href="simple/validr/index.html" data-name="validr">
+                <strong>validr</strong> (latest version: 1.2.2)
+            </a>
+        
+            <a class="package odd" href="simple/vcs-versioning/index.html" data-name="vcs-versioning">
+                <strong>vcs-versioning</strong> (latest version: 1.1.1)
+            </a>
+        
+            <a class="package even" href="simple/venusian/index.html" data-name="venusian">
+                <strong>venusian</strong> (latest version: 3.1.1)
+            </a>
+        
+            <a class="package odd" href="simple/vine/index.html" data-name="vine">
+                <strong>vine</strong> (latest version: 5.1.0)
+            </a>
+        
+            <a class="package even" href="simple/virtualenv/index.html" data-name="virtualenv">
+                <strong>virtualenv</strong> (latest version: 21.3.1)
+            </a>
+        
+            <a class="package odd" href="simple/voluptuous/index.html" data-name="voluptuous">
+                <strong>voluptuous</strong> (latest version: 0.16.0)
+            </a>
+        
+            <a class="package even" href="simple/watchdog/index.html" data-name="watchdog">
+                <strong>watchdog</strong> (latest version: 6.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/watchfiles/index.html" data-name="watchfiles">
+                <strong>watchfiles</strong> (latest version: 1.1.1)
+            </a>
+        
+            <a class="package even" href="simple/wcmatch/index.html" data-name="wcmatch">
+                <strong>wcmatch</strong> (latest version: 10.1)
+            </a>
+        
+            <a class="package odd" href="simple/wcwidth/index.html" data-name="wcwidth">
+                <strong>wcwidth</strong> (latest version: 0.7.0)
+            </a>
+        
+            <a class="package even" href="simple/webcolors/index.html" data-name="webcolors">
+                <strong>webcolors</strong> (latest version: 25.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/webencodings/index.html" data-name="webencodings">
+                <strong>webencodings</strong> (latest version: 0.5.1)
+            </a>
+        
+            <a class="package even" href="simple/webruntime/index.html" data-name="webruntime">
+                <strong>webruntime</strong> (latest version: 0.5.8)
+            </a>
+        
+            <a class="package odd" href="simple/websocket-client/index.html" data-name="websocket-client">
+                <strong>websocket-client</strong> (latest version: 1.9.0)
+            </a>
+        
+            <a class="package even" href="simple/websockets/index.html" data-name="websockets">
+                <strong>websockets</strong> (latest version: 16.0)
+            </a>
+        
+            <a class="package odd" href="simple/werkzeug/index.html" data-name="werkzeug">
+                <strong>werkzeug</strong> (latest version: 3.1.8)
+            </a>
+        
+            <a class="package even" href="simple/whenever/index.html" data-name="whenever">
+                <strong>whenever</strong> (latest version: 0.10.0)
+            </a>
+        
+            <a class="package odd" href="simple/widgetsnbextension/index.html" data-name="widgetsnbextension">
+                <strong>widgetsnbextension</strong> (latest version: 4.0.15)
+            </a>
+        
+            <a class="package even" href="simple/wirerope/index.html" data-name="wirerope">
+                <strong>wirerope</strong> (latest version: 1.0.0)
+            </a>
+        
+            <a class="package odd" href="simple/wrapt/index.html" data-name="wrapt">
+                <strong>wrapt</strong> (latest version: 2.1.2)
+            </a>
+        
+            <a class="package even" href="simple/wsproto/index.html" data-name="wsproto">
+                <strong>wsproto</strong> (latest version: 1.3.2)
+            </a>
+        
+            <a class="package odd" href="simple/wssh/index.html" data-name="wssh">
+                <strong>wssh</strong> (latest version: 0.1.0)
+            </a>
+        
+            <a class="package even" href="simple/xarray/index.html" data-name="xarray">
+                <strong>xarray</strong> (latest version: 2026.4.0)
+            </a>
+        
+            <a class="package odd" href="simple/xlrd/index.html" data-name="xlrd">
+                <strong>xlrd</strong> (latest version: 2.0.2)
+            </a>
+        
+            <a class="package even" href="simple/xlsxwriter/index.html" data-name="xlsxwriter">
+                <strong>xlsxwriter</strong> (latest version: 3.2.9)
+            </a>
+        
+            <a class="package odd" href="simple/xlwings/index.html" data-name="xlwings">
+                <strong>xlwings</strong> (latest version: 0.35.3)
+            </a>
+        
+            <a class="package even" href="simple/xmltodict/index.html" data-name="xmltodict">
+                <strong>xmltodict</strong> (latest version: 1.0.4)
+            </a>
+        
+            <a class="package odd" href="simple/yarl/index.html" data-name="yarl">
+                <strong>yarl</strong> (latest version: 1.23.0)
+            </a>
+        
+            <a class="package even" href="simple/zarr/index.html" data-name="zarr">
+                <strong>zarr</strong> (latest version: 3.2.1)
+            </a>
+        
+            <a class="package odd" href="simple/zenml/index.html" data-name="zenml">
+                <strong>zenml</strong> (latest version: 0.94.1)
+            </a>
+        
+            <a class="package even" href="simple/zipp/index.html" data-name="zipp">
+                <strong>zipp</strong> (latest version: 3.23.1)
+            </a>
+        
+            <a class="package odd" href="simple/zope-event/index.html" data-name="zope-event">
+                <strong>zope-event</strong> (latest version: 6.2)
+            </a>
+        
+            <a class="package even" href="simple/zope-interface/index.html" data-name="zope-interface">
+                <strong>zope-interface</strong> (latest version: 8.4)
+            </a>
+        
+            <a class="package odd" href="simple/zstandard/index.html" data-name="zstandard">
+                <strong>zstandard</strong> (latest version: 0.25.0)
+            </a>
+        
+    </div>
+
+    <script>
+        (function() {
+            function normalize(str) {
+                return str.toLowerCase().replace(/[._-]+/g, '-');
+            }
+            function filter() {
+                var words = normalize(search.value).trim().split();
+                var rows = document.getElementsByClassName('package');
+                var odd = true;
+                for (var i = 0; i < rows.length; i++) {
+                    var row = rows[i];
+                    var name = row.dataset.name;
+                    var ok = true;
+                    for (var j = 0; j < words.length; j++) {
+                        if (!normalize(name).includes(words[j])) {
+                            ok = false;
+                            break;
+                        }
+                    }
+                    if (ok) {
+                        row.style.backgroundColor = odd ? '#fefefe' : '#f8f8f8';
+                        odd = !odd;
+                    }
+                    row.style.display = ok ? 'block' : 'none';
+                }
+            }
+
+            var search = document.getElementById('search');
+            search.oninput = filter;
+            search.onpaste = filter;
+            search.onpropertychange = filter;
+        })();
+    </script>
+
+        </div>
+    </body>
+</html>
+

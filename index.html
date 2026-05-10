@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Wheels for Termux - 预编译包源</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header .emoji {
+            font-size: 3em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: "Courier New", monospace;
+            font-size: 0.9em;
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .install-box {
+            background: #f0f4ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .star-footer {
+            text-align: center;
+            padding: 20px 0 10px 0;
+            margin-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .star-footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .star-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="emoji">🎉</div>
+            <h1>python_wheels_for_termux</h1>
+            <p>在 Termux 上装 Python 包，不用再等编译了！</p>
+        </div>
+
+        <div class="content">
+            <p>本仓库提供 Termux (Android) 环境下预编译的 Python wheel 包 (<code>.whl</code>)，让你安装 NumPy、Pandas 等常用包时直接安装，告别漫长的编译等待。</p>
+
+            <h2>🚀 快速开始</h2>
+            <div class="install-box">
+                <p><strong>直接使用本仓库作为 pip 源：</strong></p>
+                <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ 包名</code></pre>
+                <p><strong>例如安装 NumPy：</strong></p>
+                <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ numpy</code></pre>
+            </div>
+
+            <h2>⚠️ 注意事项</h2>
+            <div class="warning">
+                <ul>
+                    <li><strong>非完整 PyPI 源：</strong>此仓库并非一个完整的 Pip 下载源，仅包含部分预编译的 Python 轮文件。如果你需要的包未在此仓库中找到，建议使用官方的 PyPI 源或其他可靠的第三方源。</li>
+                    <li><strong>适用环境：</strong>主要针对 Termux 环境，特别是 Android (aarch64) 架构系统。</li>
+                    <li><strong>Python 版本：</strong>请确保你的 Python 版本与 wheel 包匹配。</li>
+                </ul>
+            </div>
+            <h2>📚 相关教程</h2>
+            <p>不知道具体怎么装？看这里：</p>
+            <ul>
+                <li><a href="./docs/how-to-install-numpy-on-termux.html">如何在 Termux 上安装 NumPy（无需编译）</a></li>
+                <li><a href="./docs/how-to-install-pandas-on-termux.html">如何在 Termux 上安装 Pandas（无需编译）</a></li>
+                <li><a href="./docs/how-to-install-scipy-on-termux.html">如何在 Termux 上安装 SciPy（无需编译）</a></li>
+                <li><a href="./docs/">更多教程 →</a></li>
+            </ul>
+            <h2>📄 许可证</h2>
+            <p>Apache License 2.0 — 个人和商业使用均免费，但需保留版权声明和 <code>NOTICE</code> 文件中的署名信息。</p>
+            <p>详见 <a href="https://github.com/nsyhykui/python_wheels_for_termux/blob/main/LICENSE">LICENSE</a> 和 <a href="https://github.com/nsyhykui/python_wheels_for_termux/blob/main/NOTICE">NOTICE</a> 文件。</p>
+            <div class="note">
+                💡 <strong>遇到问题？</strong> 欢迎提交 <a href="https://github.com/nsyhykui/python_wheels_for_termux/issues">Issue</a>。
+            </div>
+            <div class="star-footer">
+                ⭐ 如果这个项目对你有帮助，可以 <a href="https://github.com/nsyhykui/python_wheels_for_termux" target="_blank">去 GitHub 给个 Star</a>，感谢支持 🙏
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 python_wheels_for_termux | 为 Termux 打造的 Python 预编译包源</p>
+            <p>
+                <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub 仓库</a>
+            </p>
+        </div>
+    </div>
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=nsyhykui.python_wheels_for_termux" style="display:none;">
+</body>
+</html>

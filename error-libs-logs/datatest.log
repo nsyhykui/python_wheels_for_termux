@@ -1,0 +1,2 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/datatest-0.11.1-py2.py3-none-any.whl has bad hash. Re-downloading.
+WARNING: Package 'datatest' has an invalid Requires-Python: Invalid specifier: '>=2.6.*'

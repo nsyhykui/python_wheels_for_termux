@@ -1,0 +1,617 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/opentelemetry_exporter_otlp_proto_grpc-1.41.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/opentelemetry_exporter_otlp_proto_http-1.41.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/opentelemetry_exporter_otlp_proto_common-1.41.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/opentelemetry_sdk-1.41.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/opentelemetry_semantic_conventions-0.62b1-py3-none-any.whl has bad hash. Re-downloading.
+  error: subprocess-exited-with-error
+  
+  × Building wheel for grpcio (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [602 lines of output]
+      Found cython-generated files...
+      SSE2 not enabled on android-24-arm64_v8a platform
+      running bdist_wheel
+      running build
+      running build_py
+      running build_project_metadata
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_typing.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_plugin_wrapping.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_common.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_runtime_protos.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_auth.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_interceptor.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_utilities.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_compression.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_observability.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_server.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_channel.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_simple_stubs.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      copying src/python/grpcio/grpc/_grpcio_metadata.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      copying src/python/grpcio/grpc/beta/interfaces.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      copying src/python/grpcio/grpc/beta/_server_adaptations.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      copying src/python/grpcio/grpc/beta/implementations.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      copying src/python/grpcio/grpc/beta/_metadata.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      copying src/python/grpcio/grpc/beta/utilities.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      copying src/python/grpcio/grpc/beta/_client_adaptations.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      copying src/python/grpcio/grpc/beta/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/beta
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython
+      copying src/python/grpcio/grpc/_cython/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_typing.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_metadata.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_utils.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_interceptor.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_base_call.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_call.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_base_channel.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_base_server.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_server.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/_channel.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      copying src/python/grpcio/grpc/aio/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/aio
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework
+      copying src/python/grpcio/grpc/framework/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/experimental
+      copying src/python/grpcio/grpc/experimental/gevent.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/experimental
+      copying src/python/grpcio/grpc/experimental/session_cache.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/experimental
+      copying src/python/grpcio/grpc/experimental/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/experimental
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_cygrpc
+      copying src/python/grpcio/grpc/_cython/_cygrpc/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_cygrpc
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      copying src/python/grpcio/grpc/framework/foundation/stream.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      copying src/python/grpcio/grpc/framework/foundation/future.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      copying src/python/grpcio/grpc/framework/foundation/abandonment.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      copying src/python/grpcio/grpc/framework/foundation/callable_util.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      copying src/python/grpcio/grpc/framework/foundation/stream_util.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      copying src/python/grpcio/grpc/framework/foundation/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      copying src/python/grpcio/grpc/framework/foundation/logging_pool.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/foundation
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/common
+      copying src/python/grpcio/grpc/framework/common/cardinality.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/common
+      copying src/python/grpcio/grpc/framework/common/style.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/common
+      copying src/python/grpcio/grpc/framework/common/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/common
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces
+      copying src/python/grpcio/grpc/framework/interfaces/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/base
+      copying src/python/grpcio/grpc/framework/interfaces/base/base.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/base
+      copying src/python/grpcio/grpc/framework/interfaces/base/utilities.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/base
+      copying src/python/grpcio/grpc/framework/interfaces/base/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/base
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/face
+      copying src/python/grpcio/grpc/framework/interfaces/face/face.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/face
+      copying src/python/grpcio/grpc/framework/interfaces/face/utilities.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/face
+      copying src/python/grpcio/grpc/framework/interfaces/face/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/framework/interfaces/face
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/experimental/aio
+      copying src/python/grpcio/grpc/experimental/aio/__init__.py -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/experimental/aio
+      running egg_info
+      writing src/python/grpcio/grpcio.egg-info/PKG-INFO
+      writing dependency_links to src/python/grpcio/grpcio.egg-info/dependency_links.txt
+      writing requirements to src/python/grpcio/grpcio.egg-info/requires.txt
+      writing top-level names to src/python/grpcio/grpcio.egg-info/top_level.txt
+      reading manifest file 'src/python/grpcio/grpcio.egg-info/SOURCES.txt'
+      reading manifest template 'PYTHON-MANIFEST.in'
+      warning: no files found matching '*.c' under directory 'src/python/grpcio/grpc'
+      warning: no files found matching '*.inc' under directory 'src/python/grpcio/grpc'
+      warning: no files found matching '*.python' under directory 'src/python/grpcio/grpc'
+      warning: no previously-included files matching '*.so' found under directory 'src/python/grpcio/grpc/_cython'
+      warning: no previously-included files matching '*.pyd' found under directory 'src/python/grpcio/grpc/_cython'
+      warning: no files found matching 'src/python/grpcio/precompiled.py'
+      adding license file 'LICENSE'
+      writing manifest file 'src/python/grpcio/grpcio.egg-info/SOURCES.txt'
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_credentials
+      copying src/python/grpcio/grpc/_cython/_credentials/roots.pem -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_credentials
+      copying src/python/grpcio/grpc/_cython/_credentials/roots.pem -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_credentials
+      creating pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_cygrpc/private_key_signing
+      copying src/python/grpcio/grpc/_cython/_cygrpc/private_key_signing/private_key_signer_py_wrapper.cc -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_cygrpc/private_key_signing
+      copying src/python/grpcio/grpc/_cython/_cygrpc/private_key_signing/private_key_signer_py_wrapper.h -> pyb/lib.android-24-arm64_v8a-cpython-313/grpc/_cython/_cygrpc/private_key_signing
+      running build_ext
+      Found cython-generated files...
+      building 'grpc._cython.cygrpc' extension
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/call
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/channelz
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/channelz/v2tov1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/client_channel
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/config
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/composite
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/external
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/gcp_service_account_identity
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/iam
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/jwt
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/jwt_token_file
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/oauth2
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/plugin
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/call/token_fetcher
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/alts
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/composite
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/fake
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/google_default
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/insecure
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/local
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/ssl
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/tls
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/credentials/transport/xds
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/backend_metrics
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/census
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/channel_idle
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/fault_injection
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/gcp_authentication
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/http/client
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/http/message_compress
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/http/server
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/message_size
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/rbac
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/filters/stateful_session
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/transport/chttp2/alpn
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/transport/chttp2/client
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/transport/chttp2/server
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/transport/chttp2/transport
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/transport/inproc
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/cel/expr
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/admin/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/annotations
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/accesslog/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/bootstrap/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/cluster/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/common/matcher/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/common/mutation_rules/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/core/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/endpoint/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/listener/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/metrics/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/overload/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/rbac/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/route/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/tap/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/config/trace/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/data/accesslog/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/clusters/aggregate/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/filters/common/fault/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/filters/http/fault/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/filters/http/gcp_authn/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/filters/http/rbac/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/filters/http/router/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/filters/http/stateful_session/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/filters/network/http_connection_manager/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/grpc_service/call_credentials/access_token/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/grpc_service/channel_credentials/tls/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/grpc_service/channel_credentials/xds/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/http/stateful_session/cookie/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/client_side_weighted_round_robin/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/common/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/pick_first/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/ring_hash/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/wrr_locality/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/transport_sockets/http_11_proxy/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/extensions/upstreams/http/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/service/discovery/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/service/load_stats/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/service/status/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/type/http/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/type/matcher/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/type/metadata/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/type/tracing/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/envoy/type/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/google/api
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/google/api/expr/v1alpha1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/google/protobuf
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/google/rpc
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/src/proto/grpc/channelz
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/src/proto/grpc/channelz/v2
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/src/proto/grpc/gcp
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/src/proto/grpc/health/v1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/src/proto/grpc/lb/v1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/src/proto/grpc/lookup/v1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/udpa/annotations
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/validate
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/xds/annotations/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/xds/core/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/xds/data/orca/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/xds/service/orca/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/xds/type/matcher/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upb-gen/xds/type/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/cel/expr
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/admin/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/annotations
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/accesslog/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/bootstrap/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/cluster/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/common/matcher/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/common/mutation_rules/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/core/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/endpoint/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/listener/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/metrics/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/overload/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/rbac/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/route/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/tap/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/config/trace/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/data/accesslog/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/clusters/aggregate/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/filters/common/fault/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/filters/http/fault/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/filters/http/gcp_authn/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/filters/http/rbac/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/filters/http/router/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/filters/http/stateful_session/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/filters/network/http_connection_manager/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/http/stateful_session/cookie/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/transport_sockets/http_11_proxy/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/transport_sockets/tls/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/extensions/upstreams/http/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/service/discovery/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/service/load_stats/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/service/status/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/type/http/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/type/matcher/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/type/metadata/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/type/tracing/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/envoy/type/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/google/api
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/google/api/expr/v1alpha1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/google/protobuf
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/google/rpc
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/src/proto/grpc/channelz
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/src/proto/grpc/channelz/v2
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/src/proto/grpc/lookup/v1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/udpa/annotations
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/validate
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/xds/annotations/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/xds/core/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/xds/type/matcher/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/ext/upbdefs-gen/xds/type/v3
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/filter/auth
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/handshaker/endpoint_info
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/handshaker/http_connect
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/handshaker/security
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/handshaker/tcp_connect
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/address_utils
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/channel
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/compression
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/debug
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/event_engine
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/event_engine/cf_engine
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/event_engine/posix_engine
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/event_engine/thread_pool
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/event_engine/thready_event_engine
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/event_engine/windows
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/event_engine/work_queue
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/experiments
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/iomgr
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/iomgr/event_engine_shims
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/promise
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/resource_quota
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/resource_tracker
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/security/authorization
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/slice
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/surface
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/lib/transport
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/grpclb
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/outlier_detection
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/pick_first
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/priority
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/ring_hash
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/rls
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/round_robin
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/weighted_round_robin
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/weighted_target
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/load_balancing/xds
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/net
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/plugin_registry
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/resolver/dns/c_ares
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/resolver/dns/event_engine
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/resolver/dns/native
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/resolver/fake
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/resolver/google_c2p
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/resolver/sockaddr
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/resolver/xds
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/server
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/service_config
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/telemetry
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/transport
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/tsi/alts/crypt
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/tsi/alts/frame_protector
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/tsi/alts/handshaker
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/tsi/alts/zero_copy_frame_protector
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/tsi/ssl/key_logging
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/tsi/ssl/session_cache
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util/http_client
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util/iphone
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util/json
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util/linux
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util/msys
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util/posix
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/util/windows
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/xds/grpc
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/core/xds/xds_client
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/src/python/grpcio/grpc/_cython/_cygrpc/private_key_signing
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/base/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/container/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/crc
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/crc/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/debugging/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/flags
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/flags/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/hash/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/log
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/log/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/numeric
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/profiling/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/random
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/random/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/status/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/strings
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/strings/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/strings/internal/str_format
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/synchronization
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/synchronization/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/time
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/abseil-cpp/absl/time/internal/cctz/src
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/address_sorting
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/aes
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/asn1
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/base64
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/bio
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/blake2
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/bn
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/buf
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/bytestring
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/chacha
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/cipher
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/cms
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/conf
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/curve25519/asm
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/des
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/dh
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/digest
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/dsa
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/ec
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/ecdh
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/ecdsa
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/engine
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/err
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/evp
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/fipsmodule
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/hpke
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/hrss/asm
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/kyber
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/lhash
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/md4
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/md5
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/mldsa
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/mlkem
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/obj
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/pem
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/pkcs7
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/pkcs8
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/poly1305
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/pool
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/rand
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/rc4
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/rsa
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/sha
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/siphash
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/slhdsa
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/spake2plus
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/stack
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/trust_token
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/crypto/x509
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/gen/bcm
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/gen/crypto
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/gen/test_support
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/ssl
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/boringssl-with-bazel/src/third_party/fiat/asm
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/cares/cares/src/lib
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/cares/cares/src/lib/dsa
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/cares/cares/src/lib/event
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/cares/cares/src/lib/legacy
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/cares/cares/src/lib/record
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/cares/cares/src/lib/str
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/cares/cares/src/lib/util
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/re2/re2
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/re2/util
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/base
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/hash
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/json
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/lex
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/mem
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/message
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/message/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/mini_descriptor
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/mini_descriptor/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/mini_table
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/mini_table/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/reflection
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/reflection/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/text
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/text/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/wire
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/upb/upb/wire/internal
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/utf8_range
+      creating pyb/temp.android-24-arm64_v8a-cpython-313/third_party/zlib
+      Traceback (most recent call last):
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-b_ksf2vc/grpcio_e967879f97944fc9a118d9c6b781710b/src/python/grpcio/commands.py", line 347, in build_extensions
+          build_ext.build_ext.build_extensions(self)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build_ext.py", line 483, in build_extensions
+          self._build_extensions_serial()
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build_ext.py", line 509, in _build_extensions_serial
+          self.build_extension(ext)
+          ~~~~~~~~~~~~~~~~~~~~^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/command/build_ext.py", line 262, in build_extension
+          _build_ext.build_extension(self, ext)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/Cython/Distutils/build_ext.py", line 136, in build_extension
+          super().build_extension(ext)
+          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build_ext.py", line 564, in build_extension
+          objects = self.compiler.compile(
+              sources,
+          ...<5 lines>...
+              depends=ext.depends,
+          )
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-b_ksf2vc/grpcio_e967879f97944fc9a118d9c6b781710b/src/python/grpcio/_parallel_compile_patch.py", line 70, in _parallel_compile
+          multiprocessing.pool.ThreadPool(BUILD_EXT_COMPILER_JOBS).map(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/pool.py", line 930, in __init__
+          Pool.__init__(self, processes, initializer, initargs)
+          ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/pool.py", line 196, in __init__
+          self._change_notifier = self._ctx.SimpleQueue()
+                                  ~~~~~~~~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/context.py", line 113, in SimpleQueue
+          return SimpleQueue(ctx=self.get_context())
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/queues.py", line 361, in __init__
+          self._rlock = ctx.Lock()
+                        ~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/context.py", line 67, in Lock
+          from .synchronize import Lock
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/synchronize.py", line 17, in <module>
+          import _multiprocessing
+      ModuleNotFoundError: No module named '_multiprocessing'
+      
+      During handling of the above exception, another exception occurred:
+      
+      Traceback (most recent call last):
+        File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 280, in build_wheel
+          return _build_backend().build_wheel(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+              wheel_directory, config_settings, metadata_directory
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          )
+          ^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 441, in build_wheel
+          return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 429, in _build
+          return self._build_with_temp_dir(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+              cmd,
+              ^^^^
+          ...<3 lines>...
+              self._arbitrary_args(config_settings),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          )
+          ^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 410, in _build_with_temp_dir
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 598, in <module>
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/__init__.py", line 117, in setup
+          return distutils.core.setup(**attrs)  # type: ignore[return-value]
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/core.py", line 186, in setup
+          return run_commands(dist)
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+          dist.run_commands()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1000, in run_commands
+          self.run_command(cmd)
+          ~~~~~~~~~~~~~~~~^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/dist.py", line 1107, in run_command
+          super().run_command(command)
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1019, in run_command
+          cmd_obj.run()
+          ~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/command/bdist_wheel.py", line 370, in run
+          self.run_command("build")
+          ~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/cmd.py", line 341, in run_command
+          self.distribution.run_command(command)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/dist.py", line 1107, in run_command
+          super().run_command(command)
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1019, in run_command
+          cmd_obj.run()
+          ~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build.py", line 135, in run
+          self.run_command(cmd_name)
+          ~~~~~~~~~~~~~~~~^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/cmd.py", line 341, in run_command
+          self.distribution.run_command(command)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/dist.py", line 1107, in run_command
+          super().run_command(command)
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1019, in run_command
+          cmd_obj.run()
+          ~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/command/build_ext.py", line 97, in run
+          _build_ext.run(self)
+          ~~~~~~~~~~~~~~^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build_ext.py", line 367, in run
+          self.build_extensions()
+          ~~~~~~~~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-b_ksf2vc/grpcio_e967879f97944fc9a118d9c6b781710b/src/python/grpcio/commands.py", line 350, in build_extensions
+          support.diagnose_build_ext_error(self, error, formatted_exception)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-b_ksf2vc/grpcio_e967879f97944fc9a118d9c6b781710b/src/python/grpcio/support.py", line 123, in diagnose_build_ext_error
+          raise commands.CommandError(
+          ...<5 lines>...
+          )
+      commands.CommandError:
+      
+      We could not diagnose your build failure with type <class 'ModuleNotFoundError'>. If you are unable to proceed, please file an issue at http://www.github.com/grpc/grpc with `[Python install]` in the title; please attach the whole log (including everything that may have appeared above the Python backtrace).
+      
+      Traceback (most recent call last):
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-b_ksf2vc/grpcio_e967879f97944fc9a118d9c6b781710b/src/python/grpcio/commands.py", line 347, in build_extensions
+          build_ext.build_ext.build_extensions(self)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build_ext.py", line 483, in build_extensions
+          self._build_extensions_serial()
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build_ext.py", line 509, in _build_extensions_serial
+          self.build_extension(ext)
+          ~~~~~~~~~~~~~~~~~~~~^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/command/build_ext.py", line 262, in build_extension
+          _build_ext.build_extension(self, ext)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/Cython/Distutils/build_ext.py", line 136, in build_extension
+          super().build_extension(ext)
+          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-1p9lgy5t/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/build_ext.py", line 564, in build_extension
+          objects = self.compiler.compile(
+              sources,
+          ...<5 lines>...
+              depends=ext.depends,
+          )
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-b_ksf2vc/grpcio_e967879f97944fc9a118d9c6b781710b/src/python/grpcio/_parallel_compile_patch.py", line 70, in _parallel_compile
+          multiprocessing.pool.ThreadPool(BUILD_EXT_COMPILER_JOBS).map(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/pool.py", line 930, in __init__
+          Pool.__init__(self, processes, initializer, initargs)
+          ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/pool.py", line 196, in __init__
+          self._change_notifier = self._ctx.SimpleQueue()
+                                  ~~~~~~~~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/context.py", line 113, in SimpleQueue
+          return SimpleQueue(ctx=self.get_context())
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/queues.py", line 361, in __init__
+          self._rlock = ctx.Lock()
+                        ~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/context.py", line 67, in Lock
+          from .synchronize import Lock
+        File "/data/data/com.termux/files/usr/lib/python3.13/multiprocessing/synchronize.py", line 17, in <module>
+          import _multiprocessing
+      ModuleNotFoundError: No module named '_multiprocessing'
+      
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for grpcio
+ERROR: Failed to build one or more wheels

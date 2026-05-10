@@ -1,0 +1,81 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/batchflow-0.10.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/tqdm-4.67.3-py3-none-any.whl has bad hash. Re-downloading.
+  error: subprocess-exited-with-error
+  
+  × Building wheel for llvmlite (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [69 lines of output]
+      /data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+        warn(
+      running bdist_wheel
+      Traceback (most recent call last):
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-vrhxtal6/llvmlite_39b41f2e0ce84020a0e38651b2a41404/ffi/build.py", line 209, in <module>
+          main()
+          ~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-vrhxtal6/llvmlite_39b41f2e0ce84020a0e38651b2a41404/ffi/build.py", line 205, in main
+          raise RuntimeError("unsupported platform: %r" % (sys.platform,))
+      RuntimeError: unsupported platform: 'android'
+      Traceback (most recent call last):
+        File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 280, in build_wheel
+          return _build_backend().build_wheel(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+              wheel_directory, config_settings, metadata_directory
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          )
+          ^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 441, in build_wheel
+          return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 429, in _build
+          return self._build_with_temp_dir(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+              cmd,
+              ^^^^
+          ...<3 lines>...
+              self._arbitrary_args(config_settings),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          )
+          ^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 410, in _build_with_temp_dir
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 520, in run_setup
+          super().run_setup(setup_script=setup_script)
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 200, in <module>
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/__init__.py", line 117, in setup
+          return distutils.core.setup(**attrs)  # type: ignore[return-value]
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/_distutils/core.py", line 186, in setup
+          return run_commands(dist)
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+          dist.run_commands()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1000, in run_commands
+          self.run_command(cmd)
+          ~~~~~~~~~~~~~~~~^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/dist.py", line 1107, in run_command
+          super().run_command(command)
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-o_4tcone/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1019, in run_command
+          cmd_obj.run()
+          ~~~~~~~~~~~^^
+        File "<string>", line 170, in run
+        File "<string>", line 62, in build_library_files
+        File "/data/data/com.termux/files/usr/lib/python3.13/subprocess.py", line 577, in run
+          raise CalledProcessError(retcode, process.args,
+                                   output=stdout, stderr=stderr)
+      subprocess.CalledProcessError: Command '['/data/data/com.termux/files/usr/bin/python3.13', '/data/data/com.termux/files/usr/tmp/pip-wheel-vrhxtal6/llvmlite_39b41f2e0ce84020a0e38651b2a41404/ffi/build.py']' returned non-zero exit status 1.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for llvmlite
+ERROR: Failed to build one or more wheels

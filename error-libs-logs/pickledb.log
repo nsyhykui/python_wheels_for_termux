@@ -1,0 +1,27 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/pickledb-1.6-py3-none-any.whl has bad hash. Re-downloading.
+  error: subprocess-exited-with-error
+  
+  × Building wheel for orjson (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [16 lines of output]
+      Running `maturin pep517 build-wheel -i /data/data/com.termux/files/usr/bin/python3.13 --compatibility off`
+      📦 Including license file `LICENSE-APACHE`
+      📦 Including license file `LICENSE-MIT`
+      📦 Including license file `LICENSE-MPL-2.0`
+      🍹 Building a mixed python/rust project
+      🔗 Found pyo3-ffi bindings
+      🐍 Found CPython 3.13 at /data/data/com.termux/files/usr/bin/python3.13
+      error: rustc 1.94.1 is not supported by the following packages:
+        orjson@3.11.9 requires rustc 1.95
+        orjson@3.11.9 requires rustc 1.95
+        orjson@3.11.9 requires rustc 1.95
+      
+      💥 maturin failed
+        Caused by: Failed to build a native library through cargo
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.13-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.13" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.13" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-cw80t7zs/orjson_cc580d228c1d4009b54f5e1cc4601b9b/Cargo.toml" "--lib"`
+      Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.13', '--compatibility', 'off'] returned non-zero exit status 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for orjson
+ERROR: Failed to build one or more wheels

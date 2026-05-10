@@ -1,0 +1,6 @@
+python_wheels_for_termux
+Copyright (c) 2026 nsyhykui
+
+This project includes pre-compiled Python wheels for Termux.
+Original source and documentation:
+https://github.com/nsyhykui/python_wheels_for_termux

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在 Termux 上安装 Pandas（无需编译）</title>
+    <meta name="description" content="在 Termux 上安装 Pandas 无需等待编译，使用预编译 wheel 包，一行命令搞定。">
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+        pre code { background: transparent; padding: 0; }
+        .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 10px 15px; margin: 20px 0; border-radius: 4px; }
+        hr { margin: 30px 0; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📊 如何在 Termux 上安装 Pandas（无需编译）</h1>
+    
+    <p>在 Termux 上直接 <code>pip install pandas</code> 会触发漫长编译，这里教你绕过编译直接装。</p>
+    
+    <h2>第 1 步：安装系统依赖</h2>
+    <pre><code>pkg install libopenblas</code></pre>
+    
+    <h2>第 2 步：从预编译源安装 Pandas</h2>
+    <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ pandas</code></pre>
+    
+    <h2>第 3 步：验证</h2>
+    <pre><code>python -c "import pandas as pd; print(pd.__version__)"</code></pre>
+    
+    <div class="note">
+        <strong>⚠️ 如果报错 libopenblas.so not found</strong><br>
+        重新运行 <code>pkg install libopenblas</code> 即可。
+    </div>
+    
+    <hr>
+    <p>🔗 <a href="./">← 返回教程首页</a> | <a href="https://nsyhykui.github.io/python_wheels_for_termux/">📦 包索引（800+ 包）</a> | ⭐ <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub</a></p>
+</div>
+</body>
+</html>
