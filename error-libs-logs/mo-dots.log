@@ -1,3 +1,25 @@
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/mo_dots-10.685.25166-py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/mo_future-7.685.25166-py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/mo_imports-7.685.25166-py3-none-any.whl has bad hash. Re-downloading.
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/bin/pip", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_internal/cli/main.py", line 47, in main
+    from pip._internal.cli.autocompletion import autocomplete
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_internal/cli/autocompletion.py", line 12, in <module>
+    from pip._internal.cli.main_parser import create_main_parser
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_internal/cli/main_parser.py", line 11, in <module>
+    from pip._internal.build_env import get_runnable_pip
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_internal/build_env.py", line 22, in <module>
+    from pip._internal.cli.spinners import open_rich_spinner, open_spinner
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_internal/cli/spinners.py", line 11, in <module>
+    from pip._vendor.rich.console import (
+    ...<4 lines>...
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/pip/_vendor/rich/console.py", line 11, in <module>
+    from html import escape
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1019, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1150, in get_code
+  File "<frozen importlib._bootstrap>", line 491, in _verbose_message
+KeyboardInterrupt

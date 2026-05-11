@@ -1,3 +1,4 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/aioprometheus-23.12.0-py3-none-any.whl has bad hash. Re-downloading.
   error: subprocess-exited-with-error
   
   × Building wheel for orjson (pyproject.toml) did not run successfully.
@@ -8,8 +9,8 @@
       📦 Including license file `LICENSE-MIT`
       📦 Including license file `LICENSE-MPL-2.0`
       🍹 Building a mixed python/rust project
-      🔗 Found pyo3-ffi bindings
       🐍 Found CPython 3.13 at /data/data/com.termux/files/usr/bin/python3.13
+      🔗 Found pyo3-ffi bindings
       error: rustc 1.94.1 is not supported by the following packages:
         orjson@3.11.9 requires rustc 1.95
         orjson@3.11.9 requires rustc 1.95
@@ -17,7 +18,7 @@
       
       💥 maturin failed
         Caused by: Failed to build a native library through cargo
-        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.13-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.13" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.13" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-vq0r2988/orjson_87959600225b435bbb3ac3f12cba5122/Cargo.toml" "--lib"`
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.13-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.13" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.13" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-_wc6fmtv/orjson_efbcc3c9757f42f0ad948c34b15f5f9b/Cargo.toml" "--lib"`
       Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.13', '--compatibility', 'off'] returned non-zero exit status 1
       [end of output]
   

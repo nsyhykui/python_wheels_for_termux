@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在 Termux 上安装 Jupyter | 预编译 Wheel 源</title>
+    <meta name="description" content="Termux 上安装 Jupyter Notebook/Lab 的完整教程，使用预编译 wheel 源，无需等待编译。包含图形界面配置说明。">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 25px;
+        }
+        .compare {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .bad {
+            flex: 1;
+            background: #fff5f5;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .good {
+            flex: 1;
+            background: #f0fff4;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .bad h3, .good h3 {
+            margin-top: 0;
+        }
+        .bad h3 { color: #dc3545; }
+        .good h3 { color: #28a745; }
+        pre {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 12px;
+            margin: 10px 0 0 0;
+        }
+        code {
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre code {
+            background: transparent;
+            padding: 0;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning {
+            background: #fff0e0;
+            border-left: 4px solid #e67e22;
+            padding: 10px 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        hr {
+            margin: 30px 0;
+        }
+        .config-box {
+            background: #e8f4f8;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        @media (max-width: 700px) {
+            .compare {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📓 如何在 Termux 上安装 Jupyter</h1>
+
+    <p>本教程教你如何在 Termux 上安装 Jupyter Notebook / Lab，<strong>无需等待编译</strong>，直接使用预编译的 wheel 包。</p>
+
+    <h2>⚡ 为什么要用预编译源？</h2>
+    <div class="compare">
+        <div class="bad">
+            <h3>❌ 不用预编译源（官方 PyPI）</h3>
+            <pre><code>$ pip install jupyter
+Collecting jupyter
+  Downloading jupyter-1.1.1.tar.gz
+  Installing build dependencies ... 
+  ⚠️ 编译依赖包（pyzmq, tornado 等）耗时极长，经常失败</code></pre>
+            <p><strong>结果：</strong>Jupyter 依赖链长，编译经常卡死 ⏱️</p>
+        </div>
+        <div class="good">
+            <h3>✅ 使用预编译源（本仓库）</h3>
+            <pre><code>$ pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ jupyter
+Looking in indexes: https://nsyhykui.github.io/.../simple/
+Collecting jupyter
+  Downloading jupyter-1.1.1-py3-none-any.whl
+Downloading pyzmq-26.4.1-cp313-cp313-android_24_arm64_v8a.whl (1.2 MB)
+Downloading tornado-6.4.2-cp313-cp313-android_24_arm64_v8a.whl (437 kB)
+Successfully installed jupyter-1.1.1 pyzmq-26.4.1 tornado-6.4.2 ...
+
+real    1m30.123s</code></pre>
+            <p><strong>结果：</strong>不到 2 分钟装好 ✅</p>
+        </div>
+    </div>
+
+    <!-- 一键配置 -->
+    <div class="config-box">
+        <strong>⚡ 一键设为默认源（以后不用再敲 --index-url）</strong>
+        <pre><code>pip config set global.index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/</code></pre>
+        设置后，直接 <code>pip install jupyter</code> 即可。
+    </div>
+
+    <h2>📦 一行命令安装</h2>
+    <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ jupyter</code></pre>
+    
+    <p>或者只安装轻量版的 Notebook（不含 Lab）：</p>
+    <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ notebook</code></pre>
+
+    <div class="warning">
+        <strong>⚠️ 图形界面配置（重要）</strong><br><br>
+        Jupyter 会在本地打开浏览器窗口。在 Termux 中需要额外配置图形界面才能正常使用：
+        <ul>
+            <li><strong>推荐方案</strong>：安装 <code>Termux:X11</code>（可从 F-Droid 或 GitHub 下载）<br>
+                安装后运行：<code>termux-x11 &amp; pip install jupyter &amp; jupyter notebook</code></li>
+            <li><strong>备选方案</strong>：使用 VNC 应用 + Termux 中安装 <code>pkg install tigervnc</code></li>
+            <li><strong>无界面模式</strong>：<code>jupyter notebook --no-browser</code>，然后通过电脑浏览器访问手机 IP 和端口（如 <code>http://192.168.x.x:8888</code>）</li>
+        </ul>
+    </div>
+
+    <h2>✅ 验证安装</h2>
+    <pre><code>python -c "import jupyter; print(jupyter.__version__)"</code></pre>
+
+    <h2>🔧 常见问题</h2>
+    <ul>
+        <li><strong>提示 <code>libc++_shared.so</code> 相关错误</strong>：运行 <code>pkg install libc++</code></li>
+        <li><strong>Termux 被杀后台</strong>：使用 <code>termux-wake-lock</code> 保持后台运行</li>
+        <li><strong>端口被占用</strong>：指定其他端口 <code>jupyter notebook --port 8889</code></li>
+    </ul>
+
+    <hr>
+    <p>🔗 <a href="./how-to-install-numpy-on-termux.html">← 安装 NumPy</a> |
+       <a href="./how-to-install-pandas-on-termux.html">安装 Pandas</a> |
+       <a href="./how-to-install-scipy-on-termux.html">安装 SciPy</a> |
+       <a href="./how-to-install-matplotlib-on-termux.html">安装 Matplotlib</a> |
+       <a href="./index.html">返回教程首页</a> |
+       <a href="https://nsyhykui.github.io/python_wheels_for_termux/">包索引</a></p>
+</div>
+</body>
+</html>

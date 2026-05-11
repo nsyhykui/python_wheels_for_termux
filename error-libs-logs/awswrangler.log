@@ -1,3 +1,5 @@
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/awswrangler-3.16.1-py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/boto3-1.43.6-py3-none-any.whl has bad hash. Re-downloading.
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/setuptools-82.0.1-py3-none-any.whl has bad hash. Re-downloading.
   error: subprocess-exited-with-error
   
@@ -6,7 +8,7 @@
   ╰─> [52 lines of output]
       *** scikit-build-core 0.12.2 using CMake 4.3.1 (wheel)
       *** Configuring CMake...
-      loading initial cache file /data/data/com.termux/files/usr/tmp/tmpioo3pyq9/build/CMakeInit.txt
+      loading initial cache file /data/data/com.termux/files/usr/tmp/tmpet9rby87/build/CMakeInit.txt
       -- The C compiler identification is Clang 21.1.8
       -- The CXX compiler identification is Clang 21.1.8
       -- Detecting C compiler ABI info
@@ -28,11 +30,11 @@
       -- CMAKE_C_FLAGS:  -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -fPIC -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
       -- CMAKE_CXX_FLAGS:   -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -fPIC -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
       -- Generator: Ninja
-      -- Build output directory: /data/data/com.termux/files/usr/tmp/tmpioo3pyq9/build/release
+      -- Build output directory: /data/data/com.termux/files/usr/tmp/tmpet9rby87/build/release
       -- Found Python3: /data/data/com.termux/files/usr/bin/python3.13 (found version "3.13.13") found components: Interpreter Development.Module NumPy
       -- Found Python3Alt: /data/data/com.termux/files/usr/bin/python3.13
       -- Found NumPy version: 2.4.4
-      -- NumPy include dir: /data/data/com.termux/files/usr/tmp/pip-build-env-e573b3jd/overlay/lib/python3.13/site-packages/numpy/_core/include
+      -- NumPy include dir: /data/data/com.termux/files/usr/tmp/pip-build-env-3sctjjve/overlay/lib/python3.13/site-packages/numpy/_core/include
       -- Found Cython version: 3.2.4
       CMake Error at CMakeLists.txt:294 (find_package):
         By not providing "FindArrow.cmake" in CMAKE_MODULE_PATH this project has

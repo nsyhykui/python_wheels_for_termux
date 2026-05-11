@@ -1,2 +1,2 @@
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/mleap-0.24.0-py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/threadpoolctl-3.6.0-py3-none-any.whl has bad hash. Re-downloading.
+ERROR: Operation cancelled by user

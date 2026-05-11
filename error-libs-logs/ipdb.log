@@ -1,6 +1,6 @@
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ipdb-0.13.13-py3-none-any.whl has bad hash. Re-downloading.
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/ipython_pygments_lexers-1.1.1-py3-none-any.whl has bad hash. Re-downloading.
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/jedi-0.20.0-py2.py3-none-any.whl has bad hash. Re-downloading.
+  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/matplotlib_inline-0.2.2-py3-none-any.whl has bad hash. Re-downloading.
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/pexpect-4.9.0-py2.py3-none-any.whl has bad hash. Re-downloading.
   error: subprocess-exited-with-error
   
