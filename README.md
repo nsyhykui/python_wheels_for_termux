@@ -30,7 +30,7 @@ pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simp
 
 · 非完整 PyPI 源：本仓库仅包含部分预编译包，若未找到你需要的包，请使用官方 PyPI 源或其他第三方源。
 · 适用环境：主要针对 Termux 环境，特别是 android(aarch64) 架构系统。
-· Python 版本：请确保你的 Python 版本与 wheel 包（支持Python3.13，Python3.12（Python3.12已停止更新））匹配。
+· Python 版本：请确保你的 Python 版本与 wheel 包（支持Python3.14，Python3.13，Python3.12（Python3.13，Python3.12已停止更新））匹配。
 · **动态库依赖**：部分包（如 numpy、scipy、pandas）运行时需要系统动态库。若遇到类似 `dlopen failed: library "libopenblas.so" not found` 的错误，请根据缺失的库名安装对应的 Termux 包：
   ```bash
   pkg install libopenblas   # 去掉 .so 后缀，即 libopenblas.so → libopenblas

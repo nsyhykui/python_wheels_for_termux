@@ -2,8 +2,8 @@
   
   × Building wheel for opencv-python (pyproject.toml) did not run successfully.
   │ exit code: 1
-  ╰─> [743 lines of output]
-      /data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+  ╰─> [787 lines of output]
+      /data/data/com.termux/files/usr/tmp/pip-build-env-c_1f_xnn/overlay/lib/python3.13/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
         warn(
       
       
@@ -31,7 +31,7 @@
       -- Detecting CXX compile features - done
       -- Configuring done (3.5s)
       -- Generating done (0.1s)
-      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_cmake_test_compile/build
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_cmake_test_compile/build
       --
       -------
       ------------
@@ -44,9 +44,9 @@
       
       Configuring Project
         Working directory:
-          /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build
+          /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-build
         Command:
-          /data/data/com.termux/files/usr/bin/cmake /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/opencv -G Ninja --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-install -DPYTHON_VERSION_STRING:STRING=3.13.13 -DSKBUILD:INTERNAL=TRUE -DCMAKE_MODULE_PATH:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/resources/cmake -DPYTHON_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPYTHON_LIBRARY:PATH=/data/data/com.termux/files/usr/lib/libpython3.13.so -DPython_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPython_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython_FIND_REGISTRY:STRING=NEVER -DPython_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPython_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/numpy/_core/include -DPython3_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPython3_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython3_FIND_REGISTRY:STRING=NEVER -DPython3_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPython3_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/numpy/_core/include -DPYTHON3_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON_DEFAULT_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON3_INCLUDE_DIR=/data/data/com.termux/files/usr/include/python3.13 -DPYTHON3_LIBRARY=/data/data/com.termux/files/usr/lib/libpython3.13.so -DBUILD_opencv_python3=ON -DBUILD_opencv_python2=OFF -DBUILD_opencv_java=OFF -DOPENCV_PYTHON3_INSTALL_PATH=python -DINSTALL_CREATE_DISTRIB=ON -DBUILD_opencv_apps=OFF -DBUILD_opencv_freetype=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_DOCS=OFF -DPYTHON3_LIMITED_API=ON -DBUILD_OPENEXR=ON -DCMAKE_BUILD_TYPE:STRING=Release
+          /data/data/com.termux/files/usr/bin/cmake /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/opencv -G Ninja --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-install -DPYTHON_VERSION_STRING:STRING=3.13.13 -DSKBUILD:INTERNAL=TRUE -DCMAKE_MODULE_PATH:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-c_1f_xnn/overlay/lib/python3.13/site-packages/skbuild/resources/cmake -DPYTHON_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPYTHON_LIBRARY:PATH=/data/data/com.termux/files/usr/lib/libpython3.13.so -DPython_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPython_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython_FIND_REGISTRY:STRING=NEVER -DPython_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPython_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-c_1f_xnn/overlay/lib/python3.13/site-packages/numpy/_core/include -DPython3_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.13 -DPython3_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython3_FIND_REGISTRY:STRING=NEVER -DPython3_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.13 -DPython3_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-c_1f_xnn/overlay/lib/python3.13/site-packages/numpy/_core/include -DPYTHON3_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON_DEFAULT_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.13 -DPYTHON3_INCLUDE_DIR=/data/data/com.termux/files/usr/include/python3.13 -DPYTHON3_LIBRARY=/data/data/com.termux/files/usr/lib/libpython3.13.so -DBUILD_opencv_python3=ON -DBUILD_opencv_python2=OFF -DBUILD_opencv_java=OFF -DOPENCV_PYTHON3_INSTALL_PATH=python -DINSTALL_CREATE_DISTRIB=ON -DBUILD_opencv_apps=OFF -DBUILD_opencv_freetype=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_DOCS=OFF -DPYTHON3_LIMITED_API=ON -DBUILD_OPENEXR=ON -DCMAKE_BUILD_TYPE:STRING=Release
       
       Not searching for unused variables given on the command line.
       CMake Deprecation Warning at CMakeLists.txt:25 (cmake_minimum_required):
@@ -568,6 +568,24 @@
       -- Looking for dlerror in dl
       -- Looking for dlerror in dl - found
       -- ADE: Downloading v0.1.2e.zip from https://github.com/opencv/ade/archive/v0.1.2e.zip
+      -- Try 1 failed
+      CMake Warning at cmake/OpenCVDownload.cmake:251 (message):
+        ADE: Download failed: 28;"Timeout was reached"
+      
+        For details please refer to the download log file:
+      
+      
+        /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-build/CMakeDownloadLog.txt
+      
+      Call Stack (most recent call first):
+        modules/gapi/cmake/DownloadADE.cmake:5 (ocv_download)
+        modules/gapi/cmake/init.cmake:20 (include)
+        cmake/OpenCVModule.cmake:298 (include)
+        cmake/OpenCVModule.cmake:361 (_add_modules_1)
+        cmake/OpenCVModule.cmake:408 (ocv_glob_modules)
+        CMakeLists.txt:1096 (ocv_register_modules)
+      
+      
       -- Allocator metrics storage type: 'int'
       -- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
       -- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
@@ -576,7 +594,7 @@
       -- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
       -- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
       -- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
-      -- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
+      -- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
       -- opencv_dnn: filter out ocl4dnn source code
       -- opencv_dnn: filter out cuda4dnn source code
       -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx.cpp
@@ -600,10 +618,36 @@
       -- Excluding from source files list: modules/features2d/src/fast.avx2.cpp
       -- imgcodecs: OpenEXR codec is disabled in runtime. Details: https://github.com/opencv/opencv/issues/21326
       -- highgui: using builtin backend: NONE
-      -- Use autogenerated whitelist /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build/modules/js_bindings_generator/whitelist.json
+      -- Use autogenerated whitelist /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-build/modules/js_bindings_generator/whitelist.json
       -- OPENCV_FACE_DETECT_YN: Downloading face_detection_yunet_2023mar.onnx from https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
       -- OPENCV_MOBILENET_SSD_WEIGHTS: Downloading mobilenet_iter_73000.caffemodel from https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/97406996b1eee2d40eb0a00ae567cf41e23369f9/mobilenet_iter_73000.caffemodel
+      -- Try 1 failed
+      CMake Warning at cmake/OpenCVDownload.cmake:251 (message):
+        OPENCV_MOBILENET_SSD_WEIGHTS: Download failed: 28;"Timeout was reached"
+      
+        For details please refer to the download log file:
+      
+      
+        /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-build/CMakeDownloadLog.txt
+      
+      Call Stack (most recent call first):
+        samples/android/mobilenet-objdetect/CMakeLists.txt:3 (ocv_download)
+      
+      
       -- OPENCV_MOBILENET_SSD_CONFIG: Downloading deploy.prototxt from https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/97406996b1eee2d40eb0a00ae567cf41e23369f9/deploy.prototxt
+      -- Try 1 failed
+      CMake Warning at cmake/OpenCVDownload.cmake:251 (message):
+        OPENCV_MOBILENET_SSD_CONFIG: Download failed: 28;"Timeout was reached"
+      
+        For details please refer to the download log file:
+      
+      
+        /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-build/CMakeDownloadLog.txt
+      
+      Call Stack (most recent call first):
+        samples/android/mobilenet-objdetect/CMakeLists.txt:13 (ocv_download)
+      
+      
       CMake Warning (dev) at CMakeLists.txt:1175 (install):
         Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
         "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
@@ -621,7 +665,7 @@
       --   Version control:               unknown
       --
       --   Platform:
-      --     Timestamp:                   2026-05-09T17:53:01Z
+      --     Timestamp:                   2026-05-12T01:52:15Z
       --     Host:                        Android 29 aarch64
       --     CMake:                       4.3.1
       --     CMake generator:             Ninja
@@ -652,13 +696,13 @@
       --     ccache:                      YES
       --     Precompiled headers:         NO
       --     Extra dependencies:          avif z dl m log
-      --     3rdparty dependencies:       libcpufeatures libprotobuf ade ittnotify libjpeg-turbo libwebp libpng libtiff libopenjp2 IlmImf tegra_hal kleidicv_hal kleidicv kleidicv_thread
+      --     3rdparty dependencies:       libcpufeatures ittnotify libprotobuf libjpeg-turbo libwebp libpng libtiff libopenjp2 IlmImf tegra_hal kleidicv_hal kleidicv kleidicv_thread
       --
       --   OpenCV modules:
-      --     To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc ml objdetect photo stitching video videoio
+      --     To be built:                 calib3d core dnn features2d flann highgui imgcodecs imgproc ml objdetect photo stitching video videoio
       --     Disabled:                    java world
       --     Disabled by dependency:      -
-      --     Unavailable:                 python2 python3 ts
+      --     Unavailable:                 gapi python2 python3 ts
       --     Applications:                -
       --     Documentation:               NO
       --     Non-free algorithms:         NO
@@ -718,21 +762,21 @@
       --     Java wrappers:               NO
       --     Java tests:                  NO
       --
-      --   Install to:                    /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-install
+      --   Install to:                    /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-install
       -- -----------------------------------------------------------------
       --
-      -- Configuring done (193.2s)
+      -- Configuring done (322.8s)
       -- Generating done (0.7s)
-      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-build
       ninja: error: 'samples/android/15-puzzle/opencv_java_android', needed by 'CMakeFiles/dephelper/android_sample_15-puzzle', missing and no known rule to make it
       Traceback (most recent call last):
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/setuptools_wrap.py", line 669, in setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-c_1f_xnn/overlay/lib/python3.13/site-packages/skbuild/setuptools_wrap.py", line 669, in setup
           cmkr.make(make_args, install_target=cmake_install_target, env=env)
           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/cmaker.py", line 697, in make
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-c_1f_xnn/overlay/lib/python3.13/site-packages/skbuild/cmaker.py", line 697, in make
           self.make_impl(clargs=clargs, config=config, source_dir=source_dir, install_target=install_target, env=env)
           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-wi2pwco8/overlay/lib/python3.13/site-packages/skbuild/cmaker.py", line 742, in make_impl
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-c_1f_xnn/overlay/lib/python3.13/site-packages/skbuild/cmaker.py", line 742, in make_impl
           raise SKBuildError(msg)
       
       An error occurred while building with CMake.
@@ -741,9 +785,9 @@
         Install target:
           install
         Source directory:
-          /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76
+          /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171
         Working directory:
-          /data/data/com.termux/files/usr/tmp/pip-wheel-01cnwlqf/opencv-python_ccb00b265c984b74a0fcb43961c98c76/_skbuild/android-24-arm64_v8a-3.13/cmake-build
+          /data/data/com.termux/files/usr/tmp/pip-wheel-vl0ameba/opencv-python_75109c6a755e4feca8d08209e99c0171/_skbuild/android-24-arm64_v8a-3.13/cmake-build
       Please check the install target is valid and see CMake's output for more information.
       
       [end of output]

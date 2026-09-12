@@ -1,0 +1,99 @@
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [84 lines of output]
+      + meson setup /data/data/com.termux/files/usr/tmp/pip-wheel-3sbf_35b/matplotlib_17c8aef5d45041ae8b387d31a74f1f5f /data/data/com.termux/files/usr/tmp/pip-wheel-3sbf_35b/matplotlib_17c8aef5d45041ae8b387d31a74f1f5f/.mesonpy-3d8qj0t_ -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --native-file=/data/data/com.termux/files/usr/tmp/pip-wheel-3sbf_35b/matplotlib_17c8aef5d45041ae8b387d31a74f1f5f/.mesonpy-3d8qj0t_/meson-python-native-file.ini
+      The Meson build system
+      Version: 1.12.0
+      Source dir: /data/data/com.termux/files/usr/tmp/pip-wheel-3sbf_35b/matplotlib_17c8aef5d45041ae8b387d31a74f1f5f
+      Build dir: /data/data/com.termux/files/usr/tmp/pip-wheel-3sbf_35b/matplotlib_17c8aef5d45041ae8b387d31a74f1f5f/.mesonpy-3d8qj0t_
+      Build type: native build
+      Program python found: YES 3.14.6 3.14.6
+      Project name: matplotlib
+      Project version: 3.11.1
+      C compiler for the host machine: clang (clang 21.1.8 "clang version 21.1.8")
+      C linker for the host machine: clang ld.lld 21.1.8
+      C++ compiler for the host machine: clang++ (clang 21.1.8 "clang version 21.1.8")
+      C++ linker for the host machine: clang++ ld.lld 21.1.8
+      Host machine cpu family: aarch64
+      Host machine cpu: aarch64
+      Program python found: YES (/data/data/com.termux/files/usr/bin/python3.14)
+      Found pkg-config: YES (/data/data/com.termux/files/usr/bin/pkg-config) 0.29.2
+      Run-time dependency python found: YES 3.14
+      Found pkg-config: YES (/data/data/com.termux/files/usr/bin/pkg-config) 0.29.2
+      pybind11-config found: YES (/data/data/com.termux/files/usr/tmp/pip-build-env-gx5uea9b/overlay/bin/pybind11-config) 3.1.0
+      Run-time dependency pybind11 found: YES 3.1.0
+      Downloading freetype2 source from https://download.savannah.nongnu.org/releases/freetype/freetype-2.14.3.tar.xz
+      HTTP Error 502: Bad Gateway
+      WARNING: failed to download with error: could not get https://download.savannah.nongnu.org/releases/freetype/freetype-2.14.3.tar.xz; is the internet available?. Trying after a delay...
+      HTTP Error 502: Bad Gateway
+      WARNING: failed to download with error: could not get https://download.savannah.nongnu.org/releases/freetype/freetype-2.14.3.tar.xz; is the internet available?. Trying after a delay...
+      HTTP Error 502: Bad Gateway
+      WARNING: failed to download with error: could not get https://download.savannah.nongnu.org/releases/freetype/freetype-2.14.3.tar.xz; is the internet available?. Trying after a delay...
+      HTTP Error 502: Bad Gateway
+      WARNING: failed to download with error: could not get https://download.savannah.nongnu.org/releases/freetype/freetype-2.14.3.tar.xz; is the internet available?. Trying after a delay...
+      HTTP Error 502: Bad Gateway
+      WARNING: failed to download with error: could not get https://download.savannah.nongnu.org/releases/freetype/freetype-2.14.3.tar.xz; is the internet available?. Trying after a delay...
+      HTTP Error 502: Bad Gateway
+      Downloading freetype2 source from https://downloads.sourceforge.net/project/freetype/freetype2/2.14.3/freetype-2.14.3.tar.xz
+      Applying diff file "freetype-2.14.1-static-harfbuzz.patch"
+      Applying diff file "freetype-2.14.1-wasm-visibility.patch"
+      
+      Executing subproject freetype2 for machine: host
+      
+      freetype2| Project name: freetype2
+      freetype2| Project version: 2.14.3
+      freetype2| C compiler for the host machine: clang (clang 21.1.8 "clang version 21.1.8")
+      freetype2| C linker for the host machine: clang ld.lld 21.1.8
+      freetype2| Program python3 found: YES (/data/data/com.termux/files/usr/bin/python3)
+      freetype2| Has header "unistd.h" : YES
+      freetype2| Has header "fcntl.h" : YES
+      freetype2| Has header "sys/mman.h" : YES
+      freetype2| Dependency bzip2 for host machine skipped: feature bzip2 disabled
+      freetype2| Library bz2 skipped: feature bzip2 disabled
+      freetype2| Dependency libpng for host machine skipped: feature png disabled
+      freetype2| Dependency libbrotlidec for host machine skipped: feature brotli disabled
+      freetype2| Found pkg-config: YES (/data/data/com.termux/files/usr/bin/pkg-config) 0.29.2
+      freetype2| Build targets in project: 5
+      freetype2| Subproject freetype2 finished.
+      
+      Downloading harfbuzz source from https://github.com/harfbuzz/harfbuzz/releases/download/14.1.0/harfbuzz-14.1.0.tar.xz
+      The read operation timed out
+      WARNING: failed to download with error: could not get https://github.com/harfbuzz/harfbuzz/releases/download/14.1.0/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/harfbuzz/harfbuzz/releases/download/14.1.0/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/harfbuzz/harfbuzz/releases/download/14.1.0/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/harfbuzz/harfbuzz/releases/download/14.1.0/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/harfbuzz/harfbuzz/releases/download/14.1.0/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      Downloading harfbuzz source from https://github.com/mesonbuild/wrapdb/releases/download/harfbuzz_14.1.0-1/harfbuzz-14.1.0.tar.xz
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/mesonbuild/wrapdb/releases/download/harfbuzz_14.1.0-1/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/mesonbuild/wrapdb/releases/download/harfbuzz_14.1.0-1/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/mesonbuild/wrapdb/releases/download/harfbuzz_14.1.0-1/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      WARNING: failed to download with error: could not get https://github.com/mesonbuild/wrapdb/releases/download/harfbuzz_14.1.0-1/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error _ssl.c:1064: The handshake operation timed out>
+      WARNING: failed to download with error: could not get https://github.com/mesonbuild/wrapdb/releases/download/harfbuzz_14.1.0-1/harfbuzz-14.1.0.tar.xz; is the internet available?. Trying after a delay...
+      <urlopen error timed out>
+      ERROR: Subproject harfbuzz is buildable: NO
+      
+      ../extern/meson.build:30:2: ERROR: could not get https://github.com/mesonbuild/wrapdb/releases/download/harfbuzz_14.1.0-1/harfbuzz-14.1.0.tar.xz; is the internet available?
+      
+      A full log can be found at /data/data/com.termux/files/usr/tmp/pip-wheel-3sbf_35b/matplotlib_17c8aef5d45041ae8b387d31a74f1f5f/.mesonpy-3d8qj0t_/meson-logs/meson-log.txt
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> matplotlib
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.

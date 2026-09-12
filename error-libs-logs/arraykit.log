@@ -1,0 +1,70 @@
+  error: subprocess-exited-with-error
+  
+  × Building wheel for arraykit (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [60 lines of output]
+      /data/data/com.termux/files/usr/tmp/pip-build-env-zhicx8yv/overlay/lib/python3.14/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+      !!
+      
+              ********************************************************************************
+              Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+      
+              By 2027-Feb-18, you need to update your project and remove deprecated calls
+              or your builds will no longer be supported.
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        corresp(dist, value, root_dir)
+      running bdist_wheel
+      running build
+      running build_py
+      creating build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/__init__.py -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      running egg_info
+      writing arraykit.egg-info/PKG-INFO
+      writing dependency_links to arraykit.egg-info/dependency_links.txt
+      writing requirements to arraykit.egg-info/requires.txt
+      writing top-level names to arraykit.egg-info/top_level.txt
+      reading manifest file 'arraykit.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENSE.txt'
+      writing manifest file 'arraykit.egg-info/SOURCES.txt'
+      copying src/__init__.pyi -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/_arraykit.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/array_go.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/array_go.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/array_to_tuple.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/array_to_tuple.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/auto_map.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/auto_map.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/block_index.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/block_index.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/delimited_to_arrays.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/delimited_to_arrays.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/methods.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/methods.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/py.typed -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/tri_map.c -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/tri_map.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      copying src/utilities.h -> build/lib.android-24-arm64_v8a-cpython-314/arraykit
+      running build_ext
+      building 'arraykit._arraykit' extension
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/_arraykit.c -o build/temp.android-24-arm64_v8a-cpython-314/src/_arraykit.o
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/array_go.c -o build/temp.android-24-arm64_v8a-cpython-314/src/array_go.o
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/array_to_tuple.c -o build/temp.android-24-arm64_v8a-cpython-314/src/array_to_tuple.o
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/auto_map.c -o build/temp.android-24-arm64_v8a-cpython-314/src/auto_map.o
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/block_index.c -o build/temp.android-24-arm64_v8a-cpython-314/src/block_index.o
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/delimited_to_arrays.c -o build/temp.android-24-arm64_v8a-cpython-314/src/delimited_to_arrays.o
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/methods.c -o build/temp.android-24-arm64_v8a-cpython-314/src/methods.o
+      clang -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -fPIC -DAK_VERSION=1.12.0 -I/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/include -Isrc -I/data/data/com.termux/files/usr/include/python3.14 -c src/tri_map.c -o build/temp.android-24-arm64_v8a-cpython-314/src/tri_map.o
+      clang -shared -L/data/data/com.termux/files/usr/lib -Wl,-rpath=/data/data/com.termux/files/usr/lib -Wl,--enable-new-dtags -Wl,-z,relro,-z,now -Wl,--no-as-needed,-landroid-support,--as-needed -L/home/builder/.termux-build/_cache/android-r29-api-24-v4/sysroot/usr/lib -landroid-posix-semaphore -L/data/data/com.termux/files/usr/lib -Wl,-rpath=/data/data/com.termux/files/usr/lib -Wl,--enable-new-dtags -Wl,-z,relro,-z,now -Wl,--no-as-needed,-landroid-support,--as-needed -L/home/builder/.termux-build/_cache/android-r29-api-24-v4/sysroot/usr/lib -landroid-posix-semaphore -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration build/temp.android-24-arm64_v8a-cpython-314/src/_arraykit.o build/temp.android-24-arm64_v8a-cpython-314/src/array_go.o build/temp.android-24-arm64_v8a-cpython-314/src/array_to_tuple.o build/temp.android-24-arm64_v8a-cpython-314/src/auto_map.o build/temp.android-24-arm64_v8a-cpython-314/src/block_index.o build/temp.android-24-arm64_v8a-cpython-314/src/delimited_to_arrays.o build/temp.android-24-arm64_v8a-cpython-314/src/methods.o build/temp.android-24-arm64_v8a-cpython-314/src/tri_map.o -L/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/lib -L/data/data/com.termux/files/usr/lib -lnpymath -lpython3.14 -o build/lib.android-24-arm64_v8a-cpython-314/arraykit/_arraykit.cpython-314-aarch64-linux-android.so
+      ld.lld: error: unable to find library -lnpymath
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      error: Command '['clang', '-shared', '-L/data/data/com.termux/files/usr/lib', '-Wl,-rpath=/data/data/com.termux/files/usr/lib', '-Wl,--enable-new-dtags', '-Wl,-z,relro,-z,now', '-Wl,--no-as-needed,-landroid-support,--as-needed', '-L/home/builder/.termux-build/_cache/android-r29-api-24-v4/sysroot/usr/lib', '-landroid-posix-semaphore', '-L/data/data/com.termux/files/usr/lib', '-Wl,-rpath=/data/data/com.termux/files/usr/lib', '-Wl,--enable-new-dtags', '-Wl,-z,relro,-z,now', '-Wl,--no-as-needed,-landroid-support,--as-needed', '-L/home/builder/.termux-build/_cache/android-r29-api-24-v4/sysroot/usr/lib', '-landroid-posix-semaphore', '-O2', '-pipe', '-fPIC', '-DNO_LONG_DOUBLE_COMPLEX', '-Wno-implicit-function-declaration', 'build/temp.android-24-arm64_v8a-cpython-314/src/_arraykit.o', 'build/temp.android-24-arm64_v8a-cpython-314/src/array_go.o', 'build/temp.android-24-arm64_v8a-cpython-314/src/array_to_tuple.o', 'build/temp.android-24-arm64_v8a-cpython-314/src/auto_map.o', 'build/temp.android-24-arm64_v8a-cpython-314/src/block_index.o', 'build/temp.android-24-arm64_v8a-cpython-314/src/delimited_to_arrays.o', 'build/temp.android-24-arm64_v8a-cpython-314/src/methods.o', 'build/temp.android-24-arm64_v8a-cpython-314/src/tri_map.o', '-L/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/_core/lib', '-L/data/data/com.termux/files/usr/lib', '-lnpymath', '-lpython3.14', '-o', 'build/lib.android-24-arm64_v8a-cpython-314/arraykit/_arraykit.cpython-314-aarch64-linux-android.so']' returned non-zero exit status 1.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for arraykit
+ERROR: Failed to build one or more wheels
