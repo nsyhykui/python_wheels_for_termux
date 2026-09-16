@@ -1,35 +1,42 @@
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/prefect-3.7.0-py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/pydantic_extra_types-2.11.1-py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/pydocket-0.20.1-py3-none-any.whl has bad hash. Re-downloading.
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/readchar-4.2.2-py3-none-any.whl has bad hash. Re-downloading.
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/semver-3.0.4-py3-none-any.whl has bad hash. Re-downloading.
   WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/toml-0.10.2-py2.py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/whenever-0.10.0-py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/py_key_value_aio-0.4.4-py3-none-any.whl has bad hash. Re-downloading.
-  WARNING: Previously-downloaded file /data/data/com.termux/files/home/python_wheels_for_termux/wheels/uncalled_for-0.3.2-py3-none-any.whl has bad hash. Re-downloading.
   error: subprocess-exited-with-error
   
-  × Building wheel for orjson (pyproject.toml) did not run successfully.
+  × Building wheel for cryptography (pyproject.toml) did not run successfully.
   │ exit code: 1
-  ╰─> [16 lines of output]
-      Running `maturin pep517 build-wheel -i /data/data/com.termux/files/usr/bin/python3.13 --compatibility off`
-      📦 Including license file `LICENSE-APACHE`
-      📦 Including license file `LICENSE-MIT`
-      📦 Including license file `LICENSE-MPL-2.0`
+  ╰─> [29 lines of output]
+      Running `maturin pep517 build-wheel -i /data/data/com.termux/files/usr/bin/python3.14 --compatibility off`
       🍹 Building a mixed python/rust project
-      🔗 Found pyo3-ffi bindings
-      🐍 Found CPython 3.13 at /data/data/com.termux/files/usr/bin/python3.13
-      error: rustc 1.94.1 is not supported by the following packages:
-        orjson@3.11.9 requires rustc 1.95
-        orjson@3.11.9 requires rustc 1.95
-        orjson@3.11.9 requires rustc 1.95
+      🐍 Found CPython 3.14 at /data/data/com.termux/files/usr/bin/python3.14
+      🔗 Found pyo3 bindings with abi3 support
+      📡 Using build options locked from pyproject.toml
+         Compiling proc-macro2 v1.0.107
+         Compiling unicode-ident v1.0.24
+         Compiling quote v1.0.47
+         Compiling shlex v2.0.1
+         Compiling target-lexicon v0.13.5
+         Compiling find-msvc-tools v0.1.9
+         Compiling pkg-config v0.3.33
+         Compiling vcpkg v0.2.15
+         Compiling libc v0.2.189
+         Compiling cc v1.4.0
+         Compiling heck v0.5.0
+         Compiling openssl v0.10.81
+      error: failed to run custom build command for `libc v0.2.189`
       
+      Caused by:
+        could not execute process `/data/data/com.termux/files/usr/tmp/pip-wheel-yu1kyw8y/cryptography_c8f937c05ca342cdbf01d1059984f082/target/release/build/libc-14cb8837616d4ed8/build-script-build` (never executed)
+      
+      Caused by:
+        Text file busy (os error 26)
+      warning: build failed, waiting for other jobs to finish...
       💥 maturin failed
         Caused by: Failed to build a native library through cargo
-        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.13-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.13" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.13" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-g_8hvf88/orjson_2d72a1b6cfcb412aba675a3cb1773073/Cargo.toml" "--lib"`
-      Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.13', '--compatibility', 'off'] returned non-zero exit status 1
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/data/data/com.termux/files/usr/tmp/pip-wheel-yu1kyw8y/cryptography_c8f937c05ca342cdbf01d1059984f082/target/maturin/pyo3-config-aarch64-linux-android-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--locked" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-yu1kyw8y/cryptography_c8f937c05ca342cdbf01d1059984f082/src/rust/Cargo.toml" "--lib"`
+      Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.14', '--compatibility', 'off'] returned non-zero exit status 1
       [end of output]
   
   note: This error originates from a subprocess, and is likely not a problem with pip.
-  ERROR: Failed building wheel for orjson
+  ERROR: Failed building wheel for cryptography
 ERROR: Failed to build one or more wheels
