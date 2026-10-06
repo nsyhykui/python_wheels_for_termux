@@ -4,9 +4,9 @@
   │ exit code: 1
   ╰─> [53 lines of output]
       WARNING: tool.scikit-build.metadata is deprecated; use the standard top-level [[tool.dynamic-metadata]] instead
-      *** scikit-build-core 1.0.3 using CMake 4.4.3 (wheel)
+      *** scikit-build-core 1.1.1 using CMake 4.4.3 (wheel)
       *** Configuring CMake...
-      loading initial cache file /data/data/com.termux/files/usr/tmp/tmpcir5q2s9/build/CMakeInit.txt
+      loading initial cache file /data/data/com.termux/files/usr/tmp/tmpko_88yi3/build/CMakeInit.txt
       -- The C compiler identification is Clang 21.1.8
       -- The CXX compiler identification is Clang 21.1.8
       -- Detecting C compiler ABI info
@@ -28,11 +28,11 @@
       -- CMAKE_C_FLAGS:  -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -fPIC -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
       -- CMAKE_CXX_FLAGS:   -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -fPIC -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
       -- Generator: Ninja
-      -- Build output directory: /data/data/com.termux/files/usr/tmp/tmpcir5q2s9/build/release
+      -- Build output directory: /data/data/com.termux/files/usr/tmp/tmpko_88yi3/build/release
       -- Found Python3: /data/data/com.termux/files/usr/bin/python3.14 (found version "3.14.6") found components: Interpreter Development.Module NumPy
       -- Found Python3Alt: /data/data/com.termux/files/usr/bin/python3.14
       -- Found NumPy version: 2.5.3
-      -- NumPy include dir: /data/data/com.termux/files/usr/tmp/pip-build-env-k9ctvpng/overlay/lib/python3.14/site-packages/numpy/_core/include
+      -- NumPy include dir: /data/data/com.termux/files/usr/tmp/pip-build-env-25ld6ker/overlay/lib/python3.14/site-packages/numpy/_core/include
       -- Found Cython version: 3.3.0
       CMake Error at CMakeLists.txt:294 (find_package):
         By not providing "FindArrow.cmake" in CMAKE_MODULE_PATH this project has

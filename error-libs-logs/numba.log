@@ -3,14 +3,14 @@
   × Building wheel for llvmlite (pyproject.toml) did not run successfully.
   │ exit code: 1
   ╰─> [69 lines of output]
-      /data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+      /data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
         warn(
       running bdist_wheel
       Traceback (most recent call last):
-        File "/data/data/com.termux/files/usr/tmp/pip-wheel-izb8lnry/llvmlite_1afaa27f0a53463086cad37340280ad8/ffi/build.py", line 234, in <module>
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-ma782_6v/llvmlite_5c3ca44b48484d7d8b25907616a14362/ffi/build.py", line 234, in <module>
           main()
           ~~~~^^
-        File "/data/data/com.termux/files/usr/tmp/pip-wheel-izb8lnry/llvmlite_1afaa27f0a53463086cad37340280ad8/ffi/build.py", line 230, in main
+        File "/data/data/com.termux/files/usr/tmp/pip-wheel-ma782_6v/llvmlite_5c3ca44b48484d7d8b25907616a14362/ffi/build.py", line 230, in main
           raise RuntimeError("unsupported platform: %r" % (sys.platform,))
       RuntimeError: unsupported platform: 'android'
       Traceback (most recent call last):
@@ -27,9 +27,9 @@
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
           )
           ^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 441, in build_wheel
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 441, in build_wheel
           return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 429, in _build
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 429, in _build
           return self._build_with_temp_dir(
                  ~~~~~~~~~~~~~~~~~~~~~~~~~^
               cmd,
@@ -39,31 +39,31 @@
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
           )
           ^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 410, in _build_with_temp_dir
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 410, in _build_with_temp_dir
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 520, in run_setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 520, in run_setup
           super().run_setup(setup_script=setup_script)
           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 317, in run_setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 317, in run_setup
           exec(code, locals())  # noqa: S102 # exec is intentional here
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 200, in <module>
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/__init__.py", line 117, in setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/__init__.py", line 117, in setup
           return distutils.core.setup(**attrs)  # type: ignore[return-value]
                  ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 168, in setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 168, in setup
           return run_commands(dist)
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 184, in run_commands
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 184, in run_commands
           dist.run_commands()
           ~~~~~~~~~~~~~~~~~^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1028, in run_commands
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1028, in run_commands
           self.run_command(cmd)
           ~~~~~~~~~~~~~~~~^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
           super().run_command(command)
           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-r46v49u4/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-b3243kqn/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
           cmd_obj.run()
           ~~~~~~~~~~~^^
         File "<string>", line 170, in run
@@ -71,7 +71,7 @@
         File "/data/data/com.termux/files/usr/lib/python3.14/subprocess.py", line 578, in run
           raise CalledProcessError(retcode, process.args,
                                    output=stdout, stderr=stderr)
-      subprocess.CalledProcessError: Command '['/data/data/com.termux/files/usr/bin/python3.14', '/data/data/com.termux/files/usr/tmp/pip-wheel-izb8lnry/llvmlite_1afaa27f0a53463086cad37340280ad8/ffi/build.py']' returned non-zero exit status 1.
+      subprocess.CalledProcessError: Command '['/data/data/com.termux/files/usr/bin/python3.14', '/data/data/com.termux/files/usr/tmp/pip-wheel-ma782_6v/llvmlite_5c3ca44b48484d7d8b25907616a14362/ffi/build.py']' returned non-zero exit status 1.
       [end of output]
   
   note: This error originates from a subprocess, and is likely not a problem with pip.

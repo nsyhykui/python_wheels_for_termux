@@ -1,0 +1,51 @@
+  error: subprocess-exited-with-error
+  
+  × Building wheel for cachebox (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [41 lines of output]
+      Running `maturin pep517 build-wheel -i /data/data/com.termux/files/usr/bin/python3.14 --compatibility off`
+      📦 Including license file `LICENSE`
+      🍹 Building a mixed python/rust project
+      🐍 Found CPython 3.14 at /data/data/com.termux/files/usr/bin/python3.14
+      🔗 Found pyo3 bindings
+      📡 Using build options features from pyproject.toml
+         Compiling target-lexicon v0.13.2
+         Compiling python3-dll-a v0.2.14
+         Compiling proc-macro2 v1.0.94
+         Compiling unicode-ident v1.0.18
+         Compiling libc v0.2.171
+         Compiling autocfg v1.4.0
+         Compiling parking_lot_core v0.9.12
+         Compiling heck v0.5.0
+         Compiling cfg-if v1.0.3
+         Compiling smallvec v1.14.0
+         Compiling scopeguard v1.2.0
+         Compiling unindent v0.2.4
+         Compiling indoc v2.0.6
+         Compiling lock_api v0.4.14
+         Compiling once_cell v1.21.3
+         Compiling fastrand v2.3.0
+         Compiling memoffset v0.9.1
+         Compiling hashbrown v0.14.5
+         Compiling quote v1.0.40
+         Compiling pyo3-build-config v0.27.1
+         Compiling parking_lot v0.12.5
+         Compiling syn v2.0.100
+         Compiling pyo3-ffi v0.27.1
+         Compiling pyo3-macros-backend v0.27.1
+         Compiling pyo3 v0.27.1
+         Compiling cachebox v5.2.3 (/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac)
+         Compiling pyo3-macros v0.27.1
+      error: could not compile `cachebox` (lib)
+      
+      Caused by:
+        process didn't exit successfully: `rustc --crate-name cachebox --edition=2021 src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type cdylib --emit=dep-info,link -C opt-level=3 -C panic=abort -C lto -C codegen-units=1 '--warn=clippy::print_stdout' '--warn=clippy::dbg_macro' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("mimalloc"))' -C metadata=b3dfcd1db4a4b952 --out-dir /data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/target/release/deps -C strip=symbols -L dependency=/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/target/release/deps --extern cfg_if=/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/target/release/deps/libcfg_if-a2eec8a3cfe07d62.rlib --extern fastrand=/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/target/release/deps/libfastrand-fe458cb9fda9032d.rlib --extern hashbrown=/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/target/release/deps/libhashbrown-56ec2e37502f17a5.rlib --extern parking_lot=/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/target/release/deps/libparking_lot-1f81020b38b90387.rlib --extern pyo3=/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/target/release/deps/libpyo3-50cda6af502810b8.rlib -L native=/data/data/com.termux/files/usr/lib --cfg Py_3_7 --cfg Py_3_8 --cfg Py_3_9 --cfg Py_3_10 --cfg Py_3_11 --cfg Py_3_12 --cfg Py_3_13 --cfg Py_3_14 --check-cfg 'cfg(Py_LIMITED_API)' --check-cfg 'cfg(Py_GIL_DISABLED)' --check-cfg 'cfg(PyPy)' --check-cfg 'cfg(GraalPy)' --check-cfg 'cfg(py_sys_config, values("Py_DEBUG", "Py_REF_DEBUG", "Py_TRACE_REFS", "COUNT_ALLOCS"))' --check-cfg 'cfg(pyo3_disable_reference_pool)' --check-cfg 'cfg(pyo3_leak_on_drop_without_reference_pool)' --check-cfg 'cfg(Py_3_7)' --check-cfg 'cfg(Py_3_8)' --check-cfg 'cfg(Py_3_9)' --check-cfg 'cfg(Py_3_10)' --check-cfg 'cfg(Py_3_11)' --check-cfg 'cfg(Py_3_12)' --check-cfg 'cfg(Py_3_13)' --check-cfg 'cfg(Py_3_14)' --check-cfg 'cfg(Py_3_15)'` (exit status: 1)
+      💥 maturin failed
+        Caused by: Failed to build a native library through cargo
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--features" "pyo3/extension-module" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-ngpp3_44/cachebox_bf1a06c125f9414fa9cb391667beaaac/Cargo.toml" "--lib"`
+      Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.14', '--compatibility', 'off'] returned non-zero exit status 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for cachebox
+ERROR: Failed to build one or more wheels

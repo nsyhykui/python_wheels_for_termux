@@ -1,10 +1,9 @@
-WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='mirrors.aliyun.com', port=443): Read timed out. (read timeout=15)")': /pypi/simple/numpy/
   error: subprocess-exited-with-error
   
   × Building wheel for opencv-python (pyproject.toml) did not run successfully.
   │ exit code: 1
-  ╰─> [773 lines of output]
-      /data/data/com.termux/files/usr/tmp/pip-build-env-kwsb0dsl/overlay/lib/python3.14/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+  ╰─> [760 lines of output]
+      /data/data/com.termux/files/usr/tmp/pip-build-env-jeg86psz/overlay/lib/python3.14/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
         warn(
       
       
@@ -32,7 +31,7 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       -- Detecting CXX compile features - done
       -- Configuring done (3.1s)
       -- Generating done (0.0s)
-      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_cmake_test_compile/build
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/_cmake_test_compile/build
       --
       -------
       ------------
@@ -45,9 +44,9 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       
       Configuring Project
         Working directory:
-          /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_skbuild/android-24-arm64_v8a-3.14/cmake-build
+          /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/_skbuild/android-24-arm64_v8a-3.14/cmake-build
         Command:
-          /data/data/com.termux/files/usr/bin/cmake /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/opencv -G Ninja --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_skbuild/android-24-arm64_v8a-3.14/cmake-install -DPYTHON_VERSION_STRING:STRING=3.14.6 -DSKBUILD:INTERNAL=TRUE -DCMAKE_MODULE_PATH:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-kwsb0dsl/overlay/lib/python3.14/site-packages/skbuild/resources/cmake -DPYTHON_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.14 -DPYTHON_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.14 -DPYTHON_LIBRARY:PATH=/data/data/com.termux/files/usr/lib/libpython3.14.so -DPython_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.14 -DPython_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython_FIND_REGISTRY:STRING=NEVER -DPython_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.14 -DPython_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-kwsb0dsl/overlay/lib/python3.14/site-packages/numpy/_core/include -DPython3_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.14 -DPython3_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython3_FIND_REGISTRY:STRING=NEVER -DPython3_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.14 -DPython3_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-kwsb0dsl/overlay/lib/python3.14/site-packages/numpy/_core/include -DPYTHON3_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.14 -DPYTHON_DEFAULT_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.14 -DPYTHON3_INCLUDE_DIR=/data/data/com.termux/files/usr/include/python3.14 -DPYTHON3_LIBRARY=/data/data/com.termux/files/usr/lib/libpython3.14.so -DBUILD_opencv_python3=ON -DBUILD_opencv_python2=OFF -DBUILD_opencv_java=OFF -DOPENCV_PYTHON3_INSTALL_PATH=python -DINSTALL_CREATE_DISTRIB=ON -DBUILD_opencv_apps=OFF -DBUILD_opencv_freetype=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_DOCS=OFF -DPYTHON3_LIMITED_API=ON -DBUILD_OPENEXR=ON -DCMAKE_BUILD_TYPE:STRING=Release
+          /data/data/com.termux/files/usr/bin/cmake /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/opencv -G Ninja --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/_skbuild/android-24-arm64_v8a-3.14/cmake-install -DPYTHON_VERSION_STRING:STRING=3.14.6 -DSKBUILD:INTERNAL=TRUE -DCMAKE_MODULE_PATH:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-jeg86psz/overlay/lib/python3.14/site-packages/skbuild/resources/cmake -DPYTHON_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.14 -DPYTHON_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.14 -DPYTHON_LIBRARY:PATH=/data/data/com.termux/files/usr/lib/libpython3.14.so -DPython_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.14 -DPython_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython_FIND_REGISTRY:STRING=NEVER -DPython_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.14 -DPython_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-jeg86psz/overlay/lib/python3.14/site-packages/numpy/_core/include -DPython3_EXECUTABLE:PATH=/data/data/com.termux/files/usr/bin/python3.14 -DPython3_ROOT_DIR:PATH=/data/data/com.termux/files/usr -DPython3_FIND_REGISTRY:STRING=NEVER -DPython3_INCLUDE_DIR:PATH=/data/data/com.termux/files/usr/include/python3.14 -DPython3_NumPy_INCLUDE_DIRS:PATH=/data/data/com.termux/files/usr/tmp/pip-build-env-jeg86psz/overlay/lib/python3.14/site-packages/numpy/_core/include -DPYTHON3_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.14 -DPYTHON_DEFAULT_EXECUTABLE=/data/data/com.termux/files/usr/bin/python3.14 -DPYTHON3_INCLUDE_DIR=/data/data/com.termux/files/usr/include/python3.14 -DPYTHON3_LIBRARY=/data/data/com.termux/files/usr/lib/libpython3.14.so -DBUILD_opencv_python3=ON -DBUILD_opencv_python2=OFF -DBUILD_opencv_java=OFF -DOPENCV_PYTHON3_INSTALL_PATH=python -DINSTALL_CREATE_DISTRIB=ON -DBUILD_opencv_apps=OFF -DBUILD_opencv_freetype=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_DOCS=OFF -DPYTHON3_LIMITED_API=ON -DBUILD_OPENEXR=ON -DCMAKE_BUILD_TYPE:STRING=Release
       
       The --no-warn-unused-cli option is deprecated.  Use -Wno-unused-cli instead.
       CMake Warning (deprecated) at CMakeLists.txt:28 (cmake_policy):
@@ -542,22 +541,9 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       -- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
       -- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
       -- UNIFONT: Downloading WenQuanYiMicroHei.ttf.gz from https://raw.githubusercontent.com/vpisarev/opencv_3rdparty/cc7d85179d69a704bee209aa37ce8a657f2f8b34/WenQuanYiMicroHei.ttf.gz
-      -- Try 1 failed
-      CMake Warning at cmake/OpenCVDownload.cmake:251 (message):
-        UNIFONT: Download failed: 28;"Timeout was reached"
-      
-        For details please refer to the download log file:
-      
-      
-        /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_skbuild/android-24-arm64_v8a-3.14/cmake-build/CMakeDownloadLog.txt
-      
-      Call Stack (most recent call first):
-        modules/imgproc/CMakeLists.txt:38 (ocv_download)
-      
-      
-      -- Unicode font download failed. Turning it off.
+      -- Unicode font has been downloaded successfully.
       -- Geometry: Eigen support is disabled. Eigen is Required for Posegraph optimization
-      -- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
+      -- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
       -- DNN: MLAS (vendored) enabled.
       -- opencv_dnn: filter out ocl4dnn source code
       -- opencv_dnn: filter out cuda4dnn source code
@@ -604,7 +590,7 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       -- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS - Success
       -- highgui: using builtin backend: NONE
       -- Set Cleaners to False
-      -- Use autogenerated whitelist /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_skbuild/android-24-arm64_v8a-3.14/cmake-build/modules/js_bindings_generator/whitelist.json
+      -- Use autogenerated whitelist /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/_skbuild/android-24-arm64_v8a-3.14/cmake-build/modules/js_bindings_generator/whitelist.json
       -- OPENCV_FACE_DETECT_YN: Downloading face_detection_yunet_2023mar.onnx from https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
       CMake Warning (policy) at CMakeLists.txt:1125 (install):
         Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
@@ -625,7 +611,7 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       --   Version control:               unknown
       --
       --   Platform:
-      --     Timestamp:                   2026-09-12T11:59:17Z
+      --     Timestamp:                   2026-10-06T07:49:46Z
       --     Host:                        Android 29 aarch64
       --     CMake:                       4.4.3
       --     CMake generator:             Ninja
@@ -646,13 +632,13 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       --     Built as dynamic libs?:      NO
       --     C++ standard:                17
       --     C++ Compiler:                /data/data/com.termux/files/usr/bin/clang++  (ver 21.1.8)
-      --     C++ flags (Release):         -fPIC   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG
-      --     C++ flags (Debug):           -fPIC   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG
+      --     C++ flags (Release):         -I/data/data/com.termux/files/usr/include   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG
+      --     C++ flags (Debug):           -I/data/data/com.termux/files/usr/include   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG
       --     C Compiler:                  /data/data/com.termux/files/usr/bin/clang
-      --     C flags (Release):           -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG
-      --     C flags (Debug):             -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG
-      --     Linker flags (Release):      -Wl,--as-needed -Wl,--no-undefined
-      --     Linker flags (Debug):        -Wl,--as-needed -Wl,--no-undefined
+      --     C flags (Release):           -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -I/data/data/com.termux/files/usr/include   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG
+      --     C flags (Debug):             -O2 -pipe -fPIC -DNO_LONG_DOUBLE_COMPLEX -Wno-implicit-function-declaration -I/data/data/com.termux/files/usr/include   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG
+      --     Linker flags (Release):      -L/data/data/com.termux/files/usr/lib  -Wl,--as-needed -Wl,--no-undefined
+      --     Linker flags (Debug):        -L/data/data/com.termux/files/usr/lib  -Wl,--as-needed -Wl,--no-undefined
       --     ccache:                      YES
       --     Precompiled headers:         NO
       --     Extra dependencies:          avif OpenEXR::OpenEXR z dl m log
@@ -674,7 +660,7 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       --   Android SDK:                   /data/data/com.termux/files/usr/opt/android-sdk (tools:  build tools: 36.0.0)
       --
       --   GUI:                           NONE
-      --     Built-in Unicode font:       NO
+      --     Built-in Unicode font:       YES
       --
       --   Media I/O:
       --     ZLib:                        z (ver 1.3.2)
@@ -729,7 +715,7 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       --     Java wrappers:               NO
       --     Java tests:                  NO
       --
-      --   Install to:                    /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_skbuild/android-24-arm64_v8a-3.14/cmake-install
+      --   Install to:                    /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/_skbuild/android-24-arm64_v8a-3.14/cmake-install
       -- -----------------------------------------------------------------
       --
       CMake Warning (policy) at cmake/OpenCVUtils.cmake:32 (get_property):
@@ -752,18 +738,18 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
       This warning is for project developers.  Use -Wno-author or -Wno-policy to
       suppress it.
       
-      -- Configuring done (206.3s)
+      -- Configuring done (174.0s)
       -- Generating done (0.8s)
-      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_skbuild/android-24-arm64_v8a-3.14/cmake-build
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/_skbuild/android-24-arm64_v8a-3.14/cmake-build
       ninja: error: 'samples/android/15-puzzle/opencv_java_android', needed by 'CMakeFiles/dephelper/android_sample_15-puzzle', missing and no known rule to make it
       Traceback (most recent call last):
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-kwsb0dsl/overlay/lib/python3.14/site-packages/skbuild/setuptools_wrap.py", line 669, in setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-jeg86psz/overlay/lib/python3.14/site-packages/skbuild/setuptools_wrap.py", line 669, in setup
           cmkr.make(make_args, install_target=cmake_install_target, env=env)
           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-kwsb0dsl/overlay/lib/python3.14/site-packages/skbuild/cmaker.py", line 697, in make
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-jeg86psz/overlay/lib/python3.14/site-packages/skbuild/cmaker.py", line 697, in make
           self.make_impl(clargs=clargs, config=config, source_dir=source_dir, install_target=install_target, env=env)
           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-kwsb0dsl/overlay/lib/python3.14/site-packages/skbuild/cmaker.py", line 742, in make_impl
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-jeg86psz/overlay/lib/python3.14/site-packages/skbuild/cmaker.py", line 742, in make_impl
           raise SKBuildError(msg)
       
       An error occurred while building with CMake.
@@ -772,9 +758,9 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
         Install target:
           install
         Source directory:
-          /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb
+          /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19
         Working directory:
-          /data/data/com.termux/files/usr/tmp/pip-wheel-3wqsrnxk/opencv-python_0276b615ff50429ab45c94222514dafb/_skbuild/android-24-arm64_v8a-3.14/cmake-build
+          /data/data/com.termux/files/usr/tmp/pip-wheel-7k5fv_vo/opencv-python_3e13cedf7bb34309822220ac2506bb19/_skbuild/android-24-arm64_v8a-3.14/cmake-build
       Please check the install target is valid and see CMake's output for more information.
       
       [end of output]
