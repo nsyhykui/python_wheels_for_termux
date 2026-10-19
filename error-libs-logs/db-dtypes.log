@@ -2,11 +2,11 @@
   
   × Building wheel for pyarrow (pyproject.toml) did not run successfully.
   │ exit code: 1
-  ╰─> [53 lines of output]
+  ╰─> [642 lines of output]
       WARNING: tool.scikit-build.metadata is deprecated; use the standard top-level [[tool.dynamic-metadata]] instead
       *** scikit-build-core 1.1.1 using CMake 4.4.3 (wheel)
       *** Configuring CMake...
-      loading initial cache file /data/data/com.termux/files/usr/tmp/tmpko_88yi3/build/CMakeInit.txt
+      loading initial cache file /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/CMakeInit.txt
       -- The C compiler identification is Clang 21.1.8
       -- The CXX compiler identification is Clang 21.1.8
       -- Detecting C compiler ABI info
@@ -25,37 +25,626 @@
       -- Performing Test CXX_SUPPORTS_SVE - Success
       -- Arrow build warning level: PRODUCTION
       -- Build Type: Release
-      -- CMAKE_C_FLAGS:  -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -fPIC -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
-      -- CMAKE_CXX_FLAGS:   -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -fPIC -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
+      -- CMAKE_C_FLAGS:  -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -I/data/data/com.termux/files/usr/include -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
+      -- CMAKE_CXX_FLAGS:   -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -I/data/data/com.termux/files/usr/include -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage
       -- Generator: Ninja
-      -- Build output directory: /data/data/com.termux/files/usr/tmp/tmpko_88yi3/build/release
+      -- Build output directory: /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/release
       -- Found Python3: /data/data/com.termux/files/usr/bin/python3.14 (found version "3.14.6") found components: Interpreter Development.Module NumPy
       -- Found Python3Alt: /data/data/com.termux/files/usr/bin/python3.14
-      -- Found NumPy version: 2.5.3
-      -- NumPy include dir: /data/data/com.termux/files/usr/tmp/pip-build-env-25ld6ker/overlay/lib/python3.14/site-packages/numpy/_core/include
+      -- Found NumPy version: 2.5.4
+      -- NumPy include dir: /data/data/com.termux/files/usr/tmp/pip-build-env-pt4w5v7k/overlay/lib/python3.14/site-packages/numpy/_core/include
       -- Found Cython version: 3.3.0
-      CMake Error at CMakeLists.txt:294 (find_package):
-        By not providing "FindArrow.cmake" in CMAKE_MODULE_PATH this project has
-        asked CMake to find a package configuration file provided by "Arrow", but
-        CMake did not find one.
+      -- Arrow version: 25.0.1
+      -- Found the Arrow shared library: /data/data/com.termux/files/usr/lib/libarrow.so
+      -- Found the Arrow import library: ARROW_IMPORT_LIB-NOTFOUND
+      -- Found the Arrow static library:
+      -- Building PyArrow with Dataset
+      -- ArrowCompute version: 25.0.1
+      -- Found the ArrowCompute shared library: /data/data/com.termux/files/usr/lib/libarrow_compute.so
+      -- Found the ArrowCompute import library: ARROW_COMPUTE_IMPORT_LIB-NOTFOUND
+      -- Found the ArrowCompute static library:
+      -- ArrowAcero version: 25.0.1
+      -- Found the ArrowAcero shared library: /data/data/com.termux/files/usr/lib/libarrow_acero.so
+      -- Found the ArrowAcero import library: ARROW_ACERO_IMPORT_LIB-NOTFOUND
+      -- Found the ArrowAcero static library:
+      -- Parquet version: 25.0.1
+      -- Found the Parquet shared library: /data/data/com.termux/files/usr/lib/libparquet.so
+      -- Found the Parquet import library: PARQUET_IMPORT_LIB-NOTFOUND
+      -- Found the Parquet static library:
+      -- ArrowDataset version: 25.0.1
+      -- Found the ArrowDataset shared library: /data/data/com.termux/files/usr/lib/libarrow_dataset.so
+      -- Found the ArrowDataset import library: ARROW_DATASET_IMPORT_LIB-NOTFOUND
+      -- Found the ArrowDataset static library:
+      -- Building PyArrow with Acero
+      -- Building PyArrow with Compute
+      -- Building PyArrow with Parquet
+      -- Parquet Encryption is NOT Enabled
+      -- Building PyArrow with HDFS
+      -- Building PyArrow with ORC
+      -- Configuring done (5.8s)
+      -- Generating done (0.1s)
+      CMake Warning (unused-cli):
+        Manually-specified variables were not used by the project:
       
-        Could not find a package configuration file provided by "Arrow" with any of
-        the following names:
+          BUILD_ANDROID_EXAMPLES
+          BUILD_ANDROID_PROJECTS
+          BUILD_DOCS
+          BUILD_PERF_TESTS
+          BUILD_TESTS
+          OPENCV_ENABLE_PKG_CONFIG
+          PKG_CONFIG_EXECUTABLE
+          PYTHON3_EXECUTABLE
+          PYTHON3_INCLUDE_DIR
+          PYTHON3_LIBRARIES
+          PYTHON3_NUMPY_INCLUDE_DIRS
+          WITH_FFMPEG
+          WITH_GTK
+          WITH_GTK_2_X
+          WITH_OPENCL
+          WITH_V4L
       
-          Arrow.cps
-          arrow.cps
-          ArrowConfig.cmake
-          arrow-config.cmake
       
-        Add the installation prefix of "Arrow" to CMAKE_PREFIX_PATH or set
-        "Arrow_DIR" to a directory containing one of the above files.  If "Arrow"
-        provides a separate development package or SDK, be sure it has been
-        installed.
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build
+      *** Building project with Ninja...
+      [1/67] Compiling Cython CXX source for _pyarrow_cpp_tests...
+      [2/67] Compiling Cython CXX source for _json...
+      performance hint: pyarrow/_json.pyx:317:73: Exception check after calling 'GetResultValue[shared_ptr[CJSONStreamingReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CJSONStreamingReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_json.pyx:364:30: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [3/67] Compiling Cython CXX source for _feather...
+      performance hint: pyarrow/_feather.pyx:79:40: Exception check after calling 'GetResultValue[shared_ptr[CFeatherReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CFeatherReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [4/67] Compiling Cython CXX source for _hdfs...
+      performance hint: pyarrow/_hdfs.pyx:108:36: Exception check after calling 'GetResultValue[shared_ptr[CHadoopFileSystem]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CHadoopFileSystem]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_hdfs.pyx:145:36: Exception check after calling 'GetResultValue[shared_ptr[CHadoopFileSystem]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CHadoopFileSystem]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [5/67] Compiling Cython CXX source for _acero...
+      performance hint: pyarrow/_acero.pyx:633:67: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_acero.pyx:633:36: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [6/67] Compiling Cython CXX source for _csv...
+      performance hint: pyarrow/_csv.pyx:1291:73: Exception check after calling 'GetResultValue[shared_ptr[CCSVStreamingReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CCSVStreamingReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_csv.pyx:1386:34: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_csv.pyx:1718:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchWriter]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchWriter]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [7/67] Compiling Cython CXX source for _fs...
+      performance hint: pyarrow/_fs.pyx:608:38: Exception check after calling 'GetResultValue[vector[CFileInfo]]' will always require the GIL to be acquired. Declare 'GetResultValue[vector[CFileInfo]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:612:38: Exception check after calling 'GetResultValue[vector[CFileInfo]]' will always require the GIL to be acquired. Declare 'GetResultValue[vector[CFileInfo]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:616:37: Exception check after calling 'GetResultValue[CFileInfo]' will always require the GIL to be acquired. Declare 'GetResultValue[CFileInfo]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:815:38: Exception check after calling 'GetResultValue[shared_ptr[CRandomAccessFile]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRandomAccessFile]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:857:38: Exception check after calling 'GetResultValue[shared_ptr[CInputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CInputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:913:39: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:984:39: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:1138:31: Exception check after calling 'GetResultValue[shared_ptr[CFileSystem]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CFileSystem]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:1650:28: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:1650:49: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_fs.pyx:1651:33: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [8/67] Compiling Cython CXX source for _compute...
+      performance hint: pyarrow/_compute.pyx:400:39: Exception check after calling 'GetResultValue[CDatum]' will always require the GIL to be acquired. Declare 'GetResultValue[CDatum]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_compute.pyx:405:39: Exception check after calling 'GetResultValue[CDatum]' will always require the GIL to be acquired. Declare 'GetResultValue[CDatum]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_compute.pyx:555:33: Exception check after calling 'GetResultValue[shared_ptr[CFunction]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CFunction]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_compute.pyx:3555:33: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [9/67] Compiling Cython CXX source for _dataset...
+      performance hint: pyarrow/_dataset.pyx:2025:39: Exception check after calling 'GetResultValue[shared_ptr[CRandomAccessFile]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRandomAccessFile]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_dataset.pyx:2028:39: Exception check after calling 'GetResultValue[shared_ptr[CRandomAccessFile]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRandomAccessFile]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_dataset.pyx:3492:41: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_dataset.pyx:3536:34: Exception check after calling 'GetResultValue[CTaggedRecordBatch]' will always require the GIL to be acquired. Declare 'GetResultValue[CTaggedRecordBatch]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_dataset.pyx:3961:42: Exception check after calling 'GetResultValue[CTaggedRecordBatchIterator]' will always require the GIL to be acquired. Declare 'GetResultValue[CTaggedRecordBatchIterator]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [10/67] Compiling Cython CXX source for _orc...
+      performance hint: pyarrow/_orc.pyx:254:45: Exception check after calling 'GetResultValue[unique_ptr[ORCFileReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[ORCFileReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:270:46: Exception check after calling 'GetResultValue[shared_ptr[const CKeyValueMetadata]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[const CKeyValueMetadata]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:288:44: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:355:48: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:361:48: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:374:41: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:378:41: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:412:42: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_orc.pyx:430:45: Exception check after calling 'GetResultValue[unique_ptr[ORCFileWriter]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[ORCFileWriter]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [11/67] Compiling Cython CXX source for _dataset_orc...
+      [12/67] Compiling Cython CXX source for _parquet...
+      performance hint: pyarrow/_parquet.pyx:1240:37: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_parquet.pyx:1791:50: Exception check after calling 'GetResultValue[unique_ptr[CRecordBatchReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[CRecordBatchReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_parquet.pyx:1798:50: Exception check after calling 'GetResultValue[unique_ptr[CRecordBatchReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[CRecordBatchReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_parquet.pyx:2423:42: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_parquet.pyx:2459:45: Exception check after calling 'GetResultValue[unique_ptr[FileWriter]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[FileWriter]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [13/67] Compiling Cython CXX source for _dataset_parquet...
+      performance hint: pyarrow/_dataset_parquet.pyx:440:45: Exception check after calling 'GetResultValue[vector[shared_ptr[CFragment]]]' will always require the GIL to be acquired. Declare 'GetResultValue[vector[shared_ptr[CFragment]]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_dataset_parquet.pyx:484:48: Exception check after calling 'GetResultValue[shared_ptr[CFragment]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CFragment]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/_dataset_parquet.pyx:492:48: Exception check after calling 'GetResultValue[shared_ptr[CFragment]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CFragment]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [14/67] Compiling Cython CXX source for lib...
+      performance hint: pyarrow/types.pxi:472:35: Exception check after calling 'GetResultValue[shared_ptr[CDataType]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CDataType]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:2627:57: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:2811:35: Exception check after calling 'GetResultValue[shared_ptr[CField]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CField]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:2850:36: Exception check after calling 'GetResultValue[shared_ptr[CField]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CField]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:3384:39: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:3415:39: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:3452:39: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:3501:59: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:3535:35: Exception check after calling 'GetResultValue[shared_ptr[CBuffer]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CBuffer]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:3633:35: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:3677:35: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/types.pxi:5660:42: Exception check after calling 'GetResultValue[shared_ptr[CDataType]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CDataType]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/scalar.pxi:1586:36: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/scalar.pxi:1774:32: Exception check after calling 'GetResultValue[shared_ptr[CChunkedArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CChunkedArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:52:32: Exception check after calling 'GetResultValue[shared_ptr[CChunkedArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CChunkedArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:502:28: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:588:32: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:654:32: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:1239:35: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:1442:33: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:1887:36: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:2018:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:2074:40: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:2078:40: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:2142:34: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:2202:40: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:2207:40: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:2291:34: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3033:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3038:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3196:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3201:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3391:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3396:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3613:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3618:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3872:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:3878:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:4142:32: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:4185:32: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:4475:41: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:4595:35: Exception check after calling 'GetResultValue[vector[shared_ptr[CArray]]]' will always require the GIL to be acquired. Declare 'GetResultValue[vector[shared_ptr[CArray]]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:4749:42: Exception check after calling 'GetResultValue[shared_ptr[CRunEndEncodedArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRunEndEncodedArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:4755:42: Exception check after calling 'GetResultValue[shared_ptr[CRunEndEncodedArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRunEndEncodedArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:5064:36: Exception check after calling 'GetResultValue[shared_ptr[CFixedShapeTensorArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CFixedShapeTensorArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/array.pxi:5475:39: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:262:33: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:730:38: Exception check after calling 'GetResultValue[vector[shared_ptr[CChunkedArray]]]' will always require the GIL to be acquired. Declare 'GetResultValue[vector[shared_ptr[CChunkedArray]]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:1255:37: Exception check after calling 'GetResultValue[shared_ptr[CChunkedArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CChunkedArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:1461:44: Exception check after calling 'GetResultValue[shared_ptr[CChunkedArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CChunkedArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:1562:33: Exception check after calling 'GetResultValue[shared_ptr[CChunkedArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CChunkedArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:2798:33: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:2907:36: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:2941:36: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3005:36: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3080:36: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3129:35: Exception check after calling 'GetResultValue[shared_ptr[CBuffer]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CBuffer]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3293:36: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3586:43: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3601:36: Exception check after calling 'GetResultValue[shared_ptr[CArray]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CArray]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3679:37: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3714:36: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3770:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3774:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3871:36: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3932:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:3936:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:4033:34: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:4363:36: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:4492:38: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:4543:37: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:4601:37: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:5024:36: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:5171:37: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:5353:33: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:5452:36: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:5485:36: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:5541:36: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:5614:36: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:6355:39: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/table.pxi:6406:45: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/tensor.pxi:694:36: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/tensor.pxi:975:36: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/tensor.pxi:1247:36: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/tensor.pxi:1501:36: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:250:33: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:263:39: Exception check after calling 'GetResultValue[shared_ptr[const CKeyValueMetadata]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[const CKeyValueMetadata]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:281:41: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:285:41: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:319:39: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:322:39: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:408:39: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:481:39: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:545:39: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:608:35: Exception check after calling 'GetResultValue[shared_ptr[CBuffer]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CBuffer]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:704:47: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:769:47: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1046:35: Exception check after calling 'GetResultValue[shared_ptr[CMemoryMappedFile]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CMemoryMappedFile]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1080:35: Exception check after calling 'GetResultValue[shared_ptr[CMemoryMappedFile]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CMemoryMappedFile]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1260:35: Exception check after calling 'GetResultValue[shared_ptr[ReadableFile]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[ReadableFile]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1267:47: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1277:35: Exception check after calling 'GetResultValue[shared_ptr[ReadableFile]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[ReadableFile]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1284:47: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1646:39: Exception check after calling 'GetResultValue[unique_ptr[CResizableBuffer]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[CResizableBuffer]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1675:50: Exception check after calling 'GetResultValue[unique_ptr[CResizableBuffer]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[CResizableBuffer]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1680:47: Exception check after calling 'GetResultValue[unique_ptr[CBuffer]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[CBuffer]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1928:34: Exception check after calling 'GetResultValue[shared_ptr[CInputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CInputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:1992:34: Exception check after calling 'GetResultValue[shared_ptr[COutputStream]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[COutputStream]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:2644:27: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:2643:42: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:2704:27: Exception check after calling 'unwrap' will always require the GIL to be acquired. Declare 'unwrap' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/io.pxi:2703:26: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:545:48: Exception check after calling 'GetResultValue[unique_ptr[CMessage]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[CMessage]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:671:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchWriter]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchWriter]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:816:48: Exception check after calling 'GetResultValue[CRecordBatchWithMetadata]' will always require the GIL to be acquired. Declare 'GetResultValue[CRecordBatchWithMetadata]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:936:37: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:998:37: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1092:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1122:40: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchWriter]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchWriter]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1177:44: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchFileReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchFileReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1182:44: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatchFileReader]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatchFileReader]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1221:34: Exception check after calling 'GetResultValue[int64_t]' will always require the GIL to be acquired. Declare 'GetResultValue[int64_t]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1244:34: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1274:48: Exception check after calling 'GetResultValue[CRecordBatchWithMetadata]' will always require the GIL to be acquired. Declare 'GetResultValue[CRecordBatchWithMetadata]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1293:43: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1295:34: Exception check after calling 'GetResultValue[shared_ptr[CTable]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTable]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1420:34: Exception check after calling 'GetResultValue[shared_ptr[CTensor]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CTensor]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1445:26: Exception check after calling 'GetResultValue[unique_ptr[CMessage]]' will always require the GIL to be acquired. Declare 'GetResultValue[unique_ptr[CMessage]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1483:35: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1488:35: Exception check after calling 'GetResultValue[shared_ptr[CSchema]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CSchema]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      performance hint: pyarrow/ipc.pxi:1528:31: Exception check after calling 'GetResultValue[shared_ptr[CRecordBatch]]' will always require the GIL to be acquired. Declare 'GetResultValue[shared_ptr[CRecordBatch]]' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+      [15/67] Generating pyarrow/src/arrow/python/lib_api.h, pyarrow/src/arrow/python/lib.h
+      [16/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/config.cc.o
+      [17/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/benchmark.cc.o
+      [18/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/common.cc.o
+      [19/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/decimal.cc.o
+      [20/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/extension_type.cc.o
+      [21/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/numpy_init.cc.o
+      [22/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/helpers.cc.o
+      [23/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/io.cc.o
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:211:42: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        211 |   return SafeCallIntoPython([=] { return file_->Seek(position, 0); });
+            |                                          ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:211:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        211 |   return SafeCallIntoPython([=] { return file_->Seek(position, 0); });
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:215:63: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        215 |   return SafeCallIntoPython([=]() -> Result<int64_t> { return file_->Tell(); });
+            |                                                               ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:215:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        215 |   return SafeCallIntoPython([=]() -> Result<int64_t> { return file_->Tell(); });
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:221:19: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        221 |     RETURN_NOT_OK(file_->Read(nbytes, bytes.ref()));
+            |                   ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:219:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        219 |   return SafeCallIntoPython([=]() -> Result<int64_t> {
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:244:9: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        244 |     if (file_->HasReadBuffer()) {
+            |         ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:242:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        242 |   return SafeCallIntoPython([=]() -> Result<std::shared_ptr<Buffer>> {
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:258:19: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        258 |     RETURN_NOT_OK(Seek(position));
+            |                   ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:257:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        257 |   return SafeCallIntoPython([=]() -> Result<int64_t> {
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:266:19: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        266 |     RETURN_NOT_OK(Seek(position));
+            |                   ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:265:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        265 |   return SafeCallIntoPython([=]() -> Result<std::shared_ptr<Buffer>> {
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:273:53: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        273 |     ARROW_ASSIGN_OR_RAISE(int64_t current_position, file_->Tell());
+            |                                                     ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:272:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        272 |   return SafeCallIntoPython([=]() -> Result<int64_t> {
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:297:44: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        297 |   return SafeCallIntoPython([=]() { return file_->Abort(); });
+            |                                            ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:297:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        297 |   return SafeCallIntoPython([=]() { return file_->Abort(); });
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:301:44: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        301 |   return SafeCallIntoPython([=]() { return file_->Close(); });
+            |                                            ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:301:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        301 |   return SafeCallIntoPython([=]() { return file_->Close(); });
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:317:5: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        317 |     position_ += nbytes;
+            |     ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:316:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        316 |   return SafeCallIntoPython([=]() {
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:324:5: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        324 |     position_ += buffer->size();
+            |     ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:323:30: note: add an explicit capture of 'this' to capture '*this' by reference
+        323 |   return SafeCallIntoPython([=]() {
+            |                              ^
+            |                               , this
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:355:7: warning: implicit capture of 'this' with a capture default of '=' is deprecated [-Wdeprecated-this-capture]
+        355 |       cb_(arg_->obj(), src, &dest);
+            |       ^
+      /data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src/arrow/python/io.cc:353:32: note: add an explicit capture of 'this' to capture '*this' by reference
+        353 |     return SafeCallIntoPython([=]() -> Result<std::shared_ptr<Buffer>> {
+            |                                ^
+            |                                 , this
+      12 warnings generated.
+      [24/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/inference.cc.o
+      [25/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/ipc.cc.o
+      [26/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/numpy_convert.cc.o
+      [27/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/datetime.cc.o
+      [28/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/pyarrow.cc.o
+      [29/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/gdb.cc.o
+      [30/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/util.cc.o
+      [31/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/csv.cc.o
+      [32/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/numpy_to_arrow.cc.o
+      [33/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/filesystem.cc.o
+      [34/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/python_test.cc.o
+      [35/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/udf.cc.o
+      [36/67] Building CXX object CMakeFiles/_pyarrow_cpp_tests.dir/_pyarrow_cpp_tests.cpp.o
+      [37/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/arrow_to_pandas.cc.o
+      [38/67] Building CXX object CMakeFiles/_feather.dir/_feather.cpp.o
+      [39/67] Building CXX object CMakeFiles/_json.dir/_json.cpp.o
+      [40/67] Building CXX object CMakeFiles/_compute.dir/_compute.cpp.o
+      FAILED: [code=1] CMakeFiles/_compute.dir/_compute.cpp.o
+      /data/data/com.termux/files/usr/bin/cmake -E env CCACHE_COMMENTS=1 CCACHE_BASEDIR=/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build -- /data/data/com.termux/files/usr/bin/ccache /data/data/com.termux/files/usr/bin/clang++ -DARROW_HAVE_NEON -DARROW_HAVE_RUNTIME_SVE128 -DARROW_HAVE_RUNTIME_SVE256 -DARROW_HAVE_RUNTIME_SVE512 -D_compute_EXPORTS -I/data/data/com.termux/files/usr/include/python3.14 -I/data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src -I/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/pyarrow/src -I/data/data/com.termux/files/usr/tmp/pip-build-env-pt4w5v7k/overlay/lib/python3.14/site-packages/numpy/_core/include -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -I/data/data/com.termux/files/usr/include -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage -O3 -DNDEBUG -O2  -std=c++20 -fPIC -Wno-unused-function -MD -MT CMakeFiles/_compute.dir/_compute.cpp.o -MF CMakeFiles/_compute.dir/_compute.cpp.o.d -o CMakeFiles/_compute.dir/_compute.cpp.o -c /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/_compute.cpp
+      _compute.cpp:8526:29: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       8526 | static enum arrow::compute::SearchSortedOptions::Side __pyx_f_7pyarrow_8_compute_unwrap_search_sorted_side(PyObject *); /*proto*/
+            |             ~~~~~~~~~~~~~~~~^
+      _compute.cpp:8526:50: error: ISO C++ forbids forward references to 'enum' types
+       8526 | static enum arrow::compute::SearchSortedOptions::Side __pyx_f_7pyarrow_8_compute_unwrap_search_sorted_side(PyObject *); /*proto*/
+            |                                                  ^
+      _compute.cpp:52354:29: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       52354 | static enum arrow::compute::SearchSortedOptions::Side __pyx_f_7pyarrow_8_compute_unwrap_search_sorted_side(PyObject *__pyx_v_side) {
+             |             ~~~~~~~~~~~~~~~~^
+      _compute.cpp:52354:50: error: ISO C++ forbids forward references to 'enum' types
+       52354 | static enum arrow::compute::SearchSortedOptions::Side __pyx_f_7pyarrow_8_compute_unwrap_search_sorted_side(PyObject *__pyx_v_side) {
+             |                                                  ^
+      _compute.cpp:52355:24: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       52355 |   enum arrow::compute::SearchSortedOptions::Side __pyx_r;
+             |        ~~~~~~~~~~~~~~~~^
+      _compute.cpp:52355:45: error: ISO C++ forbids forward references to 'enum' types
+       52355 |   enum arrow::compute::SearchSortedOptions::Side __pyx_r;
+             |                                             ^
+      _compute.cpp:52387:33: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       52387 |       __pyx_r = arrow::compute::SearchSortedOptions::Left;
+             |                 ~~~~~~~~~~~~~~~~^
+      _compute.cpp:52420:33: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       52420 |       __pyx_r = arrow::compute::SearchSortedOptions::Right;
+             |                 ~~~~~~~~~~~~~~~~^
+      _compute.cpp:52474:35: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       52474 |   __pyx_r = (enum arrow::compute::SearchSortedOptions::Side) 0;
+             |                   ~~~~~~~~~~~~~~~~^
+      _compute.cpp:52474:56: error: ISO C++ forbids forward references to 'enum' types
+       52474 |   __pyx_r = (enum arrow::compute::SearchSortedOptions::Side) 0;
+             |                                                        ^
+      _compute.cpp:52481:35: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       52481 |   __pyx_r = (enum arrow::compute::SearchSortedOptions::Side) 0;
+             |                   ~~~~~~~~~~~~~~~~^
+      _compute.cpp:52481:56: error: ISO C++ forbids forward references to 'enum' types
+       52481 |   __pyx_r = (enum arrow::compute::SearchSortedOptions::Side) 0;
+             |                                                        ^
+      _compute.cpp:56158:24: error: no member named 'SearchSortedOptions' in namespace 'arrow::compute'
+       56158 |   enum arrow::compute::SearchSortedOptions::Side __pyx_t_1;
+             |        ~~~~~~~~~~~~~~~~^
+      _compute.cpp:56158:45: error: ISO C++ forbids forward references to 'enum' types
+       56158 |   enum arrow::compute::SearchSortedOptions::Side __pyx_t_1;
+             |                                             ^
+      _compute.cpp:56180:62: error: no type named 'SearchSortedOptions' in namespace 'arrow::compute'
+       56180 |   __pyx_v_self->__pyx_base.wrapped.reset(new arrow::compute::SearchSortedOptions(__pyx_t_1));
+             |                                              ~~~~~~~~~~~~~~~~^
+      _compute.cpp:56762:48: warning: 'SortOptions' is deprecated: Deprecated in arrow 25.0.0, use null_placement in sort_keys instead [-Wdeprecated-declarations]
+       56762 |     __pyx_v_self->__pyx_base.wrapped.reset(new arrow::compute::SortOptions(__pyx_t_2, __pyx_t_4));
+             |                                                ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/compute/api_vector.h:117:3: note: 'SortOptions' has been explicitly marked deprecated here
+        117 |   ARROW_DEPRECATED("Deprecated in arrow 25.0.0, use null_placement in sort_keys instead")
+            |   ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/util/macros.h:140:35: note: expanded from macro 'ARROW_DEPRECATED'
+        140 | #  define ARROW_DEPRECATED(...) [[deprecated(__VA_ARGS__)]]
+            |                                   ^
+      _compute.cpp:60729:52: warning: 'RankOptions' is deprecated: Deprecated in arrow 25.0.0, use null_placement in sort_keys instead [-Wdeprecated-declarations]
+       60729 |         __pyx_v_self->__pyx_base.wrapped.reset(new arrow::compute::RankOptions(__pyx_t_5, __pyx_t_9, __pyx_t_8));
+             |                                                    ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/compute/api_vector.h:214:3: note: 'RankOptions' has been explicitly marked deprecated here
+        214 |   ARROW_DEPRECATED("Deprecated in arrow 25.0.0, use null_placement in sort_keys instead")
+            |   ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/util/macros.h:140:35: note: expanded from macro 'ARROW_DEPRECATED'
+        140 | #  define ARROW_DEPRECATED(...) [[deprecated(__VA_ARGS__)]]
+            |                                   ^
+      2 warnings and 15 errors generated.
+      [41/67] Building CXX object CMakeFiles/arrow_python.dir/pyarrow/src/arrow/python/python_to_arrow.cc.o
+      [42/67] Building CXX object CMakeFiles/_hdfs.dir/_hdfs.cpp.o
+      FAILED: [code=1] CMakeFiles/_hdfs.dir/_hdfs.cpp.o
+      /data/data/com.termux/files/usr/bin/cmake -E env CCACHE_COMMENTS=1 CCACHE_BASEDIR=/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build -- /data/data/com.termux/files/usr/bin/ccache /data/data/com.termux/files/usr/bin/clang++ -DARROW_HAVE_NEON -DARROW_HAVE_RUNTIME_SVE128 -DARROW_HAVE_RUNTIME_SVE256 -DARROW_HAVE_RUNTIME_SVE512 -D_hdfs_EXPORTS -I/data/data/com.termux/files/usr/include/python3.14 -I/data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src -I/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/pyarrow/src -I/data/data/com.termux/files/usr/tmp/pip-build-env-pt4w5v7k/overlay/lib/python3.14/site-packages/numpy/_core/include -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -I/data/data/com.termux/files/usr/include -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage -O3 -DNDEBUG -O2  -std=c++20 -fPIC -Wno-unused-function -MD -MT CMakeFiles/_hdfs.dir/_hdfs.cpp.o -MF CMakeFiles/_hdfs.dir/_hdfs.cpp.o.d -o CMakeFiles/_hdfs.dir/_hdfs.cpp.o -c /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/_hdfs.cpp
+      _hdfs.cpp:10255:60: error: no member named 'HaveLibHdfs' in namespace 'arrow::fs'; did you mean 'arrow::io::HaveLibHdfs'?
+       10255 |             __pyx_t_4 = __pyx_f_7pyarrow_3lib_check_status(arrow::fs::HaveLibHdfs()); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 36, __pyx_L10_error)
+             |                                                            ^~~~~~~~~~~~~~~~~~~~~~
+             |                                                            arrow::io::HaveLibHdfs
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/io/hdfs.h:281:21: note: 'arrow::io::HaveLibHdfs' declared here
+        281 | ARROW_EXPORT Status HaveLibHdfs();
+            |                     ^
+      _hdfs.cpp:11642:39: error: no member named 'extra_conf' in 'arrow::fs::HdfsOptions'
+       11642 |   __pyx_v_c_extra_conf = __pyx_v_opts.extra_conf();
+             |                          ~~~~~~~~~~~~ ^
+      _hdfs.cpp:11666:94: error: no member named 'host' in 'arrow::fs::HdfsOptions'
+       11666 |   __pyx_t_6 = __pyx_convert_PyBytes_string_to_py_6libcpp_6string_std__in_string(__pyx_v_opts.host()); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 161, __pyx_L1_error)
+             |                                                                                 ~~~~~~~~~~~~ ^
+      _hdfs.cpp:11699:50: error: no member named 'port' in 'arrow::fs::HdfsOptions'
+       11699 |   __pyx_t_3 = __Pyx_PyLong_From_int(__pyx_v_opts.port()); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
+             |                                     ~~~~~~~~~~~~ ^
+      _hdfs.cpp:11714:94: error: no member named 'user' in 'arrow::fs::HdfsOptions'
+       11714 |   __pyx_t_4 = __pyx_convert_PyBytes_string_to_py_6libcpp_6string_std__in_string(__pyx_v_opts.user()); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 163, __pyx_L1_error)
+             |                                                                                 ~~~~~~~~~~~~ ^
+      _hdfs.cpp:11786:94: error: no member named 'kerb_ticket' in 'arrow::fs::HdfsOptions'
+       11786 |   __pyx_t_5 = __pyx_convert_PyBytes_string_to_py_6libcpp_6string_std__in_string(__pyx_v_opts.kerb_ticket()); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 167, __pyx_L1_error)
+             |                                                                                 ~~~~~~~~~~~~ ^
+      6 errors generated.
+      [43/67] Building CXX object CMakeFiles/_csv.dir/_csv.cpp.o
+      _csv.cpp:29922:43: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       29922 |         __pyx_v_self->__pyx_base.writer = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL< arrow::ipc::RecordBatchWriter> )__pyx_t_4));
+             |                                           ^
+      _csv.cpp:5524:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       5524 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      1 warning generated.
+      [44/67] Building CXX object CMakeFiles/lib.dir/lib.cpp.o
+      FAILED: [code=1] CMakeFiles/lib.dir/lib.cpp.o
+      /data/data/com.termux/files/usr/bin/cmake -E env CCACHE_COMMENTS=1 CCACHE_BASEDIR=/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build -- /data/data/com.termux/files/usr/bin/ccache /data/data/com.termux/files/usr/bin/clang++ -DARROW_HAVE_NEON -DARROW_HAVE_RUNTIME_SVE128 -DARROW_HAVE_RUNTIME_SVE256 -DARROW_HAVE_RUNTIME_SVE512 -Dlib_EXPORTS -I/data/data/com.termux/files/usr/include/python3.14 -I/data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src -I/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/pyarrow/src -I/data/data/com.termux/files/usr/tmp/pip-build-env-pt4w5v7k/overlay/lib/python3.14/site-packages/numpy/_core/include -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -I/data/data/com.termux/files/usr/include -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage -O3 -DNDEBUG -O2  -std=c++20 -fPIC -Wno-unused-function -MD -MT CMakeFiles/lib.dir/lib.cpp.o -MF CMakeFiles/lib.dir/lib.cpp.o.d -o CMakeFiles/lib.dir/lib.cpp.o -c /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/lib.cpp
+      lib.cpp:34411:21: warning: 'timezone_db_path' is deprecated: Deprecated in 24.0.0. Only needed for Clang/libc++ on Windows. [-Wdeprecated-declarations]
+       34411 |     __pyx_v_options.timezone_db_path = ((std::optional<std::string> )((std::string)__pyx_t_7));
+             |                     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/config.h:101:3: note: 'timezone_db_path' has been explicitly marked deprecated here
+        101 |   ARROW_DEPRECATED("Deprecated in 24.0.0. Only needed for Clang/libc++ on Windows.")
+            |   ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/util/macros.h:140:35: note: expanded from macro 'ARROW_DEPRECATED'
+        140 | #  define ARROW_DEPRECATED(...) [[deprecated(__VA_ARGS__)]]
+            |                                   ^
+      lib.cpp:140087:103: error: no member named 'ToTensor' in 'arrow::Array'
+       140087 |             __pyx_t_2 = arrow::py::GetResultValue<std::shared_ptr< arrow::Tensor> >(__pyx_v_self->ap->ToTensor(__pyx_v_c_allow_nulls)); if (unlikely(__Pyx_ErrOccurredWithGIL())) __PYX_ERR(4, 1887, __pyx_L4_error)
+              |                                                                                     ~~~~~~~~~~~~~~~~  ^
+      lib.cpp:144613:62: error: no member named 'kVersion' in namespace 'arrow::dlpack'
+       144613 |       __pyx_t_1 = __Pyx_PyLong_From_uint32_t( arrow::dlpack::kVersion.major); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 2324, __pyx_L1_error)
+              |                                                              ^~~~~~~~
+      lib.cpp:144615:62: error: no member named 'kVersion' in namespace 'arrow::dlpack'
+       144615 |       __pyx_t_2 = __Pyx_PyLong_From_uint32_t( arrow::dlpack::kVersion.minor); if (unlikely(!__pyx_t_2)) __PYX_ERR(4, 2324, __pyx_L1_error)
+              |                                                              ^~~~~~~~
+      lib.cpp:144784:46: error: no member named 'ImportArrayVersioned' in namespace 'arrow::dlpack'
+       144784 |             __pyx_v_result =  arrow::dlpack::ImportArrayVersioned(__pyx_v_ptr);
+              |                                              ^~~~~~~~~~~~~~~~~~~~
+      lib.cpp:145357:90: error: no member named 'ExportArrayVersioned' in namespace 'arrow::dlpack'
+       145357 |       __pyx_t_16 = arrow::py::GetResultValue<DLManagedTensorVersioned *>( arrow::dlpack::ExportArrayVersioned(__pyx_v_self->sp_array, __pyx_t_15)); if (unlikely(PyErr_Occurred())) __PYX_ERR(4, 2401, __pyx_L1_error)
+              |                                                                                          ^~~~~~~~~~~~~~~~~~~~
+      lib.cpp:223504:66: error: no member named 'kVersion' in namespace 'arrow::dlpack'
+       223504 |           __pyx_t_1 = __Pyx_PyLong_From_uint32_t( arrow::dlpack::kVersion.major); if (unlikely(!__pyx_t_1)) __PYX_ERR(5, 335, __pyx_L1_error)
+              |                                                                  ^~~~~~~~
+      lib.cpp:223506:66: error: no member named 'kVersion' in namespace 'arrow::dlpack'
+       223506 |           __pyx_t_2 = __Pyx_PyLong_From_uint32_t( arrow::dlpack::kVersion.minor); if (unlikely(!__pyx_t_2)) __PYX_ERR(5, 335, __pyx_L1_error)
+              |                                                                  ^~~~~~~~
+      lib.cpp:223675:50: error: no member named 'ImportTensorVersioned' in namespace 'arrow::dlpack'
+       223675 |                 __pyx_v_result =  arrow::dlpack::ImportTensorVersioned(__pyx_v_ptr);
+              |                                                  ^~~~~~~~~~~~~~~~~~~~~
+      lib.cpp:224248:94: error: no member named 'ExportTensorVersioned' in namespace 'arrow::dlpack'
+       224248 |           __pyx_t_16 = arrow::py::GetResultValue<DLManagedTensorVersioned *>( arrow::dlpack::ExportTensorVersioned(__pyx_v_self->sp_tensor, __pyx_t_15)); if (unlikely(PyErr_Occurred())) __PYX_ERR(5, 412, __pyx_L1_error)
+              |                                                                                              ^~~~~~~~~~~~~~~~~~~~~
+      lib.cpp:287698:51: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       287698 |                 __pyx_v_self->__pyx_base.writer = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL< arrow::ipc::RecordBatchWriter> )__pyx_t_3));
+              |                                                   ^
+      lib.cpp:8365:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       8365 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      lib.cpp:292336:51: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       292336 |                 __pyx_v_self->__pyx_base.reader = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL< arrow::RecordBatchReader> )__pyx_t_4));
+              |                                                   ^
+      lib.cpp:8365:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       8365 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      lib.cpp:293000:62: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       293000 |                 __pyx_v_self->__pyx_base.__pyx_base.writer = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL< arrow::ipc::RecordBatchWriter> )__pyx_t_5));
+              |                                                              ^
+      lib.cpp:8365:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       8365 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      lib.cpp:293867:42: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       293867 |                   __pyx_v_self->reader = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL< arrow::ipc::RecordBatchFileReader> )__pyx_t_13));
+              |                                          ^
+      lib.cpp:8365:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       8365 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      lib.cpp:293930:42: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       293930 |                   __pyx_v_self->reader = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL< arrow::ipc::RecordBatchFileReader> )__pyx_t_13));
+              |                                          ^
+      lib.cpp:8365:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       8365 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      6 warnings and 9 errors generated.
+      [45/67] Building CXX object CMakeFiles/_fs.dir/_fs.cpp.o
+      [46/67] Building CXX object CMakeFiles/_parquet.dir/_parquet.cpp.o
+      FAILED: [code=1] CMakeFiles/_parquet.dir/_parquet.cpp.o
+      /data/data/com.termux/files/usr/bin/cmake -E env CCACHE_COMMENTS=1 CCACHE_BASEDIR=/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build -- /data/data/com.termux/files/usr/bin/ccache /data/data/com.termux/files/usr/bin/clang++ -DARROW_HAVE_NEON -DARROW_HAVE_RUNTIME_SVE128 -DARROW_HAVE_RUNTIME_SVE256 -DARROW_HAVE_RUNTIME_SVE512 -D_parquet_EXPORTS -I/data/data/com.termux/files/usr/include/python3.14 -I/data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src -I/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/pyarrow/src -I/data/data/com.termux/files/usr/tmp/pip-build-env-pt4w5v7k/overlay/lib/python3.14/site-packages/numpy/_core/include -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -I/data/data/com.termux/files/usr/include -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage -O3 -DNDEBUG -O2  -std=c++20 -fPIC -Wno-unused-function -MD -MT CMakeFiles/_parquet.dir/_parquet.cpp.o -MF CMakeFiles/_parquet.dir/_parquet.cpp.o.d -o CMakeFiles/_parquet.dir/_parquet.cpp.o -c /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/_parquet.cpp
+      _parquet.cpp:37485:24: error: no member named 'set_schema_depth_limit' in 'parquet::ReaderProperties'
+       37485 |     __pyx_v_properties.set_schema_depth_limit(__pyx_t_9);
+             |     ~~~~~~~~~~~~~~~~~~ ^
+      1 error generated.
+      [47/67] Building CXX object CMakeFiles/_dataset_parquet.dir/_dataset_parquet.cpp.o
+      FAILED: [code=1] CMakeFiles/_dataset_parquet.dir/_dataset_parquet.cpp.o
+      /data/data/com.termux/files/usr/bin/cmake -E env CCACHE_COMMENTS=1 CCACHE_BASEDIR=/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build -- /data/data/com.termux/files/usr/bin/ccache /data/data/com.termux/files/usr/bin/clang++ -DARROW_HAVE_NEON -DARROW_HAVE_RUNTIME_SVE128 -DARROW_HAVE_RUNTIME_SVE256 -DARROW_HAVE_RUNTIME_SVE512 -D_dataset_parquet_EXPORTS -I/data/data/com.termux/files/usr/include/python3.14 -I/data/data/com.termux/files/usr/tmp/pip-wheel-abbzhu6x/pyarrow_755784973e4641808e1e4fc3492acfab/pyarrow/src -I/data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/pyarrow/src -I/data/data/com.termux/files/usr/tmp/pip-build-env-pt4w5v7k/overlay/lib/python3.14/site-packages/numpy/_core/include -Wall -Wno-unknown-warning-option -Wno-pass-failed -march=armv8-a -I/data/data/com.termux/files/usr/include -Qunused-arguments -fcolor-diagnostics  -fno-omit-frame-pointer -Wno-unused-variable -Wno-maybe-uninitialized -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-missing-declarations -Wno-sometimes-uninitialized -Wno-return-type-c-linkage -O3 -DNDEBUG -O2  -std=c++20 -fPIC -Wno-unused-function -MD -MT CMakeFiles/_dataset_parquet.dir/_dataset_parquet.cpp.o -MF CMakeFiles/_dataset_parquet.dir/_dataset_parquet.cpp.o.d -o CMakeFiles/_dataset_parquet.dir/_dataset_parquet.cpp.o -c /data/data/com.termux/files/usr/tmp/tmpuwo2bc5w/build/_dataset_parquet.cpp
+      _dataset_parquet.cpp:25510:52: error: no member named 'schema_depth_limit' in 'parquet::ReaderProperties'
+       25510 |   __pyx_t_2 = __Pyx_PyLong_From_int32_t(__pyx_t_1->schema_depth_limit()); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 896, __pyx_L1_error)
+             |                                         ~~~~~~~~~  ^
+      _dataset_parquet.cpp:25629:14: error: no member named 'set_schema_depth_limit' in 'parquet::ReaderProperties'
+       25629 |   __pyx_t_5->set_schema_depth_limit(__pyx_t_6);
+             |   ~~~~~~~~~  ^
+      _dataset_parquet.cpp:27700:40: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       27700 |   __pyx_v_self->options.partitioning = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::dataset::PartitioningOrFactory)__pyx_t_1));
+             |                                        ^
+      _dataset_parquet.cpp:6890:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       6890 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      _dataset_parquet.cpp:27890:40: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       27890 |   __pyx_v_self->options.partitioning = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::dataset::PartitioningOrFactory)__pyx_t_1));
+             |                                        ^
+      _dataset_parquet.cpp:6890:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       6890 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      2 warnings and 2 errors generated.
+      [48/67] Building CXX object CMakeFiles/_acero.dir/_acero.cpp.o
+      _acero.cpp:14282:82: warning: 'Ordering' is deprecated: Deprecated in arrow 25.0.0, use null_placement in sort_keys instead [-Wdeprecated-declarations]
+       14282 |     __pyx_v_self->__pyx_base.wrapped.reset(new arrow::acero::OrderByNodeOptions( arrow::compute::Ordering(__pyx_t_2, __pyx_t_4)));
+             |                                                                                  ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/compute/ordering.h:69:3: note: 'Ordering' has been explicitly marked deprecated here
+         69 |   ARROW_DEPRECATED("Deprecated in arrow 25.0.0, use null_placement in sort_keys instead")
+            |   ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/util/macros.h:140:35: note: expanded from macro 'ARROW_DEPRECATED'
+        140 | #  define ARROW_DEPRECATED(...) [[deprecated(__VA_ARGS__)]]
+            |                                   ^
+      _acero.cpp:14282:82: warning: 'Ordering' is deprecated: Deprecated in arrow 25.0.0, use null_placement in sort_keys instead [-Wdeprecated-declarations]
+       14282 |     __pyx_v_self->__pyx_base.wrapped.reset(new arrow::acero::OrderByNodeOptions( arrow::compute::Ordering(__pyx_t_2, __pyx_t_4)));
+             |                                                                                  ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/compute/ordering.h:69:3: note: 'Ordering' has been explicitly marked deprecated here
+         69 |   ARROW_DEPRECATED("Deprecated in arrow 25.0.0, use null_placement in sort_keys instead")
+            |   ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/arrow/util/macros.h:140:35: note: expanded from macro 'ARROW_DEPRECATED'
+        140 | #  define ARROW_DEPRECATED(...) [[deprecated(__VA_ARGS__)]]
+            |                                   ^
+      2 warnings generated.
+      [49/67] Building CXX object CMakeFiles/_dataset.dir/_dataset.cpp.o
+      _dataset.cpp:47676:40: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       47676 |   __pyx_v_self->options.partitioning = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::dataset::PartitioningOrFactory)__pyx_t_1));
+             |                                        ^
+      _dataset.cpp:7132:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       7132 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      _dataset.cpp:47866:40: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       47866 |   __pyx_v_self->options.partitioning = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::dataset::PartitioningOrFactory)__pyx_t_1));
+             |                                        ^
+      _dataset.cpp:7132:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       7132 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      _dataset.cpp:50411:28: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       50411 |   __pyx_v_self->iterator = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL<arrow::RecordBatchIterator> )__pyx_t_2));
+             |                            ^
+      _dataset.cpp:7132:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       7132 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      _dataset.cpp:51086:28: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       51086 |   __pyx_v_self->iterator = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL<arrow::dataset::TaggedRecordBatchIterator> )__pyx_t_2));
+             |                            ^
+      _dataset.cpp:7132:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       7132 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      _dataset.cpp:55963:28: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+       55963 |   __pyx_v_reader->reader = __PYX_STD_MOVE_IF_SUPPORTED(((arrow::py::SharedPtrNoGIL< arrow::RecordBatchReader> )__pyx_t_2));
+             |                            ^
+      _dataset.cpp:7132:42: note: expanded from macro '__PYX_STD_MOVE_IF_SUPPORTED'
+       7132 |   #define __PYX_STD_MOVE_IF_SUPPORTED(x) std::move(x)
+            |                                          ^
+      5 warnings generated.
+      ninja: build stopped: subcommand failed.
       
-      
-      -- Configuring incomplete, errors occurred!
-      
-      *** CMake configuration failed
+      *** CMake build failed
       [end of output]
   
   note: This error originates from a subprocess, and is likely not a problem with pip.
