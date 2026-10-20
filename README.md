@@ -8,7 +8,7 @@
 
 | 文件 | 适用架构 | 说明 |
 |------|----------|------|
-| [包索引](./wheels/simple/index.html) | aarch64 / arm64-v8a | 1000+预编译 wheel 的完整列表（可以搜索包名（链接：https://nsyhykui.github.io/python_wheels_for_termux/wheels/simple/ ）） |
+| [包索引](./wheels/simple/index.html) | aarch64 / arm64-v8a | 1000+预编译 wheel 的完整列表（链接：https://nsyhykui.github.io/python_wheels_for_termux/wheels/simple/） |
 | [更新日志](./update-libs/) | - | 更新日志 |
 | [错误日志](./error-libs-logs/) | - | 构建失败的包日志 |
 
