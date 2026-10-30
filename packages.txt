@@ -1,8 +1,0 @@
-numpy-1.26.4-cp314-cp314-android_24_arm64_v8a.whl
-numpy-2.2.6-cp313-cp313-android_24_arm64_v8a.whl
-numpy-2.3.3-cp312-cp312-linux_aarch64.whl
-numpy-2.4.4-cp313-cp313-android_24_arm64_v8a.whl
-numpy-2.5.1-cp314-cp314-android_24_arm64_v8a.whl
-numpy-2.5.3-cp314-cp314-android_24_arm64_v8a.whl
-numpy_groupies-0.11.3-py3-none-any.whl
-numpy_groupies-0.12.3-py3-none-any.whl
