@@ -18,24 +18,24 @@
          Compiling version_check v0.9.5
          Compiling cfg-if v1.0.4
          Compiling autocfg v1.5.1
-         Compiling memchr v2.8.3
          Compiling crossbeam-utils v0.8.22
+         Compiling memchr v2.8.3
          Compiling pin-project-lite v0.2.17
          Compiling libm v0.2.16
-         Compiling num-traits v0.2.19
          Compiling pkg-config v0.3.34
+         Compiling num-traits v0.2.19
          Compiling jobserver v0.1.35
          Compiling syn v3.0.3
          Compiling syn v2.0.119
          Compiling cc v1.4.3
-         Compiling target-lexicon v0.13.5
-         Compiling futures-core v0.3.34
-         Compiling allocator-api2 v0.2.21
          Compiling equivalent v1.0.2
+         Compiling target-lexicon v0.13.5
+         Compiling allocator-api2 v0.2.21
+         Compiling futures-core v0.3.34
          Compiling crossbeam-epoch v0.9.20
          Compiling itoa v1.0.18
-         Compiling stable_deref_trait v1.2.1
          Compiling crossbeam-deque v0.8.7
+         Compiling stable_deref_trait v1.2.1
          Compiling foldhash v0.2.0
       error[E0554]: `#![feature]` may not be used on the stable release channel
          --> /data/data/com.termux/files/home/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/foldhash-0.2.0/src/lib.rs:115:34
@@ -48,7 +48,7 @@
       warning: build failed, waiting for other jobs to finish...
       💥 maturin failed
         Caused by: Failed to build a native library through cargo
-        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/data/data/com.termux/files/usr/tmp/pip-wheel-c9g1ceul/polars-runtime-32_87d80d94097d44e8926a6f7542047f39/target/maturin/pyo3-config-aarch64-linux-android-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-c9g1ceul/polars-runtime-32_87d80d94097d44e8926a6f7542047f39/py-polars/runtime/polars-runtime-32/Cargo.toml" "--lib"`
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/data/data/com.termux/files/usr/tmp/pip-wheel-_pmgtq3m/polars-runtime-32_1fd19a0df9684c629a9edc317c79667c/target/maturin/pyo3-config-aarch64-linux-android-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-_pmgtq3m/polars-runtime-32_1fd19a0df9684c629a9edc317c79667c/py-polars/runtime/polars-runtime-32/Cargo.toml" "--lib"`
       Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.14', '--compatibility', 'off'] returned non-zero exit status 1
       [end of output]
   
