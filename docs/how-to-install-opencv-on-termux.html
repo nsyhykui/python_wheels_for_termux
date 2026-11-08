@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在 Termux 上安装 OpenCV（无需编译）</title>
+    <meta name="description" content="在 Termux 上安装 OpenCV (opencv-python) 无需等待编译，使用预编译 wheel 包，一行命令搞定。">
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+        pre code { background: transparent; padding: 0; }
+        .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 10px 15px; margin: 20px 0; border-radius: 4px; }
+        hr { margin: 30px 0; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>👁️ 如何在 Termux 上安装 OpenCV（无需编译）</h1>
+
+    <p>在 Termux 上直接 <code>pip install opencv-python</code> 会从源码编译 OpenCV，过程漫长且容易卡在依赖检测上。这里教你用预编译 wheel 直接装。</p>
+
+    <h2>第 1 步：从预编译源安装 OpenCV</h2>
+    <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ opencv-python</code></pre>
+    <p>pip 会自动解析并安装 NumPy 等依赖，无需手动分步操作。</p>
+
+    <h2>第 2 步：验证</h2>
+    <pre><code>python -c "import cv2; print(cv2.__version__)"</code></pre>
+    <p>正常会输出版本号，比如 <code>4.12.0</code>。</p>
+
+    <h2>FFmpeg 版本兼容性（重要）</h2>
+    <p>本源的 OpenCV wheel 基于 <strong>FFmpeg 8.x</strong> 构建，运行时需要 <code>libavcodec.so.62</code>。但 Termux 官方源目前已升级到 <strong>FFmpeg 9.x</strong>，因此直接安装后可能报错：</p>
+    <pre><code>ImportError: dlopen failed: library "libavcodec.so.62" not found</code></pre>
+    <p>目前有两种处理方式：</p>
+    <ul>
+        <li><strong>降级 FFmpeg 到 8.x</strong>：从 Termux 历史镜像手动下载 <code>ffmpeg_8.x_aarch64.deb</code> 安装。注意 TUR 仓库目前只提供 <code>ffmpeg5.1</code> 和 <code>ffmpeg7</code>，没有 8.x，需要自行寻找历史包。降级可能影响其他依赖 FFmpeg 9 的软件，请自行评估。</li>
+        <li><strong>等待新版本 OpenCV</strong>：等本源基于 FFmpeg 9.x 重新构建 wheel 后再安装。在此之前，OpenCV 的视频读写功能可能不可用。</li>
+    </ul>
+
+    <div class="note">
+        <strong>⚠️ 遇到其他 <code>dlopen failed: library "xxx.so" not found</code>？</strong><br>
+        把 <code>.so</code> 去掉，用 <code>pkg install</code> 装上就行：<br><br>
+        <code>libopenblas.so</code> → <code>pkg install libopenblas</code>
+    </div>
+
+    <ul>
+        <li><a href="./how-to-install-numpy-on-termux.html">安装 NumPy</a></li>
+        <li><a href="./how-to-install-pandas-on-termux.html">安装 Pandas</a></li>
+        <li><a href="./how-to-install-matplotlib-on-termux.html">安装 Matplotlib</a></li>
+    </ul>
+
+    <hr>
+    <p>🔗 <a href="./">← 返回教程首页</a> | <a href="https://nsyhykui.github.io/python_wheels_for_termux/">📦 包索引（1100+ 包）</a> | ⭐ <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在 Termux 上安装 PyTorch（无需编译）</title>
+    <meta name="description" content="在 Termux 上安装 PyTorch 无需从源码编译，使用预编译 wheel 包，一行命令搞定。">
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+        pre code { background: transparent; padding: 0; }
+        .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 10px 15px; margin: 20px 0; border-radius: 4px; }
+        hr { margin: 30px 0; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🔥 如何在 Termux 上安装 PyTorch（无需编译）</h1>
+
+    <p>在 Termux 上直接 <code>pip install torch</code> 通常会失败——PyPI 上没有 Termux (Android aarch64) 的官方预编译 wheel，pip 会尝试从源码编译，过程极慢且经常因内存不足而崩溃。</p>
+
+    <h2>第 1 步：从预编译源安装 PyTorch</h2>
+    <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ torch</code></pre>
+    <p>PyTorch 的 wheel 体积较大，下载需要一些时间，属正常现象。</p>
+
+    <h2>第 2 步：验证</h2>
+    <pre><code>python -c "import torch; print(torch.__version__); print(torch.rand(3, 3))"</code></pre>
+    <p>正常会输出版本号和一个随机张量，比如：</p>
+    <pre><code>2.x.x
+tensor([[0.1234, 0.5678, 0.9012],
+        [0.3456, 0.7890, 0.2345],
+        [0.6789, 0.0123, 0.4567]])</code></pre>
+
+    <h2>常见问题</h2>
+    <p><strong>Q：官方 PyPI 的 PyTorch 为什么装不上？</strong><br>
+    PyTorch 官方只为 Linux (manylinux) 和 Windows 提供预编译 wheel，Termux 的 <code>sys.platform</code> 是 <code>android</code> 而非 <code>linux</code>，因此 PyPI 上的 wheel 无法匹配。</p>
+
+    <p><strong>Q：这个 PyTorch 能跑 GPU 吗？</strong><br>
+    不能。本源的 PyTorch 是 CPU 版本：<code>torch.cuda.is_available()</code> 返回 <code>False</code>，<code>torch.version.cuda</code> 为 <code>None</code>，适合学习和轻量推理。</p>
+
+    <p><strong>Q：<code>import torch</code> 时刷出 linker warning 怎么办？</strong><br>
+    类似 <code>unused DT entry: unknown processor-specific ... (ignoring)</code> 的警告可以忽略，是 Android linker 对 ELF 条目的提示，不影响运行。</p>
+
+    <div class="note">
+        <strong>⚠️ 遇到 <code>dlopen failed: library "xxx.so" not found</code>？</strong><br>
+        把 <code>.so</code> 去掉，用 <code>pkg install</code> 装上就行：<br><br>
+        <code>libopenblas.so</code> → <code>pkg install libopenblas</code>
+    </div>
+
+    <ul>
+        <li><a href="./how-to-install-numpy-on-termux.html">安装 NumPy</a></li>
+        <li><a href="./how-to-install-pandas-on-termux.html">安装 Pandas</a></li>
+        <li><a href="./how-to-install-opencv-on-termux.html">安装 OpenCV</a></li>
+    </ul>
+
+    <hr>
+    <p>🔗 <a href="./">← 返回教程首页</a> | <a href="https://nsyhykui.github.io/python_wheels_for_termux/">📦 包索引（1100+ 包）</a> | ⭐ <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub</a></p>
+</div>
+</body>
+</html>
