@@ -60,6 +60,9 @@ Apache 2.0 License
 - [如何在 Termux 上安装 SciPy（无需编译）](./docs/how-to-install-scipy-on-termux.html)
 - [如何在 Termux 上安装 Jupyter（无需编译）](./docs/how-to-install-jupyter-on-termux.html)
 - [如何在 Termux 上安装 Matplotlib（无需编译）](./docs/how-to-install-matplotlib-on-termux.html)
+- [如何在 Termux 上安装 PyTorch（无需编译）](./docs/how-to-install-pytorch-on-termux.html)
+- [如何在 Termux 上安装 OpenCV（无需编译，注意 FFmpeg 版本）](./docs/how-to-install-opencv-on-termux.html)
+
 ---
 
 ⭐ 如果这个项目对你有帮助，欢迎 [来 GitHub 给个 Star](https://github.com/nsyhykui/python_wheels_for_termux)，感谢支持～
