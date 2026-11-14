@@ -1,0 +1,12 @@
+Script started on 2026-11-14 07:56:21+08:00 [TERM="xterm-256color" TTY="/dev/pts/24" COLUMNS="82" LINES="45"]
+[?2004h[0;32m~/python_wheels_for_termux/wheels[0m [0;97m$[0m _XSERVTransSocketINETCreateListener: ...SocketCreateListener() failed
+_XSERVTransMakeAllCOTSServerListeners: server already running
+(EE) 
+Fatal server error:
+(EE) Cannot establish any listening sockets - Make sure an X server isn't already running(EE) 
+
+[?2004l[1]-  Exit 1                     termux-x11 :0 -listen tcp
+[?2004h[0;32m~/python_wheels_for_termux/wheels[0m [0;97m$[0m [?2004l
+exit
+
+Script done on 2026-11-14 07:56:25+08:00 [COMMAND_EXIT_CODE="0"]
