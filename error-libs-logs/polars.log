@@ -2,19 +2,42 @@
   
   × Building wheel for polars-runtime-32 (pyproject.toml) did not run successfully.
   │ exit code: 1
-  ╰─> [47 lines of output]
+  ╰─> [71 lines of output]
       Running `maturin pep517 build-wheel -i /data/data/com.termux/files/usr/bin/python3.14 --compatibility off`
       🍹 Building a mixed python/rust project
       🐍 Found CPython 3.14 at /data/data/com.termux/files/usr/bin/python3.14
       🔗 Found pyo3 bindings with abi3-py3.11 support
+      warning: unused workspace dependency `polars-dylib`
+         --> Cargo.toml:117:1
+          |
+      117 | polars-dylib = { version = "0.55.1", path = "crates/polars-dylib", default-features = false }
+          | ^^^^^^^^^^^^
+          |
+          = note: `cargo::unused_workspace_dependencies` is set to `warn` by default
+      help: consider removing the workspace dependency `polars-dylib`
+      warning: unused workspace dependency `pyo3-polars`
+         --> Cargo.toml:139:1
+          |
+      139 | pyo3-polars = { version = "0.28.0", path = "pyo3-polars/pyo3-polars" }
+          | ^^^^^^^^^^^
+          |
+      help: consider removing the workspace dependency `pyo3-polars`
+      warning: unused workspace dependency `pyo3-polars-derive`
+         --> Cargo.toml:140:1
+          |
+      140 | pyo3-polars-derive = { version = "0.22.0", path = "pyo3-polars/pyo3-polars-derive" }
+          | ^^^^^^^^^^^^^^^^^^
+          |
+      help: consider removing the workspace dependency `pyo3-polars-derive`
+      warning: workspace (manifest) generated 3 warnings
          Compiling proc-macro2 v1.0.107
-         Compiling unicode-ident v1.0.24
          Compiling quote v1.0.47
+         Compiling unicode-ident v1.0.24
          Compiling serde_core v1.0.229
          Compiling libc v0.2.189
          Compiling serde v1.0.229
-         Compiling shlex v2.0.1
          Compiling find-msvc-tools v0.1.11
+         Compiling shlex v2.0.1
          Compiling version_check v0.9.5
          Compiling cfg-if v1.0.4
          Compiling autocfg v1.5.1
@@ -24,9 +47,9 @@
          Compiling libm v0.2.16
          Compiling num-traits v0.2.19
          Compiling pkg-config v0.3.34
-         Compiling jobserver v0.1.35
          Compiling syn v3.0.3
          Compiling syn v2.0.119
+         Compiling jobserver v0.1.35
          Compiling cc v1.4.3
          Compiling futures-core v0.3.34
          Compiling allocator-api2 v0.2.21
@@ -34,8 +57,9 @@
          Compiling target-lexicon v0.13.5
          Compiling crossbeam-epoch v0.9.20
          Compiling itoa v1.0.18
-         Compiling stable_deref_trait v1.2.1
          Compiling crossbeam-deque v0.8.7
+         Compiling stable_deref_trait v1.2.1
+         Compiling rayon-core v1.13.0
          Compiling foldhash v0.2.0
       error[E0554]: `#![feature]` may not be used on the stable release channel
          --> /data/data/com.termux/files/home/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/foldhash-0.2.0/src/lib.rs:115:34
@@ -48,7 +72,7 @@
       warning: build failed, waiting for other jobs to finish...
       💥 maturin failed
         Caused by: Failed to build a native library through cargo
-        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/data/data/com.termux/files/usr/tmp/pip-wheel-2oipa_bm/polars-runtime-32_d90dce7ca2e647c98a7a398c5a1e34d6/target/maturin/pyo3-config-aarch64-linux-android-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-2oipa_bm/polars-runtime-32_d90dce7ca2e647c98a7a398c5a1e34d6/py-polars/runtime/polars-runtime-32/Cargo.toml" "--lib"`
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/data/data/com.termux/files/usr/tmp/pip-wheel-c79z7hox/polars-runtime-32_c45c292dc31147dba3a635095d9f6d47/target/maturin/pyo3-config-aarch64-linux-android-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-c79z7hox/polars-runtime-32_c45c292dc31147dba3a635095d9f6d47/py-polars/runtime/polars-runtime-32/Cargo.toml" "--lib"`
       Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.14', '--compatibility', 'off'] returned non-zero exit status 1
       [end of output]
   
