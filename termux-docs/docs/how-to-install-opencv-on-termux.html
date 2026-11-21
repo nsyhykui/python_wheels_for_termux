@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Install OpenCV on Termux (No Compilation)</title>
+    <meta name="description" content="Install OpenCV (opencv-python) on Termux without waiting for builds: use prebuilt wheels and a one-line command.">
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+        pre code { background: transparent; padding: 0; }
+        .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 10px 15px; margin: 20px 0; border-radius: 4px; }
+        .lang-switch { font-size: 0.9em; color: #555; margin-bottom: 20px; }
+        hr { margin: 30px 0; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch">
+        🌐 Languages: <strong>English</strong> (<a href="how-to-install-opencv-on-termux.html">how-to-install-opencv-on-termux.html</a>) · <a href="how-to-install-opencv-on-termux.zh_cn.html">简体中文</a>
+    </div>
+
+    <h1>👁️ How to Install OpenCV on Termux (No Compilation)</h1>
+
+    <p>Running <code>pip install opencv-python</code> on Termux builds OpenCV from source — a slow process that often stalls on dependency detection. Here is how to install it directly from a prebuilt wheel.</p>
+
+    <h2>Step 1: Install OpenCV from the prebuilt index</h2>
+    <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ opencv-python</code></pre>
+    <p>pip resolves and installs dependencies such as NumPy automatically; no manual steps needed.</p>
+
+    <h2>Step 2: Verify</h2>
+    <pre><code>python -c "import cv2; print(cv2.__version__)"</code></pre>
+    <p>You should see a version number, for example <code>4.12.0</code>.</p>
+
+    <h2>FFmpeg version compatibility (important)</h2>
+    <p>The OpenCV wheel in this index is built against <strong>FFmpeg 8.x</strong> and needs <code>libavcodec.so.62</code> at runtime. However, the official Termux repositories have moved to <strong>FFmpeg 9.x</strong>, so installing it directly may fail with:</p>
+    <pre><code>ImportError: dlopen failed: library "libavcodec.so.62" not found</code></pre>
+    <p>There are currently two ways to handle this:</p>
+    <ul>
+        <li><strong>Downgrade FFmpeg to 8.x</strong>: manually download and install <code>ffmpeg_8.x_aarch64.deb</code> from a Termux historical mirror. Note that the TUR repository currently only offers <code>ffmpeg5.1</code> and <code>ffmpeg7</code> — no 8.x — so you will need to find a historical package yourself. Downgrading may affect other software that depends on FFmpeg 9; assess the impact yourself.</li>
+        <li><strong>Wait for a newer OpenCV</strong>: install once this index has rebuilt the wheel against FFmpeg 9.x. Until then, OpenCV's video read/write features may not work.</li>
+    </ul>
+
+    <div class="note">
+        <strong>⚠️ Other <code>dlopen failed: library "xxx.so" not found</code> errors?</strong><br>
+        Drop the <code>.so</code> suffix and install the package with <code>pkg install</code>:<br><br>
+        <code>libopenblas.so</code> → <code>pkg install libopenblas</code>
+    </div>
+
+    <ul>
+        <li><a href="./how-to-install-numpy-on-termux.html">Install NumPy</a></li>
+        <li><a href="./how-to-install-pandas-on-termux.html">Install Pandas</a></li>
+        <li><a href="./how-to-install-matplotlib-on-termux.html">Install Matplotlib</a></li>
+    </ul>
+
+    <hr>
+    <p>🔗 <a href="index.html">← Back to guides</a> | <a href="https://nsyhykui.github.io/python_wheels_for_termux/">📦 Package index (1200+ packages)</a> | ⭐ <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub</a></p>
+</div>
+</body>
+</html>

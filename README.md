@@ -61,13 +61,13 @@ Apache 2.0 License
 
 Want step-by-step instructions for a specific package? See:
 
-- [How to install NumPy on Termux (no compilation)](./docs/how-to-install-numpy-on-termux.html)
-- [How to install Pandas on Termux (no compilation)](./docs/how-to-install-pandas-on-termux.html)
-- [How to install SciPy on Termux (no compilation)](./docs/how-to-install-scipy-on-termux.html)
-- [How to install Jupyter on Termux (no compilation)](./docs/how-to-install-jupyter-on-termux.html)
-- [How to install Matplotlib on Termux (no compilation)](./docs/how-to-install-matplotlib-on-termux.html)
-- [How to install PyTorch on Termux (no compilation)](./docs/how-to-install-torch-on-termux.html)
-- [How to install OpenCV on Termux (no compilation, FFmpeg version caveat)](./docs/how-to-install-opencv-on-termux.html)
+- [How to install NumPy on Termux (no compilation)](./docs/how-to-install-numpy-on-termux.md)
+- [How to install Pandas on Termux (no compilation)](./docs/how-to-install-pandas-on-termux.md)
+- [How to install SciPy on Termux (no compilation)](./docs/how-to-install-scipy-on-termux.md)
+- [How to install Jupyter on Termux (no compilation)](./docs/how-to-install-jupyter-on-termux.md)
+- [How to install Matplotlib on Termux (no compilation)](./docs/how-to-install-matplotlib-on-termux.md)
+- [How to install PyTorch on Termux (no compilation)](./docs/how-to-install-torch-on-termux.md)
+- [How to install OpenCV on Termux (no compilation, FFmpeg version caveat)](./docs/how-to-install-opencv-on-termux.md)
 
 ---
 

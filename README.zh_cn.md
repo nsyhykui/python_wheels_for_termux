@@ -60,13 +60,13 @@ Apache 2.0 License
 
 如果你想知道具体怎么安装某个包，可以看这些教程：
 
-- [如何在 Termux 上安装 NumPy（无需编译）](./docs/how-to-install-numpy-on-termux.zh_cn.html)
-- [如何在 Termux 上安装 Pandas（无需编译）](./docs/how-to-install-pandas-on-termux.zh_cn.html)
-- [如何在 Termux 上安装 SciPy（无需编译）](./docs/how-to-install-scipy-on-termux.zh_cn.html)
-- [如何在 Termux 上安装 Jupyter（无需编译）](./docs/how-to-install-jupyter-on-termux.zh_cn.html)
-- [如何在 Termux 上安装 Matplotlib（无需编译）](./docs/how-to-install-matplotlib-on-termux.zh_cn.html)
-- [如何在 Termux 上安装 PyTorch（无需编译）](./docs/how-to-install-torch-on-termux.zh_cn.html)
-- [如何在 Termux 上安装 OpenCV（无需编译，注意 FFmpeg 版本）](./docs/how-to-install-opencv-on-termux.zh_cn.html)
+- [如何在 Termux 上安装 NumPy（无需编译）](./docs/how-to-install-numpy-on-termux.zh_cn.md)
+- [如何在 Termux 上安装 Pandas（无需编译）](./docs/how-to-install-pandas-on-termux.zh_cn.md)
+- [如何在 Termux 上安装 SciPy（无需编译）](./docs/how-to-install-scipy-on-termux.zh_cn.md)
+- [如何在 Termux 上安装 Jupyter（无需编译）](./docs/how-to-install-jupyter-on-termux.zh_cn.md)
+- [如何在 Termux 上安装 Matplotlib（无需编译）](./docs/how-to-install-matplotlib-on-termux.zh_cn.md)
+- [如何在 Termux 上安装 PyTorch（无需编译）](./docs/how-to-install-torch-on-termux.zh_cn.md)
+- [如何在 Termux 上安装 OpenCV（无需编译，注意 FFmpeg 版本）](./docs/how-to-install-opencv-on-termux.zh_cn.md)
 
 ---
 
