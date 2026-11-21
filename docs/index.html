@@ -1,214 +1,85 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termux Python 包安装教程 | 预编译 Wheel 源</title>
-    <meta name="description" content="Termux 上安装 Python 包的教程合集，使用预编译 wheel 源，无需等待编译。">
+    <title>Termux Python Package Installation Guides | Prebuilt Wheel Index</title>
+    <meta name="description" content="Install Python packages on Termux from prebuilt wheels, no compilation needed.">
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            max-width: 950px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            background: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            border-bottom: 2px solid #0366d6;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #333;
-            margin-top: 25px;
-        }
-        .compare {
-            display: flex;
-            gap: 20px;
-            margin: 20px 0;
-            flex-wrap: wrap;
-        }
-        .bad {
-            flex: 1;
-            background: #fff5f5;
-            border-left: 4px solid #dc3545;
-            padding: 15px;
-            border-radius: 8px;
-            overflow-x: auto;
-        }
-        .good {
-            flex: 1;
-            background: #f0fff4;
-            border-left: 4px solid #28a745;
-            padding: 15px;
-            border-radius: 8px;
-            overflow-x: auto;
-        }
-        .bad h3, .good h3 {
-            margin-top: 0;
-        }
-        .bad h3 { color: #dc3545; }
-        .good h3 { color: #28a745; }
-        pre {
-            background: #1e1e1e;
-            color: #d4d4d4;
-            padding: 12px;
-            border-radius: 6px;
-            overflow-x: auto;
-            font-size: 12px;
-            margin: 10px 0 0 0;
-        }
-        code {
-            background: #f0f0f0;
-            padding: 2px 5px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-        pre code {
-            background: transparent;
-            padding: 0;
-        }
-        .tutorial-list {
-            list-style: none;
-            padding: 0;
-        }
-        .tutorial-list li {
-            margin: 15px 0;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #0366d6;
-        }
-        .tutorial-list li a {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #0366d6;
-            text-decoration: none;
-        }
-        .tutorial-list li a:hover {
-            text-decoration: underline;
-        }
-        .tutorial-list li p {
-            margin: 8px 0 0 0;
-            color: #666;
-        }
-        .note {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 10px 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        hr {
-            margin: 30px 0;
-        }
-        .config-box {
-            background: #e8f4f8;
-            padding: 12px 15px;
-            border-radius: 8px;
-            margin: 15px 0;
-        }
-        @media (max-width: 700px) {
-            .compare {
-                flex-direction: column;
-            }
-        }
+        body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .lang-switch { font-size: 0.9em; color: #555; margin-bottom: 20px; }
+        h2 { margin-top: 32px; }
+        .compare { padding: 16px 20px; border-radius: 8px; margin: 16px 0; }
+        .bad { background: #fff0f0; border-left: 4px solid #e5534b; }
+        .good { background: #f0fff4; border-left: 4px solid #2da44e; }
+        .compare h3 { margin: 0 0 10px; font-size: 1.05em; }
+        .compare p { margin: 10px 0 0; }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+        pre code { background: transparent; padding: 0; }
+        .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px 16px; margin: 20px 0; border-radius: 4px; }
+        ul { padding-left: 24px; }
+        li { margin: 8px 0; }
+        hr { margin: 30px 0; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>📚 Termux Python 包安装教程</h1>
-    
-    <p>本系列教程教你如何在 Termux 上安装 Python 包，<strong>无需等待编译</strong>，直接使用预编译的 wheel 包。</p>
-    
-    <h2>⚡ 为什么要用预编译源？</h2>
-    <div class="compare">
-        <div class="bad">
-            <h3>❌ 不用预编译源（官方 PyPI）</h3>
-            <pre><code>$ pip install numpy
+    <div class="lang-switch">
+        🌐 Languages: <strong>English</strong> (<a href="index.html">index.html</a>) · <a href="index.zh_cn.html">简体中文</a>
+    </div>
+
+    <h1>📚 Termux Python Package Installation Guides</h1>
+    <p>This series shows how to install Python packages on Termux without waiting for builds — just use the prebuilt wheels.</p>
+
+    <h2>⚡ Why use a prebuilt index?</h2>
+
+    <div class="compare bad">
+        <h3>❌ Without a prebuilt index (official PyPI)</h3>
+        <pre><code>$ pip install numpy
 Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
-Collecting numpy
-  Downloading numpy-2.4.4.tar.gz (20.7 MB)
-Installing build dependencies ... done
-Getting requirements to build wheel ... done
-Installing backend dependencies ... error
+Downloading numpy-2.4.4.tar.gz (20.7 MB)
+...
 error: subprocess-exited-with-error
+⚠️ 编译失败，折腾半小时还是装不上</code></pre>
+        <p><strong>Result:</strong> Build fails and a lot of time is wasted ⏱️</p>
+    </div>
 
-× installing backend dependencies for numpy did not run successfully.
-└─> Installing backend dependencies for ninja... error
-    └─> Installing cmake... Installing setuptools-scm...
-        ⚠️ 编译失败，折腾半小时还是装不上</code></pre>
-            <p><strong>结果：</strong>编译失败，浪费大量时间 ⏱️</p>
-        </div>
-        <div class="good">
-            <h3>✅ 使用预编译源（本仓库）</h3>
-            <pre><code>$ pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ numpy
-Looking in indexes: https://nsyhykui.github.io/.../simple/
-Collecting numpy
-  Downloading numpy-2.4.4-cp313-cp313-android_24_arm64_v8a.whl (5.7 MB)
-Installing collected packages: numpy
+    <div class="compare good">
+        <h3>✅ Using this repository’s prebuilt index</h3>
+        <pre><code>$ pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ numpy
+Looking in indexes: https://nsyhykui.github.io/...
+Downloading numpy-2.4.4-cp313-cp313-android_24_arm64_v8a.whl (5.7 MB)
+...
 Successfully installed numpy-2.4.4
+real 2m47.352s</code></pre>
+        <p><strong>Result:</strong> Installed in under 3 minutes ✅</p>
+    </div>
 
-real    2m47.352s</code></pre>
-            <p><strong>结果：</strong>不到 3 分钟装好 ✅</p>
-        </div>
-    </div>
-    
-    <!-- 一键配置 -->
-    <div class="config-box">
-        <strong>⚡ 一键设为默认源（以后不用再敲 --index-url）</strong>
-        <pre><code>pip config set global.index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/</code></pre>
-        设置后，直接 <code>pip install 包名</code> 即可。
-    </div>
-    
-    <h2>📖 教程列表</h2>
-    <ul class="tutorial-list">
-        <li>
-            <a href="./how-to-install-numpy-on-termux.html">📦 如何在 Termux 上安装 NumPy</a>
-            <p>NumPy 是 Python 科学计算的基础包。本教程教你一行命令安装，绕过编译过程。</p>
-        </li>
-        <li>
-            <a href="./how-to-install-pandas-on-termux.html">📊 如何在 Termux 上安装 Pandas</a>
-            <p>Pandas 是数据分析的核心工具。使用预编译 wheel，告别漫长的编译等待。</p>
-        </li>
-        <li>
-            <a href="./how-to-install-scipy-on-termux.html">🔬 如何在 Termux 上安装 SciPy</a>
-            <p>SciPy 包含大量科学计算函数。本教程提供一键安装命令。</p>
-        </li>
-        <li>
-            <a href="./how-to-install-jupyter-on-termux.html">📓 如何在 Termux 上安装 Jupyter</a>
-            <p>Jupyter Notebook/Lab 是交互式开发环境。本教程包含图形界面配置（Termux:X11 / VNC）。</p>
-        </li>
-        <li>
-            <a href="./how-to-install-matplotlib-on-termux.html">📈 如何在 Termux 上安装 Matplotlib</a>
-            <p>Matplotlib 是 Python 最流行的绘图库。支持 Agg 后端（无图形界面）和 GUI 后端。</p>
-        </li>
-        <li>
-            <a href="./how-to-install-pytorch-on-termux.html">🔥 如何在 Termux 上安装 PyTorch</a>
-            <p>PyTorch 是主流的深度学习框架。PyPI 没有 Termux 的官方预编译包，本源提供 CPU 版 wheel，一行命令装好。</p>
-        </li>
-        <li>
-            <a href="./how-to-install-opencv-on-termux.html">👁️ 如何在 Termux 上安装 OpenCV</a>
-            <p>OpenCV 是计算机视觉库。当前 wheel 需要 FFmpeg 8.x，与官方源的 9.x 暂不兼容，教程里写了处理方式。</p>
-        </li>
-    </ul>
-    
     <div class="note">
-        <strong>💡 更多包</strong><br>
-        把命令里的包名替换即可，支持 1200+ 预编译包。<br>
-        查看完整列表：<a href="https://nsyhykui.github.io/python_wheels_for_termux/wheels/">包索引</a>
+        <pre><code>pip config set global.index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/</code></pre>
+        <p>After this, just run <code>pip install &lt;package&gt;</code>.</p>
     </div>
-    
+
     <hr>
-    <p>🔗 <a href="https://nsyhykui.github.io/python_wheels_for_termux/">← 返回包索引首页</a> | 
-       ⭐ <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub 仓库</a></p>
+    <ul>
+        <li><a href="how-to-install-numpy-on-termux.html">📦 How to Install NumPy on Termux</a></li>
+        <li><a href="how-to-install-pandas-on-termux.html">📊 How to Install Pandas on Termux</a></li>
+        <li><a href="how-to-install-scipy-on-termux.html">🔬 How to Install SciPy on Termux</a></li>
+        <li><a href="how-to-install-jupyter-on-termux.html">📓 How to Install Jupyter on Termux</a></li>
+        <li><a href="how-to-install-matplotlib-on-termux.html">📈 How to Install Matplotlib on Termux</a></li>
+        <li><a href="how-to-install-torch-on-termux.html">🔥 How to Install PyTorch on Termux</a></li>
+    </ul>
+
+    <h2>💡 More packages</h2>
+    <p>Just replace the package name in the command — 1200+ prebuilt wheels are available. See the full list: <a href="../index.html">Package index</a></p>
+
+    <hr>
+    <p>🔗 <a href="../index.html">← Back to package index</a> | ⭐ <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub repository</a></p>
 </div>
 </body>
 </html>
+
