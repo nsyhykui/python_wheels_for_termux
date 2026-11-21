@@ -1,68 +1,74 @@
 # python_wheels_for_termux
 
-🎉 **在 Termux 上装 Python 包，不用再等编译了！**
+> **Languages:** **English** ([README.md](README.md)) · [简体中文](README.zh_cn.md)
 
-本仓库提供 Termux (Android) 环境下预编译的 Python wheel 包 (.whl)，让你安装 numpy、pandas 等常用包时直接安装，告别漫长的编译等待。
+🎉 **Install Python packages on Termux — no more waiting for builds!**
 
-## 📦 包含的包及更新日志
+This repository provides prebuilt Python wheels (`.whl`) for Termux (Android), so you can install common packages such as NumPy and Pandas directly, without long compilation waits.
 
-| 文件 | 适用架构 | 说明 |
-|------|----------|------|
-| [包索引](./wheels/simple/index.html) | aarch64 / arm64-v8a | 1200+预编译 wheel 的完整列表（链接：https://nsyhykui.github.io/python_wheels_for_termux/wheels/simple/ ） |
-| [更新日志](./update-libs/) | - | 更新日志 |
-| [错误日志](./error-libs-logs/) | - | 构建失败的包日志 |
+## 📦 Packages & Changelog
 
-## 🚀 快速开始
+| File | Architecture | Description |
+|------|--------------|-------------|
+| [Package index](./wheels/simple/index.html) | aarch64 / arm64-v8a | Full list of 1200+ prebuilt wheels (link: https://nsyhykui.github.io/python_wheels_for_termux/wheels/simple/ ) |
+| [Changelog](./update-libs/) | - | Changelog |
+| [Error logs](./error-libs-logs/) | - | Build-failure logs |
 
-直接使用本仓库作为 pip 源：
+## 🚀 Quick start
+
+Use this repository directly as a pip index:
 
 ```bash
-pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ 包名
+pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ <package>
 ```
 
-例如安装 numpy：
+For example, to install NumPy:
 
 ```bash
 pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ numpy
 ```
 
-⚠️ 注意事项
+⚠️ Notes
 
-· 非完整 PyPI 源：本仓库仅包含部分预编译包，若未找到你需要的包，请使用官方 PyPI 源或其他第三方源。
-· 适用环境：主要针对 Termux 环境，特别是 android(aarch64) 架构系统。
-· Python 版本：请确保你的 Python 版本与 wheel 包（支持Python3.14，Python3.13，Python3.12（Python3.13，Python3.12已停止更新））匹配。
-· **动态库依赖**：部分包（如 numpy、scipy、pandas）运行时需要系统动态库。若遇到类似 `dlopen failed: library "libopenblas.so" not found` 的错误，请根据缺失的库名安装对应的 Termux 包：
+- **Not a full PyPI mirror**: this repository only contains a subset of prebuilt packages. If the package you need is missing, use the official PyPI index or another third-party index.
+- **Target environment**: mainly Termux, especially Android (aarch64) systems.
+- **Python version**: make sure your Python version matches the wheels (Python 3.14 supported; Python 3.13 and 3.12 are no longer updated).
+- **Shared library dependencies**: some packages (e.g. NumPy, SciPy, Pandas) need system shared libraries at runtime. If you hit an error such as `dlopen failed: library "libopenblas.so" not found`, install the matching Termux package by dropping the `.so` suffix:
   ```bash
-  pkg install libopenblas   # 去掉 .so 后缀，即 libopenblas.so → libopenblas
-```
-📄 许可证
+  pkg install libopenblas   # libopenblas.so → libopenblas
+  ```
+
+📄 License
 
 Apache 2.0 License
 
-## 许可证与致谢
+## License & Acknowledgements
 
-- 本仓库中的预编译 `.whl` 文件，基于 Termux 官方提供的二进制文件重新打包而成，**未对原始代码进行任何修改**。
-- 每个 `.whl` 文件内部均已包含其对应软件（如 psutil、opencv-python、cmake、grpcio 等）的原始许可证文件（如 `LICENSE`），使用前请仔细阅读。
-- 本项目的打包脚本 `update-python-wheels.sh` 采用 [Apache-2.0](LICENSE) 许可证。
-- 特别致谢 [Termux](https://termux.dev/) 项目及其贡献者，本仓库的存在离不开他们的卓越工作。
+- The prebuilt `.whl` files in this repository are repackaged from binaries provided by Termux, **without any modification to the original code**.
+- Every `.whl` ships the original license file (e.g. `LICENSE`) of its upstream software (psutil, opencv-python, cmake, grpcio, etc.). Please read it before use.
+- The packaging script `update-python-wheels.sh` is licensed under [Apache-2.0](LICENSE).
+- Special thanks to the [Termux](https://termux.dev/) project and its contributors — this repository would not exist without their excellent work.
 
-## 📅 更新日志
+## 📅 Changelog
+
+### 2026-11-21
+- **Added English documentation**: the README, site homepage, and all installation guides are now available in English, with language switchers.
 
 ### 2026-05-07
-- **许可证变更**：从 MIT 切换到 Apache 2.0，新增 `NOTICE` 文件，明确要求保留版权和来源链接
+- **License change**: switched from MIT to Apache 2.0, added a `NOTICE` file requiring preservation of copyright and source links.
 
-## 相关教程
+## Related guides
 
-如果你想知道具体怎么安装某个包，可以看这些教程：
+Want step-by-step instructions for a specific package? See:
 
-- [如何在 Termux 上安装 NumPy（无需编译）](./docs/how-to-install-numpy-on-termux.html)
-- [如何在 Termux 上安装 Pandas（无需编译）](./docs/how-to-install-pandas-on-termux.html)
-- [如何在 Termux 上安装 SciPy（无需编译）](./docs/how-to-install-scipy-on-termux.html)
-- [如何在 Termux 上安装 Jupyter（无需编译）](./docs/how-to-install-jupyter-on-termux.html)
-- [如何在 Termux 上安装 Matplotlib（无需编译）](./docs/how-to-install-matplotlib-on-termux.html)
-- [如何在 Termux 上安装 PyTorch（无需编译）](./docs/how-to-install-torch-on-termux.html)
-- [如何在 Termux 上安装 OpenCV（无需编译，注意 FFmpeg 版本）](./docs/how-to-install-opencv-on-termux.html)
+- [How to install NumPy on Termux (no compilation)](./docs/how-to-install-numpy-on-termux.html)
+- [How to install Pandas on Termux (no compilation)](./docs/how-to-install-pandas-on-termux.html)
+- [How to install SciPy on Termux (no compilation)](./docs/how-to-install-scipy-on-termux.html)
+- [How to install Jupyter on Termux (no compilation)](./docs/how-to-install-jupyter-on-termux.html)
+- [How to install Matplotlib on Termux (no compilation)](./docs/how-to-install-matplotlib-on-termux.html)
+- [How to install PyTorch on Termux (no compilation)](./docs/how-to-install-torch-on-termux.html)
+- [How to install OpenCV on Termux (no compilation, FFmpeg version caveat)](./docs/how-to-install-opencv-on-termux.html)
 
 ---
 
-⭐ 如果这个项目对你有帮助，欢迎 [来 GitHub 给个 Star](https://github.com/nsyhykui/python_wheels_for_termux)，感谢支持～
+⭐ If this project helps you, please [give it a Star on GitHub](https://github.com/nsyhykui/python_wheels_for_termux). Thanks for your support!

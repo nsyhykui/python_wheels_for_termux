@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Wheels for Termux - 预编译包源</title>
+    <title>Python Wheels for Termux - Prebuilt Package Index</title>
     <style>
         * {
             margin: 0;
@@ -49,6 +49,21 @@
 
         .content {
             padding: 40px;
+        }
+
+        .lang-switch {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .lang-switch a:hover {
+            text-decoration: underline;
         }
 
         h2 {
@@ -152,51 +167,55 @@
         <div class="header">
             <div class="emoji">🎉</div>
             <h1>python_wheels_for_termux</h1>
-            <p>在 Termux 上装 Python 包，不用再等编译了！</p>
+            <p>Install Python packages on Termux — no more waiting for builds!</p>
         </div>
 
         <div class="content">
-            <p>本仓库提供 Termux (Android) 环境下预编译的 Python wheel 包 (<code>.whl</code>)，让你安装 NumPy、Pandas 等常用包时直接安装，告别漫长的编译等待。</p>
+            <div class="lang-switch">
+                🌐 Languages: <strong>English</strong> (<a href="index.html">index.html</a>) · <a href="index.zh_cn.html">简体中文</a>
+            </div>
 
-            <h2>🚀 快速开始</h2>
+            <p>This repository provides prebuilt Python wheels (<code>.whl</code>) for Termux (Android), so you can install common packages such as NumPy and Pandas directly, without long compilation waits.</p>
+
+            <h2>🚀 Quick start</h2>
             <div class="install-box">
-                <p><strong>直接使用本仓库作为 pip 源：</strong></p>
-                <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ 包名</code></pre>
-                <p><strong>例如安装 NumPy：</strong></p>
+                <p><strong>Use this repository directly as a pip index:</strong></p>
+                <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ &lt;package&gt;</code></pre>
+                <p><strong>For example, to install NumPy:</strong></p>
                 <pre><code>pip install --index-url https://nsyhykui.github.io/python_wheels_for_termux/simple/ numpy</code></pre>
             </div>
 
-            <h2>⚠️ 注意事项</h2>
+            <h2>⚠️ Notes</h2>
             <div class="warning">
                 <ul>
-                    <li><strong>非完整 PyPI 源：</strong>此仓库并非一个完整的 Pip 下载源，仅包含部分预编译的 Python 轮文件。如果你需要的包未在此仓库中找到，建议使用官方的 PyPI 源或其他可靠的第三方源。</li>
-                    <li><strong>适用环境：</strong>主要针对 Termux 环境，特别是 Android (aarch64) 架构系统。</li>
-                    <li><strong>Python 版本：</strong>请确保你的 Python 版本与 wheel 包匹配。</li>
+                    <li><strong>Not a full PyPI mirror:</strong> this repository is not a complete pip index; it only contains a subset of prebuilt Python wheels. If the package you need is not here, use the official PyPI index or another reliable third-party index.</li>
+                    <li><strong>Target environment:</strong> mainly Termux, especially Android (aarch64) systems.</li>
+                    <li><strong>Python version:</strong> make sure your Python version matches the wheels.</li>
                 </ul>
             </div>
-            <h2>📚 相关教程</h2>
-            <p>不知道具体怎么装？看这里：</p>
+            <h2>📚 Related guides</h2>
+            <p>Not sure how to install a specific package? Start here:</p>
             <ul>
-                <li><a href="./docs/how-to-install-numpy-on-termux.html">如何在 Termux 上安装 NumPy（无需编译）</a></li>
-                <li><a href="./docs/how-to-install-pandas-on-termux.html">如何在 Termux 上安装 Pandas（无需编译）</a></li>
-                <li><a href="./docs/how-to-install-scipy-on-termux.html">如何在 Termux 上安装 SciPy（无需编译）</a></li>
-                <li><a href="./docs/">更多教程 →</a></li>
+                <li><a href="./docs/how-to-install-numpy-on-termux.html">How to install NumPy on Termux (no compilation)</a></li>
+                <li><a href="./docs/how-to-install-pandas-on-termux.html">How to install Pandas on Termux (no compilation)</a></li>
+                <li><a href="./docs/how-to-install-scipy-on-termux.html">How to install SciPy on Termux (no compilation)</a></li>
+                <li><a href="./docs/">More guides →</a></li>
             </ul>
-            <h2>📄 许可证</h2>
-            <p>Apache License 2.0 — 个人和商业使用均免费，但需保留版权声明和 <code>NOTICE</code> 文件中的署名信息。</p>
-            <p>详见 <a href="https://github.com/nsyhykui/python_wheels_for_termux/blob/main/LICENSE">LICENSE</a> 和 <a href="https://github.com/nsyhykui/python_wheels_for_termux/blob/main/NOTICE">NOTICE</a> 文件。</p>
+            <h2>📄 License</h2>
+            <p>Apache License 2.0 — free for both personal and commercial use, but you must keep the copyright notice and the attribution in the <code>NOTICE</code> file.</p>
+            <p>See <a href="https://github.com/nsyhykui/python_wheels_for_termux/blob/main/LICENSE">LICENSE</a> and <a href="https://github.com/nsyhykui/python_wheels_for_termux/blob/main/NOTICE">NOTICE</a>.</p>
             <div class="note">
-                💡 <strong>遇到问题？</strong> 欢迎提交 <a href="https://github.com/nsyhykui/python_wheels_for_termux/issues">Issue</a>。
+                💡 <strong>Having trouble?</strong> Feel free to open an <a href="https://github.com/nsyhykui/python_wheels_for_termux/issues">Issue</a>.
             </div>
             <div class="star-footer">
-                ⭐ 如果这个项目对你有帮助，可以 <a href="https://github.com/nsyhykui/python_wheels_for_termux" target="_blank">去 GitHub 给个 Star</a>，感谢支持 🙏
+                ⭐ If this project helps you, please <a href="https://github.com/nsyhykui/python_wheels_for_termux" target="_blank">give it a Star on GitHub</a>. Thanks for your support 🙏
             </div>
         </div>
 
         <div class="footer">
-            <p>© 2026 python_wheels_for_termux | 为 Termux 打造的 Python 预编译包源</p>
+            <p>© 2026 python_wheels_for_termux | A prebuilt Python package index for Termux</p>
             <p>
-                <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub 仓库</a>
+                <a href="https://github.com/nsyhykui/python_wheels_for_termux">GitHub repository</a>
             </p>
         </div>
     </div>
