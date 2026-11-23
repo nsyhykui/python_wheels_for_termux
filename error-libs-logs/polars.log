@@ -41,8 +41,8 @@
          Compiling version_check v0.9.5
          Compiling cfg-if v1.0.4
          Compiling autocfg v1.5.1
-         Compiling crossbeam-utils v0.8.22
          Compiling memchr v2.8.3
+         Compiling crossbeam-utils v0.8.22
          Compiling pin-project-lite v0.2.17
          Compiling libm v0.2.16
          Compiling pkg-config v0.3.34
@@ -52,11 +52,11 @@
          Compiling syn v2.0.119
          Compiling cc v1.4.3
          Compiling futures-core v0.3.34
-         Compiling target-lexicon v0.13.5
          Compiling allocator-api2 v0.2.21
+         Compiling target-lexicon v0.13.5
          Compiling equivalent v1.0.2
-         Compiling crossbeam-epoch v0.9.20
          Compiling itoa v1.0.18
+         Compiling crossbeam-epoch v0.9.20
          Compiling stable_deref_trait v1.2.1
          Compiling crossbeam-deque v0.8.7
          Compiling foldhash v0.2.0
@@ -71,7 +71,7 @@
       warning: build failed, waiting for other jobs to finish...
       💥 maturin failed
         Caused by: Failed to build a native library through cargo
-        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/data/data/com.termux/files/usr/tmp/pip-wheel-chekg6r5/polars-runtime-32_ac72810eb52c40c98e379130f48ec831/target/maturin/pyo3-config-aarch64-linux-android-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-chekg6r5/polars-runtime-32_ac72810eb52c40c98e379130f48ec831/py-polars/runtime/polars-runtime-32/Cargo.toml" "--lib"`
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/data/data/com.termux/files/usr/tmp/pip-wheel-tz14oyg4/polars-runtime-32_e2153ac2dde843eeb441144a1cb236f4/target/maturin/pyo3-config-aarch64-linux-android-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/data/data/com.termux/files/usr/bin/python3.14" PYTHON_SYS_EXECUTABLE="/data/data/com.termux/files/usr/bin/python3.14" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--manifest-path" "/data/data/com.termux/files/usr/tmp/pip-wheel-tz14oyg4/polars-runtime-32_e2153ac2dde843eeb441144a1cb236f4/py-polars/runtime/polars-runtime-32/Cargo.toml" "--lib"`
       Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/data/data/com.termux/files/usr/bin/python3.14', '--compatibility', 'off'] returned non-zero exit status 1
       [end of output]
   

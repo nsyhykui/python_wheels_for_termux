@@ -2,7 +2,7 @@
   
   × Building wheel for whylogs-sketching (pyproject.toml) did not run successfully.
   │ exit code: 1
-  ╰─> [589 lines of output]
+  ╰─> [590 lines of output]
       running bdist_wheel
       running build
       running build_ext
@@ -17,23 +17,23 @@
       -- Performing Test HAS_FLTO_THIN - Success
       -- Performing Test HAS_FLTO
       -- Performing Test HAS_FLTO - Success
-      -- Found pybind11: /data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/include (found version "3.1.0")
-      -- Configuring done (4.6s)
-      -- Generating done (0.1s)
+      -- Found pybind11: /data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/include (found version "3.1.0")
+      -- Configuring done (5.2s)
+      -- Generating done (0.2s)
       CMake Warning (unused-cli):
         Manually-specified variables were not used by the project:
       
           PYTHON_EXECUTABLE
       
       
-      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/build/temp.android-24-arm64_v8a-cpython-314
-      [ 20%] Building CXX object python/CMakeFiles/python.dir/src/datasketches.cpp.o
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/build/temp.android-24-arm64_v8a-cpython-314
       [ 20%] Building CXX object python/CMakeFiles/python.dir/src/hll_wrapper.cpp.o
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/hll_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/hll.hpp:639:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/hll.private.hpp:4:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/AuxHashMap.hpp:27:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/coupon_iterator.hpp:26:36: warning: 'iterator<std::input_iterator_tag, unsigned int>' is deprecated [-Wdeprecated-declarations]
+      [ 20%] Building CXX object python/CMakeFiles/python.dir/src/datasketches.cpp.o
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/hll_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/hll.hpp:639:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/hll.private.hpp:4:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/AuxHashMap.hpp:27:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/coupon_iterator.hpp:26:36: warning: 'iterator<std::input_iterator_tag, unsigned int>' is deprecated [-Wdeprecated-declarations]
          26 | class coupon_iterator: public std::iterator<std::input_iterator_tag, uint32_t> {
             |                                    ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/iterator.h:23:8: note: 'iterator<std::input_iterator_tag, unsigned int>' has been explicitly marked deprecated here
@@ -45,11 +45,11 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/hll_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/hll.hpp:639:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/hll.private.hpp:10:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/Hll4Array.hpp:24:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/HllArray.hpp:116:48: warning: 'iterator<std::input_iterator_tag, unsigned int>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/hll_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/hll.hpp:639:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/hll.private.hpp:10:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/Hll4Array.hpp:24:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/HllArray.hpp:116:48: warning: 'iterator<std::input_iterator_tag, unsigned int>' is deprecated [-Wdeprecated-declarations]
         116 | class HllArray<A>::const_iterator: public std::iterator<std::input_iterator_tag, uint32_t> {
             |                                                ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/iterator.h:23:8: note: 'iterator<std::input_iterator_tag, unsigned int>' has been explicitly marked deprecated here
@@ -61,29 +61,29 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/hll_wrapper.cpp:20:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/hll.hpp:153:13: warning: virtual method '~hll_sketch_alloc' is inside a 'final' class and can never be overridden [-Wunnecessary-virtual-specifier]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/hll_wrapper.cpp:20:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/hll.hpp:153:13: warning: virtual method '~hll_sketch_alloc' is inside a 'final' class and can never be overridden [-Wunnecessary-virtual-specifier]
         153 |     virtual ~hll_sketch_alloc();
             |             ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/hll_wrapper.cpp:30:12: note: in instantiation of template class 'datasketches::hll_sketch_alloc<>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/hll_wrapper.cpp:30:12: note: in instantiation of template class 'datasketches::hll_sketch_alloc<>' requested here
          30 | hll_sketch hll_sketch_deserialize(py::bytes skBytes) {
             |            ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/hll_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/hll.hpp:639:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/hll.private.hpp:4:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/AuxHashMap.hpp:45:13: warning: virtual method '~AuxHashMap' is inside a 'final' class and can never be overridden [-Wunnecessary-virtual-specifier]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/hll_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/hll.hpp:639:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/hll.private.hpp:4:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/AuxHashMap.hpp:45:13: warning: virtual method '~AuxHashMap' is inside a 'final' class and can never be overridden [-Wunnecessary-virtual-specifier]
          45 |     virtual ~AuxHashMap() = default;
             |             ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/HllArray-internal.hpp:114:18: note: in instantiation of template class 'datasketches::AuxHashMap<std::allocator<unsigned char>>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/HllArray-internal.hpp:114:18: note: in instantiation of template class 'datasketches::AuxHashMap<std::allocator<unsigned char>>' requested here
         114 |     auxHashMap = AuxHashMap<A>::deserialize(auxDataStart, len - offset, lgK, auxCount, auxLgIntArrSize, comapctFlag, allocator);
             |                  ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/HllSketchImplFactory.hpp:97:25: note: in instantiation of member function 'datasketches::HllArray<std::allocator<unsigned char>>::newHll' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/HllSketchImplFactory.hpp:97:25: note: in instantiation of member function 'datasketches::HllArray<std::allocator<unsigned char>>::newHll' requested here
          97 |     return HllArray<A>::newHll(bytes, len, allocator);
             |                         ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/hll/include/HllSketch-internal.hpp:63:53: note: in instantiation of member function 'datasketches::HllSketchImplFactory<std::allocator<unsigned char>>::deserialize' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/hll/include/HllSketch-internal.hpp:63:53: note: in instantiation of member function 'datasketches::HllSketchImplFactory<std::allocator<unsigned char>>::deserialize' requested here
          63 |   HllSketchImpl<A>* impl = HllSketchImplFactory<A>::deserialize(bytes, len, allocator);
             |                                                     ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/hll_wrapper.cpp:32:22: note: in instantiation of member function 'datasketches::hll_sketch_alloc<>::deserialize' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/hll_wrapper.cpp:32:22: note: in instantiation of member function 'datasketches::hll_sketch_alloc<>::deserialize' requested here
          32 |   return hll_sketch::deserialize(skStr.c_str(), skStr.length());
             |                      ^
       [ 30%] Building CXX object python/CMakeFiles/python.dir/src/kll_wrapper.cpp.o
@@ -91,18 +91,18 @@
       [ 40%] Building CXX object python/CMakeFiles/python.dir/src/cpc_wrapper.cpp.o
       [ 50%] Building CXX object python/CMakeFiles/python.dir/src/fi_wrapper.cpp.o
       [ 60%] Building CXX object python/CMakeFiles/python.dir/src/theta_wrapper.cpp.o
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/fi_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/fi/include/frequent_items_sketch.hpp:29:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/fi/include/reverse_purge_hash_map.hpp:87:68: warning: 'iterator<std::input_iterator_tag, std::string>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/fi_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/fi/include/frequent_items_sketch.hpp:29:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/fi/include/reverse_purge_hash_map.hpp:87:68: warning: 'iterator<std::input_iterator_tag, std::string>' is deprecated [-Wdeprecated-declarations]
          87 | class reverse_purge_hash_map<K, V, H, E, A>::iterator: public std::iterator<std::input_iterator_tag, K> {
             |                                                                    ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/fi/include/frequent_items_sketch_impl.hpp:437:17: note: in instantiation of member class 'datasketches::reverse_purge_hash_map<std::string>::iterator' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/fi/include/frequent_items_sketch_impl.hpp:437:17: note: in instantiation of member class 'datasketches::reverse_purge_hash_map<std::string>::iterator' requested here
         437 |     for (auto it: map) {
             |                 ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/fi_wrapper.cpp:110:48: note: in instantiation of member function 'datasketches::frequent_items_sketch<std::string>::to_string' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/fi_wrapper.cpp:110:48: note: in instantiation of member function 'datasketches::frequent_items_sketch<std::string>::to_string' requested here
         110 |     .def("__str__", &frequent_items_sketch<T>::to_string, py::arg("print_items")=false,
             |                                                ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/fi_wrapper.cpp:161:3: note: in instantiation of function template specialization 'bind_fi_sketch<std::string>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/fi_wrapper.cpp:161:3: note: in instantiation of function template specialization 'bind_fi_sketch<std::string>' requested here
         161 |   bind_fi_sketch<std::string>(m, "frequent_strings_sketch");
             |   ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/iterator.h:23:8: note: 'iterator<std::input_iterator_tag, std::string>' has been explicitly marked deprecated here
@@ -114,37 +114,37 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:24:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_sketch.hpp:23:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_update_sketch_base.hpp:247:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_update_sketch_base_impl.hpp:28:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_helpers.hpp:58:45: warning: implicit conversion from 'const uint64_t' (aka 'const unsigned long') to 'float' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:24:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_sketch.hpp:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_update_sketch_base.hpp:247:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_update_sketch_base_impl.hpp:28:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_helpers.hpp:58:45: warning: implicit conversion from 'const uint64_t' (aka 'const unsigned long') to 'float' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
          58 |     if (p < 1) return static_cast<uint64_t>(theta_constants::MAX_THETA * p);
             |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~ ~
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_update_sketch_base_impl.hpp:344:36: note: in instantiation of member function 'datasketches::theta_build_helper<true>::starting_theta_from_p' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_update_sketch_base_impl.hpp:344:36: note: in instantiation of member function 'datasketches::theta_build_helper<true>::starting_theta_from_p' requested here
         344 |   return theta_build_helper<true>::starting_theta_from_p(p_);
             |                                    ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_sketch_impl.hpp:258:102: note: in instantiation of member function 'datasketches::theta_base_builder<datasketches::update_theta_sketch_alloc<>::builder, std::allocator<unsigned long>>::starting_theta' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_sketch_impl.hpp:258:102: note: in instantiation of member function 'datasketches::theta_base_builder<datasketches::update_theta_sketch_alloc<>::builder, std::allocator<unsigned long>>::starting_theta' requested here
         258 |   return update_theta_sketch_alloc(this->starting_lg_size(), this->lg_k_, this->rf_, this->p_, this->starting_theta(), this->seed_, this->allocator_);
             |                                                                                                      ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:42:18: note: in instantiation of member function 'datasketches::update_theta_sketch_alloc<>::builder::build' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:42:18: note: in instantiation of member function 'datasketches::update_theta_sketch_alloc<>::builder::build' requested here
          42 |   return builder.build();
             |                  ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:24:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_sketch.hpp:23:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_update_sketch_base.hpp:197:35: warning: 'iterator<std::input_iterator_tag, unsigned long>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:24:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_sketch.hpp:23:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_update_sketch_base.hpp:197:35: warning: 'iterator<std::input_iterator_tag, unsigned long>' is deprecated [-Wdeprecated-declarations]
         197 | class theta_iterator: public std::iterator<std::input_iterator_tag, Entry> {
             |                                   ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_intersection_base_impl.hpp:53:21: note: in instantiation of template class 'datasketches::theta_iterator<unsigned long, datasketches::trivial_extract_key>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_intersection_base_impl.hpp:53:21: note: in instantiation of template class 'datasketches::theta_iterator<unsigned long, datasketches::trivial_extract_key>' requested here
          53 |     for (auto& entry: sketch) {
             |                     ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_intersection_impl.hpp:33:10: note: in instantiation of function template specialization 'datasketches::theta_intersection_base<unsigned long, datasketches::trivial_extract_key, datasketches::theta_intersection_alloc<>::nop_policy, datasketches::theta_sketch_alloc<>, datasketches::compact_theta_sketch_alloc<>, std::allocator<unsigned long>>::update<datasketches::compact_theta_sketch_alloc<> &>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_intersection_impl.hpp:33:10: note: in instantiation of function template specialization 'datasketches::theta_intersection_base<unsigned long, datasketches::trivial_extract_key, datasketches::theta_intersection_alloc<>::nop_policy, datasketches::theta_sketch_alloc<>, datasketches::compact_theta_sketch_alloc<>, std::allocator<unsigned long>>::update<datasketches::compact_theta_sketch_alloc<> &>' requested here
          33 |   state_.update(std::forward<SS>(sketch));
             |          ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_jaccard_similarity_base.hpp:66:7: note: in instantiation of function template specialization 'datasketches::theta_intersection_alloc<>::update<datasketches::compact_theta_sketch_alloc<> &>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_jaccard_similarity_base.hpp:66:7: note: in instantiation of function template specialization 'datasketches::theta_intersection_alloc<>::update<datasketches::compact_theta_sketch_alloc<> &>' requested here
          66 |     i.update(union_ab); // ensures that intersection is a subset of the union
             |       ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:68:45: note: in instantiation of function template specialization 'datasketches::jaccard_similarity_base<datasketches::theta_union_alloc<>, datasketches::theta_intersection_alloc<>, datasketches::trivial_extract_key>::jaccard<datasketches::theta_sketch_alloc<>, datasketches::theta_sketch_alloc<>>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:68:45: note: in instantiation of function template specialization 'datasketches::jaccard_similarity_base<datasketches::theta_union_alloc<>, datasketches::theta_intersection_alloc<>, datasketches::trivial_extract_key>::jaccard<datasketches::theta_sketch_alloc<>, datasketches::theta_sketch_alloc<>>' requested here
          68 |   return py::cast(theta_jaccard_similarity::jaccard(sketch_a, sketch_b, seed));
             |                                             ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/iterator.h:23:8: note: 'iterator<std::input_iterator_tag, unsigned long>' has been explicitly marked deprecated here
@@ -156,21 +156,21 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:24:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_sketch.hpp:23:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_update_sketch_base.hpp:213:41: warning: 'iterator<std::input_iterator_tag, unsigned long>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:24:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_sketch.hpp:23:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_update_sketch_base.hpp:213:41: warning: 'iterator<std::input_iterator_tag, unsigned long>' is deprecated [-Wdeprecated-declarations]
         213 | class theta_const_iterator: public std::iterator<std::input_iterator_tag, Entry> {
             |                                         ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/bounds_on_ratios_in_theta_sketched_sets.hpp:127:27: note: in instantiation of template class 'datasketches::theta_const_iterator<unsigned long, datasketches::trivial_extract_key>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/bounds_on_ratios_in_theta_sketched_sets.hpp:127:27: note: in instantiation of template class 'datasketches::theta_const_iterator<unsigned long, datasketches::trivial_extract_key>' requested here
         127 |     for (const auto& entry: sketch) if (ExtractKey()(entry) < theta) ++count;
             |                           ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/bounds_on_ratios_in_theta_sketched_sets.hpp:66:11: note: in instantiation of function template specialization 'datasketches::bounds_on_ratios_in_theta_sketched_sets<datasketches::trivial_extract_key>::count_less_than_theta64<datasketches::compact_theta_sketch_alloc<>>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/bounds_on_ratios_in_theta_sketched_sets.hpp:66:11: note: in instantiation of function template specialization 'datasketches::bounds_on_ratios_in_theta_sketched_sets<datasketches::trivial_extract_key>::count_less_than_theta64<datasketches::compact_theta_sketch_alloc<>>' requested here
          66 |         : count_less_than_theta64(sketch_a, theta64_b);
             |           ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_jaccard_similarity_base.hpp:70:60: note: in instantiation of function template specialization 'datasketches::bounds_on_ratios_in_theta_sketched_sets<datasketches::trivial_extract_key>::lower_bound_for_b_over_a<datasketches::compact_theta_sketch_alloc<>, datasketches::compact_theta_sketch_alloc<>>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_jaccard_similarity_base.hpp:70:60: note: in instantiation of function template specialization 'datasketches::bounds_on_ratios_in_theta_sketched_sets<datasketches::trivial_extract_key>::lower_bound_for_b_over_a<datasketches::compact_theta_sketch_alloc<>, datasketches::compact_theta_sketch_alloc<>>' requested here
          70 |       bounds_on_ratios_in_theta_sketched_sets<ExtractKey>::lower_bound_for_b_over_a(union_ab, inter_abu),
             |                                                            ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:68:45: note: in instantiation of function template specialization 'datasketches::jaccard_similarity_base<datasketches::theta_union_alloc<>, datasketches::theta_intersection_alloc<>, datasketches::trivial_extract_key>::jaccard<datasketches::theta_sketch_alloc<>, datasketches::theta_sketch_alloc<>>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:68:45: note: in instantiation of function template specialization 'datasketches::jaccard_similarity_base<datasketches::theta_union_alloc<>, datasketches::theta_intersection_alloc<>, datasketches::trivial_extract_key>::jaccard<datasketches::theta_sketch_alloc<>, datasketches::theta_sketch_alloc<>>' requested here
          68 |   return py::cast(theta_jaccard_similarity::jaccard(sketch_a, sketch_b, seed));
             |                                             ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/iterator.h:23:8: note: 'iterator<std::input_iterator_tag, unsigned long>' has been explicitly marked deprecated here
@@ -182,24 +182,24 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:24:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_sketch.hpp:455:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/theta/include/theta_sketch_impl.hpp:41:47: warning: implicit conversion from 'const uint64_t' (aka 'const unsigned long') to 'double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:24:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_sketch.hpp:455:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/theta/include/theta_sketch_impl.hpp:41:47: warning: implicit conversion from 'const uint64_t' (aka 'const unsigned long') to 'double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
          41 |   return static_cast<double>(get_theta64()) / theta_constants::MAX_THETA;
             |                                             ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/theta_wrapper.cpp:94:38: note: in instantiation of member function 'datasketches::base_theta_sketch_alloc<>::get_theta' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/theta_wrapper.cpp:94:38: note: in instantiation of member function 'datasketches::base_theta_sketch_alloc<>::get_theta' requested here
          94 |     .def("get_theta", &theta_sketch::get_theta,
             |                                      ^
       1 warning generated.
       [ 70%] Building CXX object python/CMakeFiles/python.dir/src/vo_wrapper.cpp.o
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:396:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:770:24: warning: variable 'display_idx' set but not used [-Wunused-but-set-variable]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:396:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:770:24: warning: variable 'display_idx' set but not used [-Wunused-but-set-variable]
         770 |   for (uint32_t i = 0, display_idx = 0; i < array_length; ++i) {
             |                        ^
       4 warnings generated.
       [ 80%] Building CXX object python/CMakeFiles/python.dir/src/req_wrapper.cpp.o
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:211:20: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:211:20: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
         211 |         allocator_.destroy(data_ + i);
             |                    ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/unique_ptr.h:76:5: note: in instantiation of member function 'datasketches::var_opt_sketch<pybind11::object>::~var_opt_sketch' requested here
@@ -211,19 +211,19 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/unique_ptr.h:256:71: note: in instantiation of member function 'std::unique_ptr<datasketches::var_opt_sketch<pybind11::object>>::reset' requested here
         256 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
             |                                                                       ^
-      /data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/include/pybind11/pybind11.h:2879:40: note: in instantiation of member function 'std::unique_ptr<datasketches::var_opt_sketch<pybind11::object>>::~unique_ptr' requested here
+      /data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/include/pybind11/pybind11.h:2879:40: note: in instantiation of member function 'std::unique_ptr<datasketches::var_opt_sketch<pybind11::object>>::~unique_ptr' requested here
        2879 |             v_h.holder<holder_type>().~holder_type();
             |                                        ^
-      /data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/include/pybind11/pybind11.h:2901:13: note: in instantiation of member function 'pybind11::class_<datasketches::var_opt_sketch<pybind11::object>>::dealloc_impl' requested here
+      /data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/include/pybind11/pybind11.h:2901:13: note: in instantiation of member function 'pybind11::class_<datasketches::var_opt_sketch<pybind11::object>>::dealloc_impl' requested here
        2901 |             dealloc_impl(v_h);
             |             ^
-      /data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/include/pybind11/pybind11.h:2394:30: note: in instantiation of member function 'pybind11::class_<datasketches::var_opt_sketch<pybind11::object>>::dealloc_release_gil_before_calling_cpp_dtor' requested here
+      /data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/include/pybind11/pybind11.h:2394:30: note: in instantiation of member function 'pybind11::class_<datasketches::var_opt_sketch<pybind11::object>>::dealloc_release_gil_before_calling_cpp_dtor' requested here
        2394 |             record.dealloc = dealloc_release_gil_before_calling_cpp_dtor;
             |                              ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:84:3: note: in instantiation of function template specialization 'pybind11::class_<datasketches::var_opt_sketch<pybind11::object>>::class_<>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:84:3: note: in instantiation of function template specialization 'pybind11::class_<datasketches::var_opt_sketch<pybind11::object>>::class_<>' requested here
          84 |   py::class_<var_opt_sketch<T>>(m, name)
             |   ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:138:3: note: in instantiation of function template specialization 'bind_vo_sketch<pybind11::object>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:138:3: note: in instantiation of function template specialization 'bind_vo_sketch<pybind11::object>' requested here
         138 |   bind_vo_sketch<py::object>(m, "var_opt_sketch");
             |   ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -235,9 +235,9 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:396:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:216:20: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:396:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:216:20: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
         216 |         allocator_.destroy(data_+ i);
             |                    ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -249,9 +249,9 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:396:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:220:20: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:396:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:220:20: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
         220 |         allocator_.destroy(data_ + i);
             |                    ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -263,17 +263,17 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:335:61: warning: 'iterator<std::input_iterator_tag, pybind11::object>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:335:61: warning: 'iterator<std::input_iterator_tag, pybind11::object>' is deprecated [-Wdeprecated-declarations]
         335 | class var_opt_sketch<T, S, A>::const_iterator : public std::iterator<std::input_iterator_tag, T> {
             |                                                             ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:60:20: note: in instantiation of member class 'datasketches::var_opt_sketch<pybind11::object>::const_iterator' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:60:20: note: in instantiation of member class 'datasketches::var_opt_sketch<pybind11::object>::const_iterator' requested here
          60 |     for (auto item : sk) {
             |                    ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:86:28: note: in instantiation of function template specialization 'datasketches::python::vo_sketch_to_string<pybind11::object>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:86:28: note: in instantiation of function template specialization 'datasketches::python::vo_sketch_to_string<pybind11::object>' requested here
          86 |     .def("__str__", &dspy::vo_sketch_to_string<T>, py::arg("print_items")=false,
             |                            ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:138:3: note: in instantiation of function template specialization 'bind_vo_sketch<pybind11::object>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:138:3: note: in instantiation of function template specialization 'bind_vo_sketch<pybind11::object>' requested here
         138 |   bind_vo_sketch<py::object>(m, "var_opt_sketch");
             |   ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/iterator.h:23:8: note: 'iterator<std::input_iterator_tag, pybind11::object>' has been explicitly marked deprecated here
@@ -285,24 +285,24 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:396:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:1006:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:396:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:1006:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
        1006 |       allocator_.destroy(data_ + i);
             |                  ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:834:5: note: in instantiation of member function 'datasketches::var_opt_sketch<pybind11::object>::grow_data_arrays' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:834:5: note: in instantiation of member function 'datasketches::var_opt_sketch<pybind11::object>::grow_data_arrays' requested here
         834 |     grow_data_arrays();
             |     ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:800:5: note: in instantiation of function template specialization 'datasketches::var_opt_sketch<pybind11::object>::update_warmup_phase<const pybind11::object &>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:800:5: note: in instantiation of function template specialization 'datasketches::var_opt_sketch<pybind11::object>::update_warmup_phase<const pybind11::object &>' requested here
         800 |     update_warmup_phase(std::forward<O>(item), weight, mark);
             |     ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:725:3: note: in instantiation of function template specialization 'datasketches::var_opt_sketch<pybind11::object>::update<const pybind11::object &>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:725:3: note: in instantiation of function template specialization 'datasketches::var_opt_sketch<pybind11::object>::update<const pybind11::object &>' requested here
         725 |   update(item, weight, false);
             |   ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:90:88: note: in instantiation of member function 'datasketches::var_opt_sketch<pybind11::object>::update' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:90:88: note: in instantiation of member function 'datasketches::var_opt_sketch<pybind11::object>::update' requested here
          90 |     .def("update", (void (var_opt_sketch<T>::*)(const T&, double)) &var_opt_sketch<T>::update, py::arg("item"), py::arg("weight")=1.0,
             |                                                                                        ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:138:3: note: in instantiation of function template specialization 'bind_vo_sketch<pybind11::object>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:138:3: note: in instantiation of function template specialization 'bind_vo_sketch<pybind11::object>' requested here
         138 |   bind_vo_sketch<py::object>(m, "var_opt_sketch");
             |   ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -314,20 +314,20 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:367:55: warning: 'iterator<std::input_iterator_tag, pybind11::object>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:367:55: warning: 'iterator<std::input_iterator_tag, pybind11::object>' is deprecated [-Wdeprecated-declarations]
         367 | class var_opt_sketch<T, S, A>::iterator : public std::iterator<std::input_iterator_tag, T> {
             |                                                       ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:350:44: note: in instantiation of member class 'datasketches::var_opt_sketch<pybind11::object>::iterator' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:350:44: note: in instantiation of member class 'datasketches::var_opt_sketch<pybind11::object>::iterator' requested here
         350 |   typename var_opt_sketch<T,S,A>::iterator r_itr(sketch, false, true);
             |                                            ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:313:3: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::merge_items' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:313:3: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::merge_items' requested here
         313 |   merge_items(sk);
             |   ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:123:97: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::update' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:123:97: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::update' requested here
         123 |     .def("update", (void (var_opt_union<T>::*)(const var_opt_sketch<T>& sk)) &var_opt_union<T>::update, py::arg("sketch"),
             |                                                                                                 ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:139:3: note: in instantiation of function template specialization 'bind_vo_union<pybind11::object>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:139:3: note: in instantiation of function template specialization 'bind_vo_union<pybind11::object>' requested here
         139 |   bind_vo_union<py::object>(m, "var_opt_union");
             |   ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/iterator.h:23:8: note: 'iterator<std::input_iterator_tag, pybind11::object>' has been explicitly marked deprecated here
@@ -339,29 +339,29 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:21:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union.hpp:237:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:517:9: warning: 'construct' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:21:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union.hpp:237:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:517:9: warning: 'construct' is deprecated [-Wdeprecated-declarations]
         517 |     A().construct(&data[next_r_pos], T(gadget_.data_[idx]));
             |         ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:484:7: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::mark_moving_gadget_coercer' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:484:7: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::mark_moving_gadget_coercer' requested here
         484 |       mark_moving_gadget_coercer(sk);
             |       ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:428:34: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::detect_and_handle_subcase_of_pseudo_exact' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:428:34: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::detect_and_handle_subcase_of_pseudo_exact' requested here
         428 |     const bool is_pseudo_exact = detect_and_handle_subcase_of_pseudo_exact(gcopy);
             |                                  ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:125:43: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::get_result' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:125:43: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::get_result' requested here
         125 |     .def("get_result", &var_opt_union<T>::get_result,
             |                                           ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:139:3: note: in instantiation of function template specialization 'bind_vo_union<pybind11::object>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:139:3: note: in instantiation of function template specialization 'bind_vo_union<pybind11::object>' requested here
         139 |   bind_vo_union<py::object>(m, "var_opt_union");
             |   ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:152:58: note: 'construct' has been explicitly marked deprecated here
         152 |   _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_HIDE_FROM_ABI void construct(_Up* __p, _Args&&... __args) {
             |                                                          ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:21:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union.hpp:237:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:517:9: warning: 'construct<pybind11::object, pybind11::object>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:21:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union.hpp:237:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:517:9: warning: 'construct<pybind11::object, pybind11::object>' is deprecated [-Wdeprecated-declarations]
         517 |     A().construct(&data[next_r_pos], T(gadget_.data_[idx]));
             |         ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:152:3: note: 'construct<pybind11::object, pybind11::object>' has been explicitly marked deprecated here
@@ -373,17 +373,17 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:21:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union.hpp:237:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:528:11: warning: 'construct' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:21:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union.hpp:237:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:528:11: warning: 'construct' is deprecated [-Wdeprecated-declarations]
         528 |       A().construct(&data[next_r_pos], T(gadget_.data_[idx]));
             |           ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:152:58: note: 'construct' has been explicitly marked deprecated here
         152 |   _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_HIDE_FROM_ABI void construct(_Up* __p, _Args&&... __args) {
             |                                                          ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:21:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union.hpp:237:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:528:11: warning: 'construct<pybind11::object, pybind11::object>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:21:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union.hpp:237:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:528:11: warning: 'construct<pybind11::object, pybind11::object>' is deprecated [-Wdeprecated-declarations]
         528 |       A().construct(&data[next_r_pos], T(gadget_.data_[idx]));
             |           ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:152:3: note: 'construct<pybind11::object, pybind11::object>' has been explicitly marked deprecated here
@@ -395,17 +395,17 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:21:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union.hpp:237:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:534:11: warning: 'construct' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:21:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union.hpp:237:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:534:11: warning: 'construct' is deprecated [-Wdeprecated-declarations]
         534 |       A().construct(&data[result_h], T(gadget_.data_[idx]));
             |           ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:152:58: note: 'construct' has been explicitly marked deprecated here
         152 |   _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_HIDE_FROM_ABI void construct(_Up* __p, _Args&&... __args) {
             |                                                          ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:21:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union.hpp:237:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:534:11: warning: 'construct<pybind11::object, pybind11::object>' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:21:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union.hpp:237:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:534:11: warning: 'construct<pybind11::object, pybind11::object>' is deprecated [-Wdeprecated-declarations]
         534 |       A().construct(&data[result_h], T(gadget_.data_[idx]));
             |           ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:152:3: note: 'construct<pybind11::object, pybind11::object>' has been explicitly marked deprecated here
@@ -417,9 +417,9 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:21:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union.hpp:237:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:555:47: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:21:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union.hpp:237:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:555:47: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
         555 |   for (size_t i = 0; i < result_k; ++i) { A().destroy(sk.data_ + i); } // assumes everything in H region, no gap
             |                                               ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -431,18 +431,18 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:396:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:676:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:396:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:676:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
         676 |       allocator_.destroy(data_ + i);
             |                  ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_union_impl.hpp:294:11: note: in instantiation of member function 'datasketches::var_opt_sketch<pybind11::object>::reset' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_union_impl.hpp:294:11: note: in instantiation of member function 'datasketches::var_opt_sketch<pybind11::object>::reset' requested here
         294 |   gadget_.reset();
             |           ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:127:38: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::reset' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:127:38: note: in instantiation of member function 'datasketches::var_opt_union<pybind11::object>::reset' requested here
         127 |     .def("reset", &var_opt_union<T>::reset,
             |                                      ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:139:3: note: in instantiation of function template specialization 'bind_vo_union<pybind11::object>' requested here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:139:3: note: in instantiation of function template specialization 'bind_vo_union<pybind11::object>' requested here
         139 |   bind_vo_union<py::object>(m, "var_opt_union");
             |   ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -454,9 +454,9 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:396:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:680:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:396:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:680:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
         680 |       allocator_.destroy(data_+ i);
             |                  ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -468,9 +468,9 @@
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__config:712:49: note: expanded from macro '_LIBCPP_DEPRECATED'
         712 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
             |                                                 ^
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vo_wrapper.cpp:20:
-      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch.hpp:396:
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/sampling/include/var_opt_sketch_impl.hpp:683:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vo_wrapper.cpp:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch.hpp:396:
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/sampling/include/var_opt_sketch_impl.hpp:683:18: warning: 'destroy' is deprecated [-Wdeprecated-declarations]
         683 |       allocator_.destroy(data_ + i);
             |                  ^
       /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/allocator.h:156:3: note: 'destroy' has been explicitly marked deprecated here
@@ -484,32 +484,33 @@
             |                                                 ^
       17 warnings generated.
       [ 90%] Building CXX object python/CMakeFiles/python.dir/src/vector_of_kll.cpp.o
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:126:6: error: cannot assign to non-static data member 'k_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:126:6: error: cannot assign to non-static data member 'k_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
         126 |   k_ = copy.k_;
             |   ~~ ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:87:20: note: non-static data member 'k_' declared const here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:87:20: note: non-static data member 'k_' declared const here
          87 |     const uint32_t k_; // kll sketch k parameter
             |     ~~~~~~~~~~~~~~~^~
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:127:6: error: cannot assign to non-static data member 'd_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:127:6: error: cannot assign to non-static data member 'd_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
         127 |   d_ = copy.d_;
             |   ~~ ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:88:20: note: non-static data member 'd_' declared const here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:88:20: note: non-static data member 'd_' declared const here
          88 |     const uint32_t d_; // number of dimensions (here: sketches) to hold
             |     ~~~~~~~~~~~~~~~^~
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:134:6: error: cannot assign to non-static data member 'k_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:134:6: error: cannot assign to non-static data member 'k_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
         134 |   k_ = other.k_;
             |   ~~ ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:87:20: note: non-static data member 'k_' declared const here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:87:20: note: non-static data member 'k_' declared const here
          87 |     const uint32_t k_; // kll sketch k parameter
             |     ~~~~~~~~~~~~~~~^~
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:135:6: error: cannot assign to non-static data member 'd_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:135:6: error: cannot assign to non-static data member 'd_' with const-qualified type 'const uint32_t' (aka 'const unsigned int')
         135 |   d_ = other.d_;
             |   ~~ ^
-      /data/data/com.termux/files/usr/tmp/pip-wheel-gup6_co6/whylogs-sketching_76d713528cb0452c8ac58772e461729a/python/src/vector_of_kll.cpp:88:20: note: non-static data member 'd_' declared const here
+      /data/data/com.termux/files/usr/tmp/pip-wheel-9hnlfw7n/whylogs-sketching_fd45f61ec43041478f1ac38e3ff78657/python/src/vector_of_kll.cpp:88:20: note: non-static data member 'd_' declared const here
          88 |     const uint32_t d_; // number of dimensions (here: sketches) to hold
             |     ~~~~~~~~~~~~~~~^~
       4 errors generated.
       make[3]: *** [python/CMakeFiles/python.dir/build.make:191: python/CMakeFiles/python.dir/src/vector_of_kll.cpp.o] Error 1
+      make[3]: *** Waiting for unfinished jobs....
       make[2]: *** [CMakeFiles/Makefile2:807: python/CMakeFiles/python.dir/all] Error 2
       make[1]: *** [CMakeFiles/Makefile2:814: python/CMakeFiles/python.dir/rule] Error 2
       make: *** [Makefile:329: python] Error 2
@@ -527,9 +528,9 @@
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
           )
           ^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 441, in build_wheel
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 441, in build_wheel
           return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 429, in _build
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 429, in _build
           return self._build_with_temp_dir(
                  ~~~~~~~~~~~~~~~~~~~~~~~~~^
               cmd,
@@ -539,52 +540,52 @@
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
           )
           ^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 410, in _build_with_temp_dir
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 410, in _build_with_temp_dir
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 317, in run_setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 317, in run_setup
           exec(code, locals())  # noqa: S102 # exec is intentional here
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 66, in <module>
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/__init__.py", line 117, in setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/__init__.py", line 117, in setup
           return distutils.core.setup(**attrs)  # type: ignore[return-value]
                  ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 168, in setup
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 168, in setup
           return run_commands(dist)
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 184, in run_commands
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 184, in run_commands
           dist.run_commands()
           ~~~~~~~~~~~~~~~~~^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1028, in run_commands
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1028, in run_commands
           self.run_command(cmd)
           ~~~~~~~~~~~~~~~~^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
           super().run_command(command)
           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
           cmd_obj.run()
           ~~~~~~~~~~~^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/command/bdist_wheel.py", line 454, in run
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/command/bdist_wheel.py", line 454, in run
           self.run_command("build")
           ~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 342, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 342, in run_command
           self.distribution.run_command(command)
           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
           super().run_command(command)
           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
           cmd_obj.run()
           ~~~~~~~~~~~^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/command/build.py", line 137, in run
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/command/build.py", line 137, in run
           self.run_command(cmd_name)
           ~~~~~~~~~~~~~~~~^^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 342, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 342, in run_command
           self.distribution.run_command(command)
           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1106, in run_command
           super().run_command(command)
           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-        File "/data/data/com.termux/files/usr/tmp/pip-build-env-j0i5ynxt/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-lxu71_tk/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1047, in run_command
           cmd_obj.run()
           ~~~~~~~~~~~^^
         File "<string>", line 24, in run
